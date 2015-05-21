@@ -4,6 +4,7 @@ require 'config/path.php';
 require 'config/constants.php';
 require 'config/database.php';
 echo '12345';
+echo 'prof';
 
 
 require 'util/auth.php';
