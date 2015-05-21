@@ -7,7 +7,7 @@ class Login extends Controller{
     
     function index(){
         
-        $this->view->render('login/index');        
+        $this->view->render('login/index', TRUE);        
     }
     
     function run(){

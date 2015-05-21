@@ -36,23 +36,31 @@
 
                 <div id="navigation" class="span-17 last">
                     <div id="top-nav" class="span-17 last">
+                        <a href="<?php echo URL; ?>index">Home</a> |
+                        <a href="<?php echo URL; ?>note">Post a job</a> |
+                        <a href="<?php echo URL; ?>help">Help</a> |
                         <?php if (Session::get('loggedIn') == FALSE): ?>
-
-                            <a href="<?php echo URL; ?>index">Index</a> |
-                            <a href="<?php echo URL; ?>help">Help</a> |
-                        <?php endif; ?>   
+                        <a href="<?php echo URL; ?>register">Sign Up</a> |
+                        <?php endif; ?>                               
+                        
+                        
                         <?php if (Session::get('loggedIn') == TRUE): ?>
-                            <a href="<?php echo URL; ?>dashboard">Dashboard</a> |
-                            <a href="<?php echo URL; ?>note">Note</a> |
+                            <a href="<?php echo URL; ?>dashboard">Account</a> |
+                            
+                        <?php endif; ?>                               
 
-                            <?php if (Session::get('role') == 'owner'): ?>
-                                <a href="<?php echo URL; ?>user">Users</a> |
-                            <?php endif; ?>   
-
-                            <a href="<?php echo URL; ?>dashboard/logout">Logout</a> |
+                        <?php if (Session::get('loggedIn') == FALSE): ?>
+                            <a href="<?php echo URL; ?>login">Login</a>
                         <?php else: ?>   
-                            <a href="<?php echo URL; ?>login">Login</a> |
-                        <?php endif; ?>   
+                                <?php if (Session::get('role') == 'owner'): ?>
+                                    <a href="<?php echo URL; ?>user">Users</a> |
+                                <?php endif; ?>   
+                            
+                            <a href="<?php echo URL; ?>dashboard/logout">Logout</a>
+
+                            
+                        <?php endif; ?>                               
+
                     </div>
 
                     <div id="subscribe" class="span-17 prepend-0 last">

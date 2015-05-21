@@ -14,7 +14,8 @@ class Auth {
         
         if ($logged == FALSE) {
             session_destroy();
-            header('location: ../login');
+            header('location: '.URL.'login');
+            //header('location: ../login');
             exit;
         }
     }

@@ -1,9 +1,28 @@
-<h1>Login</h1>
-<form action="login/run" method="post">
- 
-    <label>Login </label><input type="text" name="login"><br />
-    <label>Password </label><input type="password" name="password"><br />
-    <label></label><input type="submit" />
-    
-</form>
+<h1>Login page</h1>
 
+  <div id="content span-24">
+        If you don't have an account, then go to the <a href="http://jobs.rubynow.com/signup">create account</a> page.<br/>
+If you already have an account and have lost your password, go to the <a href="http://jobs.rubynow.com/password_reset_request/new">reset account</a> page.<br/><br/>
+
+<form accept-charset="UTF-8" action="login/run" method="post">
+    <div style="margin:0;padding:0;display:inline">
+        <input name="utf8" type="hidden" value="&#x2713;" />
+        <input name="authenticity_token" type="hidden" value="XsTD3UQWKWtrQ3wMTCY0wOneAfWepo+Ej0v9dGo8W/g=" />
+    </div>
+
+<div title="Account login" id="loginform" class="form">
+    <h3>Please login</h3>
+    
+
+    <label for="user_login">Email:</label><br/>
+    <input type="text" name="login" id="user_login" size="30" value=""/><br/>
+
+    <label for="user_password">Password:</label><br/>
+    <input type="password" name="password" id="user_password" size="30"/>
+
+    <br/>
+    <input type="submit" name="submit_login" value="Sign in" class="button inline" />
+
+</div>
+
+</form>
