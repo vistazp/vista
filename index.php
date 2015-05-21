@@ -3,6 +3,8 @@
 require 'config/path.php';
 require 'config/constants.php';
 require 'config/database.php';
+echo '12345';
+echo 'prof';
 echo '123456';
 
 
