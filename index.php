@@ -6,6 +6,8 @@ require 'config/database.php';
 echo '12345';
 echo 'vetal';
 echo '123456';
+echo 'prof';
+
 
 
 require 'util/auth.php';
