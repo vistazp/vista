@@ -3,7 +3,7 @@
 require 'config/path.php';
 require 'config/constants.php';
 require 'config/database.php';
-echo '12345';
+echo '123456';
 
 
 require 'util/auth.php';
