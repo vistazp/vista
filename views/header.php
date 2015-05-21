@@ -1,11 +1,14 @@
-<!doctype html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
     <head>
+        <meta name="author" content="dotnetnow.com" />
+        <link rel="canonical" href="http://dotnetnow.com/" />
         <title>
             <?=(isset($this->titl)) ? $this->titl : 'Test'; ?></title>
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
-        <link rel="stylesheet" href="<?php echo URL; ?>public/css/default1.css"/>
+        
+        <link rel="stylesheet" href="<?php echo URL; ?>public/css/application.css"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
         <?php
