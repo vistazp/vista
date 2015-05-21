@@ -5,7 +5,7 @@ require 'config/constants.php';
 require 'config/database.php';
 echo '12345';
 echo 'prof';
-echo '123456';
+
 
 
 require 'util/auth.php';
