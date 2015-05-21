@@ -1,10 +1,13 @@
     </div>
+    
 
-    <div id="footer">
-        <a href="<?php echo URL; ?>privacy">Privacy</a>
-        <a href="<?php echo URL; ?>terms">Terms of use</a>
-        <a href="<?php echo URL; ?>contactus">Contact us</a>
+    <div id="footer" class="span-24 last">
+        <a href="<?php echo URL; ?>privacy">Privacy Policy</a> |
+        <a href="<?php echo URL; ?>terms">Terms of use</a> |
+        <a href="<?php echo URL; ?>contactus">Contact Us</a> <br />
+  DotNetNow.com. All rights reserved 2005 - 2015.
     </div>
+</div>
 
 </body>
 </html>

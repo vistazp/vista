@@ -6,7 +6,9 @@ class View {
     }
     public function render($name, $noInclude=FALSE){
         if ($noInclude==TRUE){
-        require 'views/'.$name.'.php';    
+        require 'views/headerNoSubscribe.php';
+        require 'views/'.$name.'.php';
+        require 'views/footer.php';
         }
         else {
         require 'views/header.php';

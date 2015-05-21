@@ -55,26 +55,7 @@
                         <?php endif; ?>   
                     </div>
 
-                    <div id="subscribe" class="span-17 prepend-0 last">
-                        <div class="span-11 prepend-4 last">
-                            <div class="span-11">
-                                <div class="span-6"><h2>Ruby Job Alerts</h2></div>
-                                <div class="span-4" id="twitter-div"><a href="https://twitter.com/FindTechJobs" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @FindTechJobs</a></div>
-                            </div>
-                            <div class="span-11">
-                                <div class="quiet" style="font-size:1.25em;">
-                                    Latest ruby jobs posted from New York, Chicago, California, and the world, sent to your inbox (digest options available).
-                                </div>
-                                <div class="inline">
-                                    <span style='font-size:16px;'>Email :</span> 
-                                    <form accept-charset="UTF-8" action="/updates" class="inline" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="XsTD3UQWKWtrQ3wMTCY0wOneAfWepo+Ej0v9dGo8W/g=" /></div>
-                                        <input id="update_email" name="update[email]" size="32" type="text" />
-                                        <input class="button-green inline" name="commit" type="submit" value="Get Job Alerts" />
-                                    </form>          
-                                </div>	
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
 
 

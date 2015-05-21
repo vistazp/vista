@@ -17,7 +17,7 @@ class Help extends Controller{
     
     function index(){
         //echo Hash::create('md5', 'prof', HASH_KEY);
-        $this->view->render('help/index');        
+        $this->view->render('help/index', TRUE);        
     }
 
 
