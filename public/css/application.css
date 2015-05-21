@@ -401,8 +401,7 @@ div.accept_terms .reject a {
 }
 
 #standard_select div.premium_text img,
-#standard_select div.premium_text span,
-{
+#standard_select div.premium_text span {
     float: right;
 }
 
