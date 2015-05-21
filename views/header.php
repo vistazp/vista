@@ -3,8 +3,10 @@
     <head>
         <meta name="author" content="dotnetnow.com" />
         <link rel="canonical" href="http://dotnetnow.com/" />
-        <title>
-            <?=(isset($this->titl)) ? $this->titl : 'Test'; ?></title>
+        <title><?=(isset($this->titl)) ? $this->titl : 'Test'; ?></title>
+        <meta name="description" content="<?=(isset($this->description)) ? $this->description : 'Page description'; ?>"/>
+        
+        
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
         
