@@ -40,6 +40,18 @@ body {
 #header a:hover {
 	background: #4d8add
 }
+#footer a {
+	color: #fff;
+	background: #436fac;
+	padding: 4px 15px;
+	text-decoration: none;
+	font-size: 15px;
+	font-weight: bolder;
+}
+
+#footer a:hover {
+	background: #4d8add
+}
 
 /** Forms */
 form {
