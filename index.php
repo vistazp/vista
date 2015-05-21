@@ -3,10 +3,8 @@
 require 'config/path.php';
 require 'config/constants.php';
 require 'config/database.php';
-echo 'prof branch';
-echo '1';
-echo 'prof branch2';
-echo 'vetal branch3';
+echo '12345';
+
 
 require 'util/auth.php';
 
