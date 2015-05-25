@@ -10,8 +10,9 @@
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
 
-            <link rel="stylesheet" href="<?php echo URL; ?>public/css/application.css"/>
-            <link rel="stylesheet" href="<?php echo URL; ?>public/css/screen.css"/>
+            <link rel="stylesheet" href="<?php echo URL; ?>public/css/application.css" media="screen" rel="stylesheet" type="text/css"/>
+            <link rel="stylesheet" href="<?php echo URL; ?>public/css/screen.css" media="screen" rel="stylesheet" type="text/css"/>
+            <link rel="stylesheet" href="<?php echo URL; ?>public/css/formtastic.css" media="screen" rel="stylesheet" type="text/css"/>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
             <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
             <?php
