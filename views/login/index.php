@@ -1,8 +1,8 @@
 <h1>Login page</h1>
 
   <div id="content span-24">
-        If you don't have an account, then go to the <a href="http://jobs.rubynow.com/signup">create account</a> page.<br/>
-If you already have an account and have lost your password, go to the <a href="http://jobs.rubynow.com/password_reset_request/new">reset account</a> page.<br/><br/>
+        If you don't have an account, then go to the <a href="<?php echo URL; ?>signup">create account</a> page.<br/>
+If you already have an account and have lost your password, go to the <a href="<?php echo URL; ?>password_reset_request/new">reset account</a> page.<br/><br/>
 
 <form accept-charset="UTF-8" action="login/run" method="post">
     <div style="margin:0;padding:0;display:inline">

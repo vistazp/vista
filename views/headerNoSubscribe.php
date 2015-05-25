@@ -12,6 +12,7 @@
 
             <link rel="stylesheet" href="<?php echo URL; ?>public/css/application.css"/>
             <link rel="stylesheet" href="<?php echo URL; ?>public/css/screen.css"/>
+            <link rel="stylesheet" href="<?php echo URL; ?>public/css/formtastic.css" media="screen" rel="stylesheet" type="text/css"/>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
             <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
             <?php
@@ -40,7 +41,7 @@
                         <a href="<?php echo URL; ?>note">Post a job</a> |
                         <a href="<?php echo URL; ?>help">Help</a> |
                         <?php if (Session::get('loggedIn') == FALSE): ?>
-                        <a href="<?php echo URL; ?>register">Sign Up</a> |
+                        <a href="<?php echo URL; ?>signup">Sign Up</a> |
                         <?php endif; ?>                               
                         
                         
@@ -54,6 +55,7 @@
                         <?php else: ?>   
                                 <?php if (Session::get('role') == 'owner'): ?>
                                     <a href="<?php echo URL; ?>user">Users</a> |
+                                    <a href="<?php echo URL; ?>feedback">Feedback</a> |
                                 <?php endif; ?>   
                             
                             <a href="<?php echo URL; ?>dashboard/logout">Logout</a>

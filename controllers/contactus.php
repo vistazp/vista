@@ -11,7 +11,7 @@ class Contactus extends Controller {
     function index() {
 //        echo 'inside index index';
 
-        $this->view->render('contactus/index');
+        $this->view->render('contactus/index', 'false');
     }
 
     

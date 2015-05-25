@@ -4,21 +4,21 @@
   <div class="span-16 colborder">
     <p>We're constantly working to make the site better, and we'd love to hear from you. If you have any questions about our product, a suggestion for the site, or just want to chat, drop us a line. Feel free to send us an e-mail, shoot us a call, or fill out the form below. All feedback is welcome, and we promise to respond promptly.</p>
 
-    <form accept-charset="UTF-8" action="<?php echo URL; ?>feedback/addFeedback" class="formtastic feedback_form" id="new_feedback_form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="RNI+TEpj6OvoPj0x7DCyMMEQOqsMsmOwDCrwrnDcqIw=" /></div>
+    <form accept-charset="UTF-8" action="<?php echo URL; ?>feedback/create" class="formtastic feedback_form" id="new_feedback_form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="RNI+TEpj6OvoPj0x7DCyMMEQOqsMsmOwDCrwrnDcqIw=" /></div>
     
     <fieldset class="inputs"><ol>
-    <li class="string input required stringish" id="feedback_form_name_input"><label class=" label" for="feedback_form_name">Your Name:<abbr title="required">*</abbr></label><input id="feedback_form_name" name="feedback_form[name]" required="required" size="25" type="text" />
+    <li class="string input required stringish" id="feedback_form_name_input"><label class=" label" for="feedback_form_name">Your Name:<abbr title="required">*</abbr></label><input id="feedback_form_name" name="name" required="required" size="25" type="text" />
 
 </li>
-    <li class="string input required stringish" id="feedback_form_email_input"><label class=" label" for="feedback_form_email">Your Email:<abbr title="required">*</abbr></label><input id="feedback_form_email" name="feedback_form[email]" required="required" size="40" type="text" />
+    <li class="string input required stringish" id="feedback_form_email_input"><label class=" label" for="feedback_form_email">Your Email:<abbr title="required">*</abbr></label><input id="feedback_form_email" name="email" required="required" size="40" type="text" />
 
 </li>
-    <li class="select input required" id="feedback_form_reason_input"><label class=" label" for="feedback_form_reason">Reason:<abbr title="required">*</abbr></label><select id="feedback_form_reason" name="feedback_form[reason]" required="required"><option value="BUG">I found a bug</option>
+    <li class="select input required" id="feedback_form_reason_input"><label class=" label" for="feedback_form_reason">Reason:<abbr title="required">*</abbr></label><select id="feedback_form_reason" name="reason" required="required"><option value="BUG">I found a bug</option>
 <option value="FEATURE">I want a feature</option>
 <option value="COMMENT">I have a comment</option></select>
 
 </li>
-    <li class="text input required" id="feedback_form_message_input"><label class=" label" for="feedback_form_message">Comments:<abbr title="required">*</abbr></label><textarea id="feedback_form_message" name="feedback_form[message]" required="required" rows="20"></textarea>
+    <li class="text input required" id="feedback_form_message_input"><label class=" label" for="feedback_form_message">Comments:<abbr title="required">*</abbr></label><textarea id="feedback_form_message" name="message" required="required" rows="20"></textarea>
 
 </li>
 </ol></fieldset>    <fieldset class="buttons"><ol>

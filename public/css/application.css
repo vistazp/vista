@@ -3,7 +3,7 @@
 /* general elements */
 
 a, a:link {
-    color: #DA7B32;
+    color: #0f3f7f;
     /* color:#9E2021;  red logo */
     text-decoration: underline;
 }
@@ -88,7 +88,7 @@ a#logout_session {
 
 #footer {
     margin-top: 50px;
-    border-top: 3px solid #9E2020; /* logo red */
+    border-top: 3px solid #0f3f7f; /* logo red */
     background-color: #ffffcc;
     text-align: center;
 }
