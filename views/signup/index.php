@@ -23,8 +23,8 @@ If you already have an account and have lost your password, go to the <a href="<
         <input id="txtPasswordConfirm" name="txtPasswordConfirm" size="30" type="password" /><br/>
 
         <label for="chkReadTerms">
-            <input name="chkReadTerms" type="hidden" value="0" /><input id="chkReadTerms" name="chkReadTerms" type="checkbox" value="1" />I agree to the <a href="<?php echo URL; ?>/terms">Terms
-                for Use</a> and <a href="<?php echo URL; ?>/privacy">Privacy Policy</a>
+            <input name="chkReadTerms" type="hidden" value="0" /><input id="chkReadTerms" name="chkReadTerms" type="checkbox" value="1" />I agree to the <a href="<?php echo URL; ?>terms">Terms
+                for Use</a> and <a href="<?php echo URL; ?>privacy">Privacy Policy</a>
         </label><br /><br />
 
         <input type="submit" name="signup" value="Create your account" class="button inline" />

@@ -4,7 +4,7 @@
   <div class="span-16 colborder">
     <p>We're constantly working to make the site better, and we'd love to hear from you. If you have any questions about our product, a suggestion for the site, or just want to chat, drop us a line. Feel free to send us an e-mail, shoot us a call, or fill out the form below. All feedback is welcome, and we promise to respond promptly.</p>
 
-    <form accept-charset="UTF-8" action="<?php echo URL; ?>feedback/create" class="formtastic feedback_form" id="new_feedback_form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="RNI+TEpj6OvoPj0x7DCyMMEQOqsMsmOwDCrwrnDcqIw=" /></div>
+    <form accept-charset="UTF-8" action="<?php echo URL; ?>contactus/create" class="formtastic feedback_form" id="new_feedback_form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="RNI+TEpj6OvoPj0x7DCyMMEQOqsMsmOwDCrwrnDcqIw=" /></div>
     
     <fieldset class="inputs"><ol>
     <li class="string input required stringish" id="feedback_form_name_input"><label class=" label" for="feedback_form_name">Your Name:<abbr title="required">*</abbr></label><input id="feedback_form_name" name="name" required="required" size="25" type="text" />

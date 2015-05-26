@@ -17,19 +17,6 @@ class Feedback extends Controller {
     }
     
     
-    public function create() {
-        $data = array();
-        
-        $data['name'] = $_POST['name'];
-        $data['email'] = $_POST['email'];
-        $data['reason'] = $_POST['reason'];
-        $data['comment'] = $_POST['message'];
-        
-        $this->model->create($data);
-        
-        
-        header('location:' . URL . 'thanks');
-    }
 
     public function view($id) {
         $this->view->feedback = $this->model->feedSingleList($id);
