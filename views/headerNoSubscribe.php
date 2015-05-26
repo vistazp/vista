@@ -56,6 +56,7 @@
                                 <?php if (Session::get('role') == 'owner'): ?>
                                     <a href="<?php echo URL; ?>user">Users</a> |
                                     <a href="<?php echo URL; ?>feedback">Feedback</a> |
+                                    <a href="<?php echo URL; ?>subscription">Subscription</a> |                                    
                                 <?php endif; ?>   
                             
                             <a href="<?php echo URL; ?>dashboard/logout">Logout</a>
