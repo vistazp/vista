@@ -3,7 +3,7 @@
 require 'Form/Val.php';
 
 class Form {
-
+    public $strError = null;
     private $_postData = array();
     private $_currentItem = null;
     private $_val = array();
@@ -58,8 +58,10 @@ class Form {
             {
                 
                 $str .= $key.' => '.$value."\n";
-                 print_r($str);
+                //$strError=$str;
+                
             }
+            
             throw new Exception();
             }
     }
