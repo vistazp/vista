@@ -24,8 +24,10 @@ try{
     print_r($data);
     echo '</pre>';
     
-    $db = new Database(DB_TYPE, DB_HOST, DB_NAME, DB_USER, DB_PASS);
-    $db->insert('person', $data);
+    //$db = new Database(DB_TYPE, DB_HOST, DB_NAME, DB_USER, DB_PASS);
+//    $db->insert('person', $data);
+    $this->model->addUser($data);
+    
 }
  catch (Exception $e){
        echo $e->getMessage();
