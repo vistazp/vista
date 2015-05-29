@@ -6,7 +6,10 @@
 
 
 <table>
-    
+            <th>ID</th>
+            <th>Email</th>
+            <th>Date</th>
+            
 <?php
     foreach ($this->subscriptionList as $key=>$value)
     {
