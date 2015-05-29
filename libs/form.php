@@ -57,7 +57,7 @@ class Form {
             foreach ($this->_error as $key => $value)
             {
                 
-                $str .= $key.' => '.$value."\n";
+                $str .= $key.' => '.$value."\n".'</br>';
                 
                 
             }
@@ -70,7 +70,7 @@ class Form {
             foreach ($this->_error as $key => $value)
             {
                 
-                $str .= $key.' => '.$value."\n";
+                $str .='<li>'. $key.' => '.$value."\n".'</li>';
                            
             }
             return $str;

@@ -24,4 +24,13 @@ class Val {
             return "Your string can  only be digit";
         }
     }
+    
+        public function emailCorrect($email_a)
+    {
+        if ((filter_var($email_a, FILTER_VALIDATE_EMAIL))==FALSE){
+            return "Your email '<b>$email_a</b>' is not correct ";
+        }
+    }
+
+    
 }

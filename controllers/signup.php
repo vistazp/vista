@@ -28,18 +28,23 @@ class Signup extends Controller {
     }
     
     
+    
     public function validation() {
         try {
             $form = new Form();
 
             $form->post('name')
-//                    ->val('minlength', 5)
+                    ->val('minlength', 2)
+                    ->val('maxlength', 20)
                     
                     ->post('email')
-//                    ->val('minlength', 5)
+                    ->val('minlength', 5)
+                    ->val('emailCorrect')
                     
-                    ->post('password');
-
+                    ->post('password')
+                    ->val('minlength', 6)
+                    ->val('maxlength', 20);
+                            
             $form->mit();
             $data = $form->fetch();
 
