@@ -15,7 +15,7 @@ If you already have an account and have lost your password, go to the <a href="<
     
 
     <label for="user_login">Email:</label><br/>
-    <input type="text" name="login" id="user_login" size="30" value=""/><br/>
+    <input type="text" name="email" id="user_login" size="30" value=""/><br/>
 
     <label for="user_password">Password:</label><br/>
     <input type="password" name="password" id="user_password" size="30"/>

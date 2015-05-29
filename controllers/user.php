@@ -19,7 +19,8 @@ class User extends Controller {
 
     public function create() {
         $data = array();
-        $data['login'] = $_POST['login'];
+        $data['name'] = $_POST['name'];
+        $data['email'] = $_POST['email'];
         $data['password'] = $_POST['password'];
         $data['role'] = $_POST['role'];
 
@@ -35,7 +36,8 @@ class User extends Controller {
     public function editSave($id) {
         $data = array();
         $data['id'] = $id;
-        $data['login'] = $_POST['login'];
+        $data['name'] = $_POST['name'];
+        $data['email'] = $_POST['email'];
         $data['password'] = $_POST['password'];
         $data['role'] = $_POST['role'];
 

@@ -1,9 +1,9 @@
-
+<div><?= (isset($this->ValError)) ? $this->ValError : ''; ?></div><br/>
 <div id="content span-24">
         
 After the account creation, you will be able to post jobs.<br/>
-If you already have an account and have lost your password, go to the <a href="<?php echo URL; ?>password_reset_request/new">reset account</a> page.<br/>
-<div id="valError"><?= (isset($this->ValError)) ? $this->ValError : ''; ?> </div>
+If you already have an account and have lost your password, go to the <a href="<?php echo URL; ?>password_reset_request/new">reset account</a> page.<br/><br/>
+
 
 <form accept-charset="UTF-8" action="<?php echo URL; ?>signup/validation" class="new_user" id="new_user" method="post">
     <div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="tRSImprGfZCjqCalIzncleieM7kvwBR2XskOgyr8qnw=" /></div>
@@ -13,7 +13,7 @@ If you already have an account and have lost your password, go to the <a href="<
         <br/>
 
         <label for="txtName">Name:</label><br/>
-        <input id="txtName" name="login" size="30" type="text" /><br/>
+        <input id="txtName" name="name" size="30" type="text" /><br/>
 
         <label for="txtEmail">Email:</label><br/>
         <input id="txtEmail" name="email" size="30" type="text" /><br/>

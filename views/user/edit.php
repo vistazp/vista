@@ -3,8 +3,12 @@
 
 
 <form method="post" action="<?php echo URL; ?>user/editSave/<?php echo  $this->user['id']; ?>">
-    <label>Login</label><input type="text" name="login" value="<?php echo  $this->user['login']; ?>"/><br />
-    <label>Password</label><input type="text" name="password"  /><br />
+    <label>Name</label><br/>
+    <input type="text" name="name" size="30" value="<?php echo  $this->user['name']; ?>"/><br />
+    <label>Email</label><br/>
+    <input type="text" name="email" size="30" value="<?php echo  $this->user['email']; ?>"/><br />
+    <label>Password</label><br/>
+    <input type="text" size="30" name="password"  /><br />
     <label>Role</label>
     <select name="role">
         <option value="default" <?php if($this->user['role']=='default') echo 'selected'; ?> >default</option>

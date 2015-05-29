@@ -3,7 +3,7 @@
 require 'Form/Val.php';
 
 class Form {
-    public $strError = null;
+    //public $strError = null;
     private $_postData = array();
     private $_currentItem = null;
     private $_val = array();
@@ -58,12 +58,25 @@ class Form {
             {
                 
                 $str .= $key.' => '.$value."\n";
-                //$strError=$str;
+                
                 
             }
             
             throw new Exception();
             }
     }
+    public function mit2() {
+            $str='';
+            foreach ($this->_error as $key => $value)
+            {
+                
+                $str .= $key.' => '.$value."\n";
+                           
+            }
+            return $str;
+            
+    }
+    
+    
 
 }

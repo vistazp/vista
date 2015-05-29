@@ -12,5 +12,7 @@ class Login extends Controller{
     
     function run(){
         $this->model->run();
+        $this->view->notice = 'Login succses!';
     }
+    
 }

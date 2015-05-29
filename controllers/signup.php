@@ -21,18 +21,23 @@ class Signup extends Controller {
         header('location: ' . URL . 'thanks/indexSubscribe');
     }
 
+
+    
+    
     public function validation() {
         try {
             $form = new Form();
 
-            $form->post('login')
+            $form->post('name')
                     ->val('minlength', 5)
+                    
                     ->post('email')
-                    ->val('digit')
+                    ->val('minlength', 5)
+                    
                     ->post('password');
 
             $form->mit();
-            echo $this->str;
+            
 
 //            echo 'form passed!';
             $data = $form->fetch();
@@ -48,11 +53,15 @@ class Signup extends Controller {
             //        'password' => Hash::create('md5', $data['password'], HASH_KEY),
             //        'role' => 'default'));
             $this->model->addUser($data);
-            header('location: ' . URL . 'note');
+            
+            $this->model->runReg($data['email'], Hash::create('md5', $data['password'], HASH_KEY));
+            
+            
         } catch (Exception $e) {
-            echo Form::strError;
+            $str = $form->mit2();
+            
             //$this->view->ValError = $e->getMessage();
-            //$this->view->ValError = 'errrrrrrrror!!!!!!!!!!!!';
+            $this->view->ValError = $str;
             $this->view->render('signup/index');
 //            header('location: ' . URL . 'signup');
         }
