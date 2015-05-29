@@ -1,4 +1,4 @@
-<div><?= (isset($this->ValError)) ? $this->ValError : ''; ?></div><br/>
+
 <div id="content span-24">
         
 After the account creation, you will be able to post jobs.<br/>
@@ -11,7 +11,7 @@ If you already have an account and have lost your password, go to the <a href="<
         <br/>
         <h3>Signup</h3>
         <br/>
-
+        <div style="color: red;"><?= (isset($this->ValError)) ? $this->ValError : ''; ?></div><br/>
         <label for="txtName">Name:</label><br/>
         <input id="txtName" name="name" size="30" type="text" /><br/>
 
