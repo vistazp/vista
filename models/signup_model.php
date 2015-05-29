@@ -48,7 +48,7 @@ class Signup_model extends Model {
             Session::set('role', $data['role']);
             Session::set('userId', $data['id']);
             Session::set('userName', $data['name']);
-            Session::set('userEmail', $data['email']);
+            Session::set('userEmail', $log);
             Session::set('loggedIn', TRUE);
             header('location: ../dashboard');
         } else {
