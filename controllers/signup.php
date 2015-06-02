@@ -13,12 +13,34 @@ class Signup extends Controller {
         $this->view->render('signup/index');
     }
 
-    public function addSubscribe() {
-        $data = array();
-        $data['email'] = $_POST['email'];
+    public function addSubscribe($data) {
+        //$data = array();
+        //$data['email'] = $_POST['email'];
         $this->model->create($data);
 
         header('location: ' . URL . 'thanks/indexSubscribe');
+    }
+
+    public function subVal(){
+        try {
+            $form = new Form();
+            
+            $form   ->post('email')
+                    ->val('minlength', 5)
+                    ->val('emailCorrect');
+
+            $form->mit();
+            $data = $form->fetch();
+
+            $this->addSubscribe($data);
+            
+        }
+        catch (Exception $e) {
+            $str = $form->mit2();
+            $this->view->ValError = $str;
+            $this->view->render('index/index');
+
+        }
     }
 
     public function mailSuck($mail) 

@@ -78,7 +78,7 @@
                                 </div>
                                 <div class="inline">
                                     <span style='font-size:16px;'>Email :</span> 
-                                    <form accept-charset="UTF-8" action="<?php echo URL; ?>signup/addSubscribe" class="inline" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="XsTD3UQWKWtrQ3wMTCY0wOneAfWepo+Ej0v9dGo8W/g=" /></div>
+                                    <form accept-charset="UTF-8" action="<?php echo URL; ?>signup/subVal" class="inline" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="XsTD3UQWKWtrQ3wMTCY0wOneAfWepo+Ej0v9dGo8W/g=" /></div>
                                         <input id="update_email" name="email" size="32" type="text" />
                                         <input class="button-green inline" name="commit" type="submit" value="Get Job Alerts" />
                                     </form>          
