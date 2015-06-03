@@ -44,15 +44,39 @@ class Dashboard extends Controller {
     }
     public function editSave($id) {
         $data = array();
-        $data['id'] = $id;
+        $data['id'] = $_SESSION['userId'];
         $data['name'] = $_POST['name'];
-        $data['email'] = $_POST['email'];
         $data['password'] = $_POST['password'];
-        $data['role'] = $_POST['role'];
-
+        Session::set('userName', $_POST['name']);
         $this->model->editSave($data);
         
-        header('location:' . URL . 'user');
+        header('location:' . URL . 'dashboard');
+    }
+    
+    
+    public function subVal(){
+        try {
+            $form = new Form();
+            
+            $form   ->post('name')
+                    ->val('minlength', 5)
+                    
+                    ->post('password')
+                    ->val('minlength', 5)
+                    ;
+
+            $form->mit();
+            $data = $form->fetch();
+            
+            $this->editSave($_SESSION['userId']);
+            
+        }
+        catch (Exception $e) {
+            $str = $form->mit2();
+            $this->view->ValError = $str;
+            $this->edit();
+
+        }
     }
 
 }

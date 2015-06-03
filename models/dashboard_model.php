@@ -32,5 +32,12 @@ class Dashboard_Model extends Model {
         //$sth->execute(array(':id' => $id));
         //return $sth->fetch();
     }
-    
+       public function editSave($data) {
+
+        $postData = array(
+            'name' => $data['name'],
+            'password' => Hash::create('md5', $data['password'], HASH_KEY));
+
+        $this->db->update('users', $postData, "`id` = {$data['id']}");
+       }
 }

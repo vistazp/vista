@@ -39,16 +39,7 @@ class User_model extends Model {
             'role' => $data['role']);
 
         $this->db->update('users', $postData, "`id` = {$data['id']}");
-
-//        $sth = $this->db->prepare('UPDATE users 
-//                SET login = :login, password = :password, role =:role
-//                WHERE id =:id');
-//        $sth->execute(array(
-//            ':id' => $data['id'],
-//            ':login' => $data['login'],
-//            ':password' => Hash::create('md5', $data['password'], HASH_KEY),
-//            ':role' => $data['role']
-//             ));
+ 
     }
 
     public function delete($id) {

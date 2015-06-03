@@ -10,6 +10,7 @@ If you already have an account and have lost your password, go to the <a href="<
     <div title="Account signup" id="signupform" class="form"> 
         <br/>
         <h3>Signup</h3>
+        
         <br/>
         <div style="color: red;"><?= (isset($this->ValError)) ? $this->ValError : ''; ?></div><br/>
         <label for="txtName">Name:</label><br/>
