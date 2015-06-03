@@ -1,7 +1,7 @@
 <div id="content span-24">
         
-<h2>Update account information</h2>
-<b><?php echo $_SESSION['userEmail'] ?></b><br/>
+<h2>Update account information | (<?php echo $_SESSION['userEmail'] ?>)</h2>
+
 
 <form accept-charset="UTF-8" action="<?php echo URL; ?>dashboard/editSave/<?php echo  $this->user[0]['id']; ?>" class="new_user" id="new_user" method="post">
     <div title="Account signup" id="signupform" class="form"> 

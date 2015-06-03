@@ -42,5 +42,17 @@ class Dashboard extends Controller {
         $this->view->user = $this->model->currentUser();
         $this->view->render('dashboard/edit');
     }
+    public function editSave($id) {
+        $data = array();
+        $data['id'] = $id;
+        $data['name'] = $_POST['name'];
+        $data['email'] = $_POST['email'];
+        $data['password'] = $_POST['password'];
+        $data['role'] = $_POST['role'];
+
+        $this->model->editSave($data);
+        
+        header('location:' . URL . 'user');
+    }
 
 }

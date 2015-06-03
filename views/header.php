@@ -5,7 +5,7 @@
         <link rel="canonical" href="http://dotnetnow.com/" />
         <title><?= (isset($this->titl)) ? $this->titl : 'Test'; ?></title>
         <meta name="description" content="<?= (isset($this->description)) ? $this->description : 'Page description'; ?>"/>
-        <link rel="shortcut icon" type="image/x-icon" href="public\images\favicon.ico" />
+        <link rel="shortcut icon" type="image/x-icon" href="<?php echo URL; ?>public\images\favicon.ico" />
 
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
