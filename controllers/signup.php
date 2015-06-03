@@ -26,8 +26,9 @@ class Signup extends Controller {
             $form = new Form();
             
             $form   ->post('email')
-                    ->val('minlength', 5)
-                    ->val('emailCorrect');
+                     ->val('minlength', 5)
+                     ->val('emailCorrect');
+                    
 
             $form->mit();
             $data = $form->fetch();
@@ -64,8 +65,11 @@ class Signup extends Controller {
                     ->val('emailCorrect')
                     
                     ->post('password')
-                    ->val('minlength', 6)
-                    ->val('maxlength', 20);
+                    ->val('minlength', 1)
+                    ->val('maxlength', 20)
+                    ->post2('password','passwordConfirm')
+                   // ->post('password')
+                    ->val('samepass', 'password', 'passwordConfirm');
                             
             $form->mit();
             $data = $form->fetch();

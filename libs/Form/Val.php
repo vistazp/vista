@@ -25,6 +25,15 @@ class Val {
         }
     }
     
+       public function samepass($pass1, $pass2)
+    {
+        if ($pass1!=$pass2){
+         //   echo $pass1;
+         //   echo $pass2;
+            return "Your passwords can only be the same";
+        }
+    }
+    
         public function emailCorrect($email_a)
     {
         if ((filter_var($email_a, FILTER_VALIDATE_EMAIL))==FALSE){

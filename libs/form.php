@@ -15,7 +15,20 @@ class Form {
 
     public function post($field) {
         $this->_postData[$field] = $_POST[$field];
+            
         $this->_currentItem = $field;
+        return $this;
+    }
+    
+     public function post2($field, $field2) {
+        $this->_postData[$field] = $_POST[$field];
+        $this->_postData[$field2] = $_POST[$field2];
+            
+        $this->_currentItem = $field;
+        $this->_currentItem2 = $field2;
+        
+       // echo $field;
+        //echo $field2;
         return $this;
     }
 
@@ -31,13 +44,23 @@ class Form {
         }
     }
 
-    public function val($typeOfValidator, $arg = NULL) {
+    public function val($typeOfValidator, $arg = NULL, $arg2 = NULL) {
 
-        if ($arg == null) {
+           if ($arg == null)
+            {
             $error = $this->_val->{$typeOfValidator}($this->_postData[$this->_currentItem]);
-        } else {
-            $error = $this->_val->{$typeOfValidator}($this->_postData[$this->_currentItem], $arg);
-        }
+            }
+            else {
+              if ($arg2 == null)
+              {
+               $error = $this->_val->{$typeOfValidator}($this->_postData[$this->_currentItem], $arg);
+              }
+              else {
+                $error = $this->_val->{$typeOfValidator}($this->_postData[$this->_currentItem], $this->_postData[$this->_currentItem2], $arg, $arg2); 
+                } 
+             }
+       
+        
         if ($error) {
             $this->_error[$this->_currentItem] = $error;
         }
