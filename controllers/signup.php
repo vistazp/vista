@@ -38,7 +38,8 @@ class Signup extends Controller {
         catch (Exception $e) {
             //$str = $form->mit2();
             //$this->view->ValError = $str;
-            header('location: ' . URL);;
+            header('location: ' . URL);
+            
 
         }
     }
