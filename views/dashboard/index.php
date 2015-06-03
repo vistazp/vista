@@ -2,7 +2,7 @@
     <div id='info'>
         <p>
         <h2>Job Post Dashboard</h2> 
-        Welcome <?php echo $_SESSION['userName'] ?> (<?php echo $_SESSION['userEmail'] ?>) | <a href="<?php echo URL; ?>account/edit">Update Account Details</a> <br/>
+        Welcome <?php echo $_SESSION['userName'] ?> (<?php echo $_SESSION['userEmail'] ?>) | <a href="<?php echo URL; ?>dashboard/edit">Update Account Details</a> <br/>
         </p>
 
         <p>

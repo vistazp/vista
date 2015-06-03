@@ -26,4 +26,11 @@ class Dashboard_Model extends Model {
         echo json_encode(1);
     }
 
+    public function currentUser() {
+        return $this->db->select('SELECT id, name, email FROM users WHERE id= :id', array(':id' => $_SESSION['userId']));
+        //$sth = $this->db->prepare('SELECT id, login, role FROM users WHERE id= :id');
+        //$sth->execute(array(':id' => $id));
+        //return $sth->fetch();
+    }
+    
 }

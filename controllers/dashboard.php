@@ -38,5 +38,9 @@ class Dashboard extends Controller {
         $this->model->xhrDeleteListing();
     }
     
-    
+    public function edit() {
+        $this->view->user = $this->model->currentUser();
+        $this->view->render('dashboard/edit');
+    }
+
 }
