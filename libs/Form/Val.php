@@ -62,7 +62,7 @@ class Val extends Model {
         $count = $sth->rowCount();
 
         if ($count > 0) {
-          return "User email alredy exist";
+          return "User email already exist";
           } 
     }
 
