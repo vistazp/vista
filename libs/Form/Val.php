@@ -34,6 +34,13 @@ class Val {
         }
     }
     
+      public function check($check)
+    {
+        if (!$check){
+              return "Please read Terms for Use and Privacy Policy";
+        }
+    }
+    
         public function emailCorrect($email_a)
     {
         if ((filter_var($email_a, FILTER_VALIDATE_EMAIL))==FALSE){
