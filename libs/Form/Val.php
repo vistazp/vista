@@ -1,10 +1,12 @@
 <?php
 
-class Val {
+class Val extends Model {
 
+   
     function __construct() {
-        
-    }
+        parent::__construct();
+    }    
+    
 
     public function minlength($data, $arg)
     {
@@ -45,8 +47,26 @@ class Val {
     {
         if ((filter_var($email_a, FILTER_VALIDATE_EMAIL))==FALSE){
             return "Your email '<b>$email_a</b>' is not correct ";
-        }
+          }
+          
+        $sth = $this->db->prepare("SELECT id, name, role FROM users WHERE email=:email");
+        $sth->execute(array(
+            ':email' => $email_a 
+                ));
+
+        $data = $sth->fetch();
+        //print_r($data);
+        //echo $data['role'];
+        //die();
+
+        $count = $sth->rowCount();
+
+        if ($count > 0) {
+          return "User email alredy exist";
+          } 
+    }
+
+                
     }
 
     
-}
