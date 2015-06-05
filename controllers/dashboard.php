@@ -59,11 +59,19 @@ class Dashboard extends Controller {
             $form = new Form();
             
             $form   ->post('name')
-                    ->val('minlength', 5)
+                    ->val('minlength', 2)
+                    ->val('maxlength', 20)
+                    
+                //    ->post('email')
+                //    ->val('minlength', 5)
+                //    ->val('emailCorrect')
                     
                     ->post('password')
-                    ->val('minlength', 5)
-                    ;
+                    ->val('minlength', 1)
+                    ->val('maxlength', 20)
+                    ->post2('password','passwordConfirm')
+                   // ->post('password')
+                    ->val('samepass', 'password', 'passwordConfirm');
 
             $form->mit();
             $data = $form->fetch();

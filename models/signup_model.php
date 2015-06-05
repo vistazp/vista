@@ -51,7 +51,8 @@ class Signup_model extends Model {
             header('location: ../login');
         }
     }
-
+    
+      
     public function mailSuck($mail) {
 
 
