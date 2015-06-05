@@ -70,11 +70,13 @@ class Signup extends Controller {
                     ->val('maxlength', 20)
                     ->post2('password','passwordConfirm')
                    // ->post('password')
-                    ->val('samepass', 'password', 'passwordConfirm');
-                            
+                    ->val('samepass', 'password', 'passwordConfirm')
+                    ->post('chkReadTerms')
+                    ->val('check', 'chkReadTerms');
+                                     
             $form->mit();
             $data = $form->fetch();
-
+            //$this->model->checkemail($data['email']);  
             /*
              * наши действия если валидация успешная
              * добавляем в базу данных addUser
