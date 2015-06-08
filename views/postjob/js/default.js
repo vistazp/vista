@@ -69,7 +69,7 @@ Job = {
                                       },
                                     "user[password]": {
                                         required: "#job_account_options_1:checked",
-                                        minlength: 5
+                                        minlength: 3
                                       },
 
                                     "new_user[login]": {
@@ -82,7 +82,7 @@ Job = {
                                       },
                                     "new_user[password]": {
                                         required: "#job_account_options_2:checked",
-                                        minlength: 5
+                                        minlength: 3
                                       },
                                     "new_user[password_confirmation]": {
                                                       required: "#job_account_options_2:checked",

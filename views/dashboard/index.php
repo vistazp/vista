@@ -48,7 +48,7 @@
         
         
         
-        To create a new job post : <a href="<?php echo URL; ?>note" title="Post a new job">Post a Job</a>
+        To create a new job post : <a href="<?php echo URL; ?>postjob" title="Post a new job">Post a Job</a>
 
     </div>
 
