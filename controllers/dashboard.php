@@ -16,7 +16,7 @@ class Dashboard extends Controller {
     }
 
     function index() {
-//        echo 'inside index index';
+        $this->view->userPost = $this->model->userPostList($_SESSION['userId']);
         $this->view->render('dashboard/index');
     }
 
@@ -85,6 +85,11 @@ class Dashboard extends Controller {
             $this->edit();
 
         }
+    }
+    
+    public function deletePost($id) {
+        $this->model->deletePost($id);
+        header('location:' . URL . 'dashboard');
     }
 
 }

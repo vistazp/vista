@@ -40,4 +40,16 @@ class Dashboard_Model extends Model {
 
         $this->db->update('users', $postData, "`id` = {$data['id']}");
        }
+       
+       public function userPostList($userid) {
+
+        return $this->db->select('SELECT * FROM post WHERE userid= :id', array(':id' => $userid));
+        
+    }
+    
+        public function deletePost($id) {
+        $this->db->delete('post', "postid = '$id' and userid = ".$_SESSION['userId']);
+    }
+
+       
 }
