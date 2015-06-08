@@ -47,8 +47,9 @@ class Postjob extends Controller {
             $data['country'] = $_POST['country'];
             $data['telec'] = $_POST['telecomute'];
             $data['type'] = $_POST['featured_status'];
-            //print_r($data);
-            //die();
+            $data['userid'] = Session::get('userId');
+            print_r($data);
+            die();
             $this->model->addStepOne($data);    
     }
 }

@@ -8,6 +8,8 @@ class Postjob_model extends Model {
 
     public function addStepOne($data) {
         print_r($data);
+
+        
         $this->db->insert('post', array(
             'title' => $data['title'],
             'city' => $data['city'],
@@ -15,7 +17,7 @@ class Postjob_model extends Model {
             'telec' => $data['telec'],
             'type' => $data['type'],
             'date_create' => date('Y-m-d H:i:s'),
-            'userid' => $_SESSION['userId']
+            'userid' => $data['userid']
         ));
     }
 
