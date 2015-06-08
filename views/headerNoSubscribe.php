@@ -38,7 +38,7 @@
                 <div id="navigation" class="span-17 last">
                     <div id="top-nav" class="span-17 last">
                         <a href="<?php echo URL; ?>">Home</a> |
-                        <a href="<?php echo URL; ?>note">Post a job</a> |
+                        <a href="<?php echo URL; ?>postjob">Post a job</a> |
                         <a href="<?php echo URL; ?>help">Help</a> |
                         <?php if (Session::get('loggedIn') == FALSE): ?>
                         <a href="<?php echo URL; ?>signup">Sign Up</a> |

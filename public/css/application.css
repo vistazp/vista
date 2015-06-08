@@ -773,11 +773,11 @@ div.ui-dialog form#new_account label.error {
 
 #step-1 div.tier-options .label-radio {
     padding-left: 104px;
-    background: url("../images/select.png") no-repeat;
+    background: url(../images/select.png) no-repeat;
 }
 #step-1 div.tier-options .label-radio-check {
     padding-left: 104px;
-    background: url("../images/selected.png") no-repeat;
+    background: url(../images/selected.png) no-repeat;
 }
 
 #step-1 div.tier-options  p.footer label.label-radio input,
