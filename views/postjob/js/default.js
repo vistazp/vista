@@ -28,10 +28,10 @@ Job = {
         $("#form_step_2").validate({
           errorLabelContainer: $("#form_step_2 .errorForsteps"),
           rules:{
-            "job[company_name]":{ 
+            "company_name":{ 
                    required: "#step-1:hidden"
             },
-            "job[url]": {
+            "url": {
                    required: "#step-1:hidden",
                    url:{
 		  	depends: function () {
@@ -39,23 +39,23 @@ Job = {
 			}
                    }
             },
-            "job[description]":{ 
+            "description":{ 
                    required: "#step-1:hidden"
             },
-            "job[instructions]": {
+            "instructions": {
                    required: "#step-1:hidden"
             }
           },
           messages: {
-             "job[company_name]": {
+             "company_name": {
                required: "Please enter a Company"
              },
-             "job[url]": {
+             "url": {
                       required: "Please enter a Company"
                       
                     },
-            "job[description]": {required: "Please enter a Description"},
-            "job[instructions]": {required: "Please enter the Instructions"}
+            "description": {required: "Please enter a Description"},
+            "instructions": {required: "Please enter the Instructions"}
           }
         });
 
@@ -94,13 +94,13 @@ Job = {
                                      }
                                  },
                                  messages: {
-                                  "user[login]": {
+                                  "login": {
                                         required: "Please enter a Login",
                                         email: "Please enter a valid email address for the login",
                                         minlength: "Your login must consist of at least 3 characters"
                                       },
 
-                                 "user[password]": {
+                                 "password": {
                                         required: "Please enter a Password",
                                         minlength: "Your password must consist of at least 5 characters"
                                       },

@@ -1,15 +1,13 @@
 <?php
 
 class Postjob_model extends Model {
-
-    function __construct() {
+    
+            function __construct() {
         parent::__construct();
     }
 
     public function addStepOne($data) {
-        print_r($data);
 
-        
         $this->db->insert('post', array(
             'title' => $data['title'],
             'city' => $data['city'],
@@ -19,6 +17,8 @@ class Postjob_model extends Model {
             'date_create' => date('Y-m-d H:i:s'),
             'userid' => $data['userid']
         ));
+        
+        return $this->db->lastInsertId();
     }
 
     public function runReg($log, $pass) {
@@ -38,13 +38,13 @@ class Postjob_model extends Model {
 
         if ($count > 0) {
             //login
-            Session::init();
+            //Session::init();
             Session::set('role', $data['role']);
             Session::set('userId', $data['id']);
             Session::set('userName', $data['name']);
             Session::set('userEmail', $log);
             Session::set('loggedIn', TRUE);
-            header('location: ../dashboard');
+            //header('location: ../dashboard');
         } else {
             //error
             header('location: ../login');

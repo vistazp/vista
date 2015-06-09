@@ -419,46 +419,16 @@
 
                         <div id="loginForm" style="display:  block ">
                             <label for="user_login">Email:</label><br />
-                            <input id="user_login" name="user[login]" size="45" type="text" value="" /><br />
+                            <input id="user_login" name="login" size="45" type="text" value="" /><br />
 
                             <label for="user_password">Password:</label><br />
-                            <input id="user_password" name="user[password]" size="45" type="password" value="" /><br />
+                            <input id="user_password" name="password" size="45" type="password" value="" /><br />
                             <a href="<?php echo URL; ?>signup/reset">Forgot your password?</a><br />
                             If you don't have an account, then go to the <a href="<?php echo URL; ?>signup">create account</a> page.<br/>
                         </div>
 
                         
                         <?php endif; ?>   
-                            
-                        <div id="loginForm" style="display:  none ">
-                            <label for="user_login">Email:</label><br />
-                            <input id="user_login" name="user[login]" size="45" type="text" value="" /><br />
-
-                            <label for="user_password">Password:</label><br />
-                            <input id="user_password" name="user[password]" size="45" type="password" value="" /><br />
-                            <a href="http://jobs.rubynow.com/password_reset_request/new">Forgot your password?</a>
-                        </div>
-
-                        <div title="Account login" id="newAccountForm"  style="display:  none ">
-                            <label for="new_user_name">Name:</label><br />
-                            <input id="new_user_name" name="new_user[name]" size="45" type="text" /><br/>
-                            <label for="new_user_login">Email:</label> <br />
-                            <input id="new_user_login" name="new_user[login]" size="45" type="text" /><br/>
-                            <label for="new_user_password">Choose password:</label> <br />
-                            <input id="new_user_password" name="new_user[password]" size="45" type="password" /><br/>
-                            <label for="new_user_password_confirmation">Confirm password:</label> <br />
-                            <input id="new_user_password_confirmation" name="new_user[password_confirmation]" size="45" type="password" /><br/>
-                            <label for="new_user_terms">
-                                <input validate="required:true" id="new_user_terms" name="new_user[terms]" type="checkbox"  value="1" />
-
-
-                                I agree to the
-
-                                <a href="<?php echo URL; ?>terms" target="_blank">Terms for Use</a> and <a href="<?php echo URL; ?>privacy" target="_blank">Privacy Policy</a>
-                            </label>
-                        </div>
-
-
 
                     </div>
 

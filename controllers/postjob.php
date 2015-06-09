@@ -4,6 +4,7 @@ class Postjob extends Controller {
 
     function __construct() {
         parent::__construct();
+        @session_start();
         $this->view->js = array('postjob/js/default.js', 'postjob/js/jquery.fancybox-1.3.4.pack.js', 'postjob/js/jquery.validate.min.js');
     }
 
@@ -15,18 +16,23 @@ class Postjob extends Controller {
     }
 
     public function nextStep() {
-
-        if (Session::get('loggedIn') == FALSE) 
+        
+        
+        if (Session::get('loggedIn') == TRUE) 
             {
             // добавляем в бд данные из step1
-            echo '333333333';
-            $this->addStepOne();
-            // запускаем контролер step2
-            //header('location: '.URL.'details');
+            $pId = $this->addStepOne();
+// запускаем контролер step2
+            header('location: '.URL.'details/edit/'.$pId);
         } 
         else 
         {
             // логинимся
+            $data['email']=$_POST['login'];
+            $data['password']=$_POST['password'];
+            
+            $this->model->runReg($data['email'], Hash::create('md5', $data['password'], HASH_KEY));
+            // 
             // добавляем в бд данные из step1
             echo '44444444444';
             $this->addStepOne();
@@ -48,8 +54,7 @@ class Postjob extends Controller {
             $data['telec'] = $_POST['telecomute'];
             $data['type'] = $_POST['featured_status'];
             $data['userid'] = Session::get('userId');
-            print_r($data);
-            die();
-            $this->model->addStepOne($data);    
+            return $this->model->addStepOne($data);
+            
     }
 }
