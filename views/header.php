@@ -92,5 +92,5 @@
 
             </div>
             <hr />
-            <div id="content">
+            <div id="content span-24" >
             
