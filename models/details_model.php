@@ -12,16 +12,18 @@ class Details_model extends Model {
         //$sth->execute(array(':id' => $id));
         //return $sth->fetch();
     }
-    public function editSave($data) {
+    public function addStepTwo($data) {
 
         $postData = array(
-            'feedid' => $data['feedid'],
-            'name' => $data['name'],
-            'email' => $data['email'],
-            'datefeed' => date('Y-m-d H:i:s'),
-            'reason' => $data['reason'],
-            'comment' => $data['comment']
-                );
+            
+            'title' => $data['title'],
+            'url' => $data['url'],
+            'company' => $data['company'],
+            'jobdescription' => $data['jobdescription'],
+            'type_of_position' => $data['type_of_position'],
+            'work_hour' => $data['work_hour']
+            
+            );
 
         $this->db->update('post', $postData, 
                 "`postid` = {$data['postid']}");

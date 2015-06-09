@@ -34,9 +34,9 @@ class Postjob extends Controller {
             $this->model->runReg($data['email'], Hash::create('md5', $data['password'], HASH_KEY));
             // 
             // добавляем в бд данные из step1
-            $this->addStepOne();
+            $pId = $this->addStepOne();
             // запускаем контролер step2
-            //header('location: '.URL.'details');
+            header('location: '.URL.'details/edit/'.$pId);
         }   
        }
 

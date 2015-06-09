@@ -1,6 +1,6 @@
 <div id="steps" class="span-24 last">
 
-  <form accept-charset="UTF-8" action=<?php echo URL; ?>preview/preview class="form_step" id="form_step_2" method="post"><div style="margin:0;padding:0;display:inline"></div>
+  <form accept-charset="UTF-8" action="<?php echo URL; ?>details/preview" class="form_step" id="form_step_2" method="post"><div style="margin:0;padding:0;display:inline"></div>
       <!-- Step 2 -->
 <div id="step-2" class="span-24 last">
 
@@ -29,7 +29,7 @@
       </div>
       <div class="span-9 last">
         <strong>Company URL: *</strong><span class="hint">(start with http://)</span><br />
-        <input id="job_url" name="job[url]" size="33" type="text" value="http://" />
+        <input id="job_url" name="url" size="33" type="text" value="http://" />
       </div>
 
       <div class="span-21 last">
@@ -40,24 +40,19 @@
         <hr class="space"/>
         <div class="span-9">
           <strong>Type of Position:</strong><br />
-          <input id="job_length_of_employment_contractor" name="length_of_employment" type="radio" value="CONTRACTOR" />
+          <input id="job_length_of_employment_contractor" name="length_of_employment" type="radio" value="contractor" />
           <label for="job_length_of_employment">Contractor</label>
-          <input checked="checked" id="job_length_of_employment_permanent" name="length_of_employment" type="radio" value="PERMANENT" />
+          <input checked="checked" id="job_length_of_employment_permanent" name="length_of_employment" type="radio" value="permanent" />
           <label for="job_length_of_employment">Permanent</label><br />
         </div>
         <div class="span-9 last">
           <strong>Work hours:</strong><br />
-          <input checked="checked" id="job_hours_f" name="hours" type="radio" value="F" />
+          <input checked="checked" id="job_hours_f" name="hours" type="radio" value="fulltime" />
           <label for="job_hours">Full Time</label>
-          <input id="job_hours_p" name="job[hours]" type="radio" value="P" />
+          <input id="job_hours_p" name="hours" type="radio" value="parttime" />
           <label for="job_hours">Part Time</label>
         </div>
-
-
-        <hr class="space"/>
-        <strong>How to Apply? *</strong><span class="hint">(put your instructions here)</span>
-        <textarea class="required" cols="40" id="job_instructions" name="job[instructions]" rows="20"></textarea>
-
+       
       </div>
     </div>
     <!--
@@ -80,5 +75,5 @@
 </div>
 
     
-    <input id="job_step" name="job[step]" type="hidden" value="2" />
+    
 </form></div>
