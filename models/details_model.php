@@ -24,7 +24,9 @@ class Details_model extends Model {
             'work_hour' => $data['work_hour']
             
             );
-
+        
+            echo $data['postid'];
+            die;
         $this->db->update('post', $postData, 
                 "`postid` = {$data['postid']}");
     }

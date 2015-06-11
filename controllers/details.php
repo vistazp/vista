@@ -20,7 +20,7 @@ class Details extends Controller {
        $this->view->render('details/index');
      }
      
-        public function preview($id) {
+        public function preview() {
             $this->addStepTwo();
             header('location: '.URL.'details/view/'.$pId);
         }
@@ -31,8 +31,9 @@ class Details extends Controller {
             $data['url'] = $_POST['url'];
             $data['company'] = $_POST['company_name'];
             $data['jobdescription'] = $_POST['description'];
-            $data['type_of_position'] = $_POST['job_length_of_employment'];
+            $data['type_of_position'] = $_POST['length_of_employment'];
             $data['work_hour'] = $_POST['hours'];
+            $data['postid'] = $pId;
             return $this->model->addStepTwo($data);
             
     }
