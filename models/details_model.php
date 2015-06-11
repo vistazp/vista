@@ -25,8 +25,6 @@ class Details_model extends Model {
             
             );
         
-            echo $data['postid'];
-            die;
         $this->db->update('post', $postData, 
                 "`postid` = {$data['postid']}");
     }

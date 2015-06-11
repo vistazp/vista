@@ -23,6 +23,7 @@ class Postjob extends Controller {
             // добавляем в бд данные из step1
             $pId = $this->addStepOne();
 // запускаем контролер step2
+
             header('location: '.URL.'details/edit/'.$pId);
         } 
         else 
@@ -36,6 +37,7 @@ class Postjob extends Controller {
             // добавляем в бд данные из step1
             $pId = $this->addStepOne();
             // запускаем контролер step2
+            
             header('location: '.URL.'details/edit/'.$pId);
         }   
        }
