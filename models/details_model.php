@@ -28,5 +28,7 @@ class Details_model extends Model {
         $this->db->update('post', $postData, 
                 "`postid` = {$data['postid']}");
     }
-
+    public function singlePostPreview($id){
+        
+    }
   }

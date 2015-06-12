@@ -46,4 +46,12 @@ class Details extends Controller {
             $this->model->addStepTwo($data);
             
     }
+        public function view($id) {
+        
+        $this->view->postPreview = $this->model->singlePostPreview($_SESSION['postId']);  
+        $this->view->render('details/view');
+        
+       
+     }
+
 }
