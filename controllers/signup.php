@@ -1,5 +1,6 @@
 <?php
 
+
 class Signup extends Controller {
 
     function __construct() {
@@ -55,6 +56,8 @@ class Signup extends Controller {
     
     public function validation() {
         try {
+           
+
             $form = new Form();
 
             $form->post('name')
