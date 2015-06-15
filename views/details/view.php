@@ -1,6 +1,6 @@
-<?php print_r($this->postPreview) ?>
+
 <div id="steps" class="span-24 last">
-  <form accept-charset="UTF-8" action="<?php echo URL; ?>payment/<?php echo  $this->postPreview[0]['postid']; ?>" class="edit_job" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden"  /></div>
+  <form accept-charset="UTF-8" action="<?php echo URL; ?>payment/<?php echo  $this->postPreview[0]['postid']; ?>" class="edit_job" method="post"><div style="margin:0;padding:0;display:inline"></div>
     <!-- Step 3 -->
 <div id="step-3" class="span-24 last">
   <div class="intro span-24 last">
@@ -8,26 +8,23 @@
     <hr />
   </div>
   <div class="span-24 last">
-    <h2 id="headline">jhgjhgjhgjhg 
+    <h2 id="headline" >
+      <?php echo  $this->postPreview[0]['title']; ?>
       <span style="color:gray;">at</span> 
-      <a href="http://saff.com">asf</a>
+      <a href="<?php echo  $this->postPreview[0]['url']; ?>" target="_blank" rel="nofollow" ><?php echo  $this->postPreview[0]['company']; ?></a>
     </h2>
-    <h3 id="location">dfsfsd, United States</h3>
+    <h3 id="location"><?php echo  $this->postPreview[0]['city']; ?>, <?php echo  $this->postPreview[0]['country']; ?></h3>
   </div>
   <div id="info" class="span-18 borderwithoutcolor">
     <p id="description">
-      <p>fasf</p>
+      <p><?php echo  nl2br(strip_tags($this->postPreview[0]['jobdescription'], '<b>')); ?></p>
 
     </p>
     <br />
-    <h4>How to apply?</h4>
-    <p id="instructions">
-      <p>asfaf</p>
-
-    </p>
     <p>
-      <strong>Type of position:</strong> PERMANENT<br />
-      <strong>Work hours:</strong> Full-time
+      <strong>Type of position:</strong> <?= ($this->postPreview[0]['type_of_position']=='contractor') ? 'Contractor' : 'Permanent'; ?><br />
+      <strong>Work hours:</strong> <?= ($this->postPreview[0]['work_hour']=='parttime') ? 'Part time' : 'Full time'; ?>
+          
     </p>
   </div>
   <!--
@@ -38,7 +35,7 @@
    <hr class="space"/>
   <div class="step-nav span-24 last">
     <div class="prev-step column span-12">
-      <a href="/post/jobs/6678/edit" class="button" id="back-to-step-2">&lt;&lt; Go back and edit</a>
+      <a href="<?php echo URL; ?>details/edit/<?php echo  $this->postPreview[0]['postid']; ?>" class="button" id="back-to-step-2">&lt;&lt; Go back and edit</a>
     </div>
     <div class="next-step column span-12 last">
      

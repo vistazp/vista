@@ -32,12 +32,12 @@
             {
                 echo '<tr>';
                 echo '<td>'.$value['postid'].'</td>';
-                echo '<td><a href="'.URL.'jobs/view/'.$value['postid'].'">'.$value['title'].'</a>';
+                echo '<td><a href="'.URL.'details/view/'.$value['postid'].'">'.$value['title'].'</a>';
                 echo '<td>'.$value['type'].'</td>';
                 echo '<td>'.$value['paid'].'</td>';
                 echo '<td>'.$value['published'].'</td>';
                 echo '<td>'.$value['date_create'].'</td>';
-                echo '<td><a href="'.URL.'jobs/edit/'.$value['postid'].'">edit / pay</a></td>';
+                echo '<td><a href="'.URL.'details/edit/'.$value['postid'].'">edit / pay</a></td>';
                 echo '<td><a class ="delete" href="'.URL.'dashboard/deletePost/'.$value['postid'].'" >delete</a></td>';
                 echo '</tr>';
             }

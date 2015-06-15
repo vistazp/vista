@@ -21,8 +21,9 @@ class Details extends Controller {
         
         Session::set('postId', $id);
         
-        $this->view->post = $this->model->postSingleList($id);  
-        $this->view->render('details/index');
+        $this->view->post = $this->model->postSingleList($id);
+        (count($this->view->post)== 0) ? $this->view->render('error/index') : $this->view->render('details/edit');
+        
         
        
      }
@@ -48,8 +49,9 @@ class Details extends Controller {
     }
         public function view($id) {
         
-        $this->view->postPreview = $this->model->postSingleList($_SESSION['postId']);  
-        $this->view->render('details/view');
+        $this->view->postPreview = $this->model->postSingleList($id);
+        (count($this->view->postPreview)== 0) ? $this->view->render('error/index') : $this->view->render('details/view');
+        
         
        
      }
