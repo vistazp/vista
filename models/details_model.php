@@ -12,23 +12,19 @@ class Details_model extends Model {
         //$sth->execute(array(':id' => $id));
         //return $sth->fetch();
     }
+
     public function addStepTwo($data) {
 
         $postData = array(
-            
             'title' => $data['title'],
             'url' => $data['url'],
             'company' => $data['company'],
             'jobdescription' => $data['jobdescription'],
             'type_of_position' => $data['type_of_position'],
             'work_hour' => $data['work_hour']
-            
-            );
-        
-        $this->db->update('post', $postData, 
-                "`postid` = {$data['postid']}");
+        );
+
+        $this->db->update('post', $postData, "`postid` = {$data['postid']}");
     }
-    public function singlePostPreview($id){
-        
-    }
-  }
+
+}

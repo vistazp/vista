@@ -1,3 +1,4 @@
+<?php print_r($this->postPreview) ?>
 <div id="steps" class="span-24 last">
   <form accept-charset="UTF-8" action="<?php echo URL; ?>payment/<?php echo  $this->postPreview[0]['postid']; ?>" class="edit_job" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden"  /></div>
     <!-- Step 3 -->

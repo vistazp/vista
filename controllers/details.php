@@ -14,7 +14,7 @@ class Details extends Controller {
             function index() {
 //        echo 'inside index index';
         $this->view->titl = 'Job details page';
-        $this->view->render('details/index');
+        $this->view->render('error/index');
     }
     
       public function edit($id) {
@@ -48,7 +48,7 @@ class Details extends Controller {
     }
         public function view($id) {
         
-        $this->view->postPreview = $this->model->singlePostPreview($_SESSION['postId']);  
+        $this->view->postPreview = $this->model->postSingleList($_SESSION['postId']);  
         $this->view->render('details/view');
         
        
