@@ -41,7 +41,7 @@
         <span class='date'>
           2015-05-22 </span>
       </h3>
-      Newton, MA</i>
+      Newton, MA</li>
     </li>
     <li id=job_6667 class='l1'>
       <h3><a href="http://jobs.rubynow.com/jobs/6667">Senior Web Developer </a> <span>at UNEP-WCMC </span>
@@ -56,29 +56,20 @@
     
       <table cellspacing="5">
         
-            <th>ID</th>
-            <th>Preview</th>
-            <th>Posting Type</th>
-            <th>Paid</th>
-            <th>Published</th>
-            <th>Created</th>
-            <th colspan='2'></th>
-
+         
+          
+       
         <?php
-            foreach ($this->alllist as $key=>$value)
+          foreach ($this->alllist as $key=>$value)
             {
                 echo '<tr>';
-                echo '<td>'.$value['postid'].'</td>';
-                echo '<td><a href="'.URL.'details/view/'.$value['postid'].'">'.$value['title'].'</a>';
-                echo '<td>'.$value['type'].'</td>';
-                echo '<td>'.$value['paid'].'</td>';
-                echo '<td>'.$value['published'].'</td>';
-                echo '<td>'.$value['date_create'].'</td>';
+                echo '<td><h3><a href="'.URL.'jobs/view/'.$value['postid'].'">'.$value['title'].'</a><span> at '.$value['company'].'</span></br>'.$value['country'].', '.$value['city'].'</h3></td>';
+                echo '<td ><h3 align="right"><span>'.$value['date_create'].'</span></h3></td>';
                 echo '</tr>';
             }
-
-        //print_r($this->userList);
+               //print_r($this->userList);
         ?>
+            
         </table>
 </div>
 
