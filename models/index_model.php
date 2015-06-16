@@ -6,7 +6,7 @@ class Index_model extends Model{
     }
 
     public function postList() {
-        return $this->db->select('SELECT * FROM post');
+        return $this->db->select('SELECT * FROM post ORDER BY date_create DESC');
    }
 }
     
