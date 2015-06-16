@@ -27,30 +27,7 @@
 
 
 <div id="jobs-list" class="span-24 last">
-  <ul class="jobs">
-    
-    <li id=job_6669 class='featured l2'>
-      <h3><a href="http://jobs.rubynow.com/jobs/6669">RoR Full Stack - Join elite swat team led by Co-Founder and fo...</a> <span>at F50</span>
-        <span class='date'>
-          2015-05-23 </span>
-      </h3>
-      San Francisco</i>
-    </li>
-    <li id=job_6668 class='featured l2'>
-      <h3><a href="http://jobs.rubynow.com/jobs/6668">Senior Rails Engineer</a> <span>at Booster</span>
-        <span class='date'>
-          2015-05-22 </span>
-      </h3>
-      Newton, MA</li>
-    </li>
-    <li id=job_6667 class='l1'>
-      <h3><a href="http://jobs.rubynow.com/jobs/6667">Senior Web Developer </a> <span>at UNEP-WCMC </span>
-        <span class='date'>
-          2015-05-19 </span>
-      </h3>
-      United Kingdom, Cambridge</i>
-    </li>
-     </ul>
+  
     
           
          
@@ -58,7 +35,7 @@
      <?php
      foreach ($this->alllist as $key=>$value)
          {
-          echo '<li class=l2><h3 ><a href="'.URL.'jobs/view/'.$value['postid'].'">'.$value['title'].'</a><span> at '.$value['company'].'</span> <span class=date>'.$value['date_create'].'</span></h3>'.$value['country'].', '.$value['city'].'</li>';
+          echo '<li class="'.$value['type'].'"><h3 ><a href="'.URL.'jobs/view/'.$value['postid'].'">'.$value['title'].'</a><span> at '.$value['company'].'</span> <span class=date>'.$value['date_create'].'</span></h3>'.$value['country'].', '.$value['city'].'</li>';
          }
      ?>
          </ul>

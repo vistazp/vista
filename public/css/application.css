@@ -318,10 +318,15 @@ div.accept_terms .reject a {
 /* border-color: #FFD324; */
 }
 
-.l1 {
+.standart {
 }
 
-.l2 {
+.premium {
+    background: #FFF6BF;
+    color: #817134;
+    border-color: #FFD324;
+}
+.ultra {
     background: #FFF6BF;
     color: #817134;
     border-color: #FFD324;
