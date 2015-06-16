@@ -32,8 +32,7 @@ class Bootstrap {
         $this->_controller = new index;
         $this->_controller->loadModel('Index');
         $this->_controller->index();
-        
-    }
+     }
 
     private function _loadExistingController() {
         $file = 'controllers/' . $this->_url[0] . '.php';
