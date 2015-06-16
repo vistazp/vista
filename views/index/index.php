@@ -7,7 +7,7 @@
 		</div>
 
 		<div id="intro-button-line" class="span-4">
-			<a href="<?php echo URL; ?>note" class="button inline" title="Post a new job">Post Your Job</a> 
+			<a href="<?php echo URL; ?>postjob" class="button inline" title="Post a new job">Post Your Job</a> 
 		</div>
 
 	</div>
