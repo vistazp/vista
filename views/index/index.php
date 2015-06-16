@@ -24,10 +24,7 @@
 
 
 <div id="jobs-list" class="span-24 last">
-  
-    
-          
-         
+      
      <ul class="jobs"> 
      <?php
      foreach ($this->alllist as $key=>$value)
