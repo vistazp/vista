@@ -58,9 +58,8 @@
      <?php
      foreach ($this->alllist as $key=>$value)
          {
-          echo '<li><h3><a href="'.URL.'jobs/view/'.$value['postid'].'">'.$value['title'].'</a><span> at '.$value['company'].'</span> <span class=date>'.$value['date_create'].'</span></h3>'.$value['country'].', '.$value['city'].'</li>';
+          echo '<li class=l2><h3 ><a href="'.URL.'jobs/view/'.$value['postid'].'">'.$value['title'].'</a><span> at '.$value['company'].'</span> <span class=date>'.$value['date_create'].'</span></h3>'.$value['country'].', '.$value['city'].'</li>';
          }
-            
      ?>
          </ul>
       </div>
