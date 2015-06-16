@@ -23,6 +23,11 @@
                 }
             }
             ?>
+            
+        <script type="text/javascript">var switchTo5x=true;</script>
+        <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+        <script type="text/javascript">stLight.options({publisher: "d1841c3c-9b1e-4cc3-a21c-26f2f40037b2", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+            
     </head>
 
     <?php Session::init(); ?>
