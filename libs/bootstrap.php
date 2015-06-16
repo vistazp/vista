@@ -31,6 +31,7 @@ class Bootstrap {
         require 'controllers/index.php';
         $this->_controller = new Index();
         $this->_controller->index();
+        //$this->_controller->loadModel('Index');
     }
 
     private function _loadExistingController() {
