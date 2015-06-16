@@ -50,129 +50,36 @@
       </h3>
       United Kingdom, Cambridge</i>
     </li>
-    <li id=job_6666 class='l1'>
-      <h3><a href="http://jobs.rubynow.com/jobs/6666">Software Developer, Ruby on Rails </a> <span>at Chimp.net</span>
-        <span class='date'>
-          2015-05-17 </span>
-      </h3>
-      Canada, Vancouver</i>
-    </li>
-    <li id=job_6664 class='l1'>
-      <h3><a href="http://jobs.rubynow.com/jobs/6664">Senior Software Engineer</a> <span>at BusinessOnline</span>
-        <span class='date'>
-          2015-05-12 </span>
-      </h3>
-      San Diego, CA</i>
-    </li>
-    <li id=job_6662 class='featured l2'>
-      <h3><a href="http://jobs.rubynow.com/jobs/6662">Applications Engineer in Ruby on Rails</a> <span>at OmniScriptum Marketing DEU GmbH</span>
-        <span class='date'>
-          2015-05-11 </span>
-      </h3>
-      Germany, Saarbrücken</i>
-    </li>
-    <li id=job_6661 class='featured l2'>
-      <h3><a href="http://jobs.rubynow.com/jobs/6661">App Developer For Creative Digital Firm (Startup Environment)</a> <span>at Poetic Systems</span>
-        <span class='date'>
-          2015-05-08 </span>
-      </h3>
-      Houston, TX</i>
-    </li>
-    <li id=job_6660 class='featured l2'>
-      <h3><a href="http://jobs.rubynow.com/jobs/6660">CMS Product Engineer</a> <span>at Simpleview</span>
-        <span class='date'>
-          2015-05-07 </span>
-      </h3>
-      Tucson/Arizona</i>
-    </li>
-    <li id=job_6659 class='featured l2'>
-      <h3><a href="http://jobs.rubynow.com/jobs/6659">CMS Developer</a> <span>at Simpleview</span>
-        <span class='date'>
-          2015-05-07 </span>
-      </h3>
-      Tucson/Arizona</i>
-    </li>
-    <li id=job_6658 class='l1'>
-      <h3><a href="http://jobs.rubynow.com/jobs/6658">Software Engineer (Ruby on Rails)</a> <span>at The Advisory Board Company</span>
-        <span class='date'>
-          2015-05-05 </span>
-      </h3>
-      Birmingham</i>
-    </li>
-    <li id=job_6655 class='l1'>
-      <h3><a href="http://jobs.rubynow.com/jobs/6655">Social Impact Software Developer - Help Millions w/your Code</a> <span>at Good St.</span>
-        <span class='date'>
-          2015-05-04 </span>
-      </h3>
-      NYC</i>
-    </li>
-    <li id=job_6656 class='featured l2'>
-      <h3><a href="http://jobs.rubynow.com/jobs/6656">Awesome Senior Rails Engineer</a> <span>at LendingHome</span>
-        <span class='date'>
-          2015-05-04 </span>
-      </h3>
-      San Francisco</i>
-    </li>
-    <li id=job_6653 class='featured l2'>
-      <h3><a href="http://jobs.rubynow.com/jobs/6653">Ruby on Rails Developer Needed ASAP</a> <span>at CoPilot Provider Support Services</span>
-        <span class='date'>
-          2015-04-30 </span>
-      </h3>
-      New York, NY</i>
-    </li>
-    <li id=job_6652 class='l1'>
-      <h3><a href="http://jobs.rubynow.com/jobs/6652">System Admin</a> <span>at Booming Games</span>
-        <span class='date'>
-          2015-04-28 </span>
-      </h3>
-      Germany, Berlin</i>
-    </li>
-    <li id=job_6651 class='l1'>
-      <h3><a href="http://jobs.rubynow.com/jobs/6651">Senior Backend Developer</a> <span>at Booming Games</span>
-        <span class='date'>
-          2015-04-28 </span>
-      </h3>
-      Germany, Berlin</i>
-    </li>
-    <li id=job_6650 class='l1'>
-      <h3><a href="http://jobs.rubynow.com/jobs/6650">Ruby on Rails Developer with a hammer</a> <span>at PrimeHammer</span>
-        <span class='date'>
-          2015-04-28 </span>
-      </h3>
-      Czech Republic, Brno</i>
-    </li>
-    <li id=job_6649 class='featured l2'>
-      <h3><a href="http://jobs.rubynow.com/jobs/6649">Full Stack Ruby on Rails Engineer</a> <span>at Carma</span>
-        <span class='date'>
-          2015-04-24 </span>
-      </h3>
-      New York</i>
-    </li>
-    <li id=job_6648 class='featured l2'>
-      <h3><a href="http://jobs.rubynow.com/jobs/6648">Senior Software Engineer</a> <span>at Invoca</span>
-        <span class='date'>
-          2015-04-24 </span>
-      </h3>
-      Santa Barbara, CA</i>
-    </li>
-    <li id=job_6647 class='l1'>
-      <h3><a href="http://jobs.rubynow.com/jobs/6647">Georgetown University Ruby on Rails Software Developer</a> <span>at Berkley Center </span>
-        <span class='date'>
-          2015-04-22 </span>
-      </h3>
-      Washington, DC</i>
-    </li>
-    <li id=job_6646 class='l1'>
-      <h3><a href="http://jobs.rubynow.com/jobs/6646">Principal Software Engineer</a> <span>at Invoca</span>
-        <span class='date'>
-          2015-04-22 </span>
-      </h3>
-      Santa Barbara, CA</i>
-    </li>
+     </ul>
+    
+    
+    
+      <table cellspacing="5">
+        
+            <th>ID</th>
+            <th>Preview</th>
+            <th>Posting Type</th>
+            <th>Paid</th>
+            <th>Published</th>
+            <th>Created</th>
+            <th colspan='2'></th>
 
+        <?php
+            foreach ($this->alllist as $key=>$value)
+            {
+                echo '<tr>';
+                echo '<td>'.$value['postid'].'</td>';
+                echo '<td><a href="'.URL.'details/view/'.$value['postid'].'">'.$value['title'].'</a>';
+                echo '<td>'.$value['type'].'</td>';
+                echo '<td>'.$value['paid'].'</td>';
+                echo '<td>'.$value['published'].'</td>';
+                echo '<td>'.$value['date_create'].'</td>';
+                echo '</tr>';
+            }
 
-
-  </ul>
+        //print_r($this->userList);
+        ?>
+        </table>
 </div>
 
 

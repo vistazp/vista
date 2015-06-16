@@ -10,6 +10,8 @@ class Index extends Controller{
 //        echo 'inside index index';
         $this->view->titl='Home page';
         $this->view->description='home page meta description';
+        $this->view->alllist= $this->model->postList();      
+        
         $this->view->render('index/index');        
     }    
     
