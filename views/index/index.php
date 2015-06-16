@@ -13,13 +13,10 @@
 	</div>
 
 	<div id="needadev" class="span-11 last">
-		<h2>.Net Contractors Available Now</h2>
+		
 
 		<div class="quiet" style="font-size:1.25em;">
-			Our contractors are available to start working on your project for $25 and up per hour. We screen through thousands of candidates a year to find you skilled contractors in C#, ASP.NET, Android, HTML/CSS.
-		</div> 
-		<div id="intro-button-line" class="span-3">
-			 <a href="<?php echo URL; ?>dotnet-contractors" class="button inline" title=".Net Contractors">Learn More</a> 
+                    <a href="mailto:admin@dotnetnow@com" alt="Mail to: admin@dotnetnow@com"><img src="<?php echo URL; ?>/public/ad_banner.jpg" alt="Place your Ad here, just $299 per month"></a>
 		</div>
 	</div>
 
@@ -35,7 +32,7 @@
      <?php
      foreach ($this->alllist as $key=>$value)
          {
-          echo '<li class="'.$value['type'].'"><h3 ><a href="'.URL.'jobs/view/'.$value['postid'].'">'.$value['title'].'</a><span> at '.$value['company'].'</span> <span class=date>'.$value['date_create'].'</span></h3>'.$value['country'].', '.$value['city'].'</li>';
+          echo '<li class='.$value['type'].'><h3 ><a href="'.URL.'jobs/view/'.$value['postid'].'">'.$value['title'].'</a><span> at '.$value['company'].'</span> <span class=date>'. date("Y-m-d", strtotime($value['date_create'])).'</span></h3>'.$value['country'].', '.$value['city'].'</li>';
          }
      ?>
          </ul>
