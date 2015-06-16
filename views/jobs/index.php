@@ -3,51 +3,20 @@
         <div id="job" class="span-24 last">
     
 <div class="span-24 last">
-  <h2 id="headline">RoR Full Stack - Join elite swat team led by Co-Founder and former CTO of LinkedIn <span style="color:gray;">at</span> <a href="http://f50.io/join/ruby/">F50</a></h2>
-  <h3 id="location">San Francisco, United States</h3>
+  <h2 id="headline"><?php echo  $this->job[0]['title']; ?><span style="color:gray;">at</span> <a href="<?php echo  $this->job[0]['url']; ?>"><?php echo  $this->job[0]['company']; ?></a></h2>
+  <h3 id="location"><?php echo  $this->job[0]['city']; ?>, <?php echo  $this->job[0]['country']; ?></h3>
 </div>
 <div id="info" class="span-18 colborder">
   <p id="description">
-    <p>Are you ready to be challenged?</p>
 
-<p>About the role:</p>
-
-<p>As one of the core engineers, you will be enhancing the back-end infrastructure and developing end-to-end, server-side to user facing features for usability, scalability, and performance.<br>
-Experience building large-scale server applications or platform technologies<br>
-Add new features and optimize our code and database to improve scalability<br>
-Build web services, remove performance bottlenecks<br>
-Experience building API based social products is a plus.<br>
-Strong analytical and problem solving skills<br>
-Highly motivated self-starter<br>
-Ability to tackle challenging problems on a tight schedule</p>
-
-<p>Required:</p>
-
-<p>B.S. in Computer Science or related field or equivalent experience<br>
-3+ years of Ruby on Rails specific experience<br>
-Experience with MySQL/Postgres and Capistrano<br>
-Strong understanding of Database schema design</p>
-
-<p>Preferred Skills:</p>
-
-<p>JavaScript, SASS/LESS, Bootstrap or equivalent<br>
-Experience with one of the major Javascript frameworks (i.e. backbone.js, ember.js angular.js, react.js, etc.) is a plus<br>
-XML, JSON, Web Services<br>
-DelayedJob/Sidekiq/Resque<br>
-Sphinx/ElasticSearch/Solr<br>
-Experience processing big data / NoSQL (i.e. MongoDB, DynamoDB, Redis, or Cassandra) is a plus</p>
-
+    <?php echo  $this->job[0]['jobdescription']; ?>
   </p>
-  <div id="show_application_instructions" class="button inline">Click for Application Instructions</div>
+  
   <br/><br/>
   
-  <div id="instructions">
-    <p>Check out our website: <a href="http://f50.io/join/ruby/">http://f50.io/join/ruby/</a> to get details about the position and F50. </p>
-
-  </div>
   <p>
-    <strong>Type of position:</strong> PERMANENT<br />
-    <strong>Work hours:</strong> Full-time<br />
+    <strong>Type of position:</strong><?= ($this->job[0]['type_of_position']=='contractor') ? 'CONTRACTOR' : 'PERMANENT'; ?><br />
+    <strong>Work hours:</strong><?= ($this->job[0]['work_hour']=='parttime') ? 'Part-time' : 'Full-time'; ?><br />
   </p>
 </div>
 <div id="sidebar" class="span-4 last">

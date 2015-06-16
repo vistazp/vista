@@ -7,6 +7,9 @@ class Jobs extends Controller {
     function __construct() {
         parent::__construct();
         
+        $this->view->js_code = '        <script type="text/javascript">var switchTo5x=true;</script>
+        <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+        <script type="text/javascript">stLight.options({publisher: "d1841c3c-9b1e-4cc3-a21c-26f2f40037b2", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>';
     
     }
 
@@ -21,8 +24,8 @@ class Jobs extends Controller {
         public function view($id) {
         
         $this->view->job = $this->model->singleJob($id);
-        $this->view->titl = $this->view->job[0]['title'];
-        (count($this->view->job)== 0) ? $this->view->render('index/index') : $this->view->render('jobs/index');
+        if (count($this->view->job)> 0) $this->view->titl = $this->view->job[0]['title'];
+        (count($this->view->job)== 0) ? header('location:' . URL . 'error') : $this->view->render('jobs/index');
         
         
        
