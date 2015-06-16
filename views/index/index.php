@@ -54,24 +54,19 @@
     
     
     
-      <table cellspacing="5">
+ 
         
          
-          
-       
-        <?php
-          foreach ($this->alllist as $key=>$value)
-            {
-                echo '<tr>';
-                echo '<td><h3><a href="'.URL.'jobs/view/'.$value['postid'].'">'.$value['title'].'</a><span> at '.$value['company'].'</span></br>'.$value['country'].', '.$value['city'].'</h3></td>';
-                echo '<td ><h3 align="right"><span>'.$value['date_create'].'</span></h3></td>';
-                echo '</tr>';
-            }
-               //print_r($this->userList);
-        ?>
+         <ul> 
+     <?php
+     foreach ($this->alllist as $key=>$value)
+         {
+          echo '<li><h3><a href="'.URL.'jobs/view/'.$value['postid'].'">'.$value['title'].'</a><span> at '.$value['company'].'</span> <span>'.$value['date_create'].'</span></h3>'.$value['country'].', '.$value['city'].'</li>';
+         }
             
-        </table>
-</div>
+     ?>
+         </ul>
+      </div>
 
 
 
