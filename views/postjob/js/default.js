@@ -25,40 +25,7 @@ Job = {
           removeClassError();
         });
 
-        $("#edit_job").validate({
-          errorLabelContainer: $("#edit_job .errorForsteps"),
-          rules:{
-            "company_name":{ 
-                   required: "#step-1:hidden"
-            },
-            "url": {
-                   required: "#step-1:hidden",
-                   url:{
-		  	depends: function () {
-				return $("#step-2").css('display') == 'block';
-			}
-                   }
-            },
-            "description":{ 
-                   required: "#step-1:hidden"
-            },
-            "instructions": {
-                   required: "#step-1:hidden"
-            }
-          },
-          messages: {
-             "company_name": {
-               required: "Please enter a Company"
-             },
-             "url": {
-                      required: "Please enter a Company"
-                    },
-            "description": {required: "Please enter a Description"},
-            "instructions": {required: "Please enter the Instructions"}
-          }
-        });
-
-        $("#new_job").validate( {
+       $("#new_job").validate( {
           errorLabelContainer: $("#new_job .errorForsteps"),
                                  rules: {
                                     "user[login]": {
@@ -127,51 +94,24 @@ Job = {
                                      }
 		}
          });
+//==============================commit===========================
+ //    if ($('#job_description').length > 0) {
+  //          $('#job_description').markItUp(myMarkdownSettings);
+  //      };
 
-        if ($('#job_description').length > 0) {
-            $('#job_description').markItUp(myMarkdownSettings);
-        };
-
-        if ($("div#step-2 #job_headline").length > 0) {
+//==============================commit===========================
+    //    if ($("div#step-2 #job_headline").length > 0) {
 //            $("div#step-1 #job_headline").onchange(function (event){
 //                $("div#step-2 #job_headline").val($("div#step-1 #job_headline").val());
 //            });
-        };
+ //       };
 
 
-        $("a#back-to-step-1").click(function (event) {
-
-            // set value to headline field
-            $("div#step-1 #job_headline").val($("div#step-2 #job_headline").val());
-
-            $("#called_from_step").val(1);
-            $("#step-1").show();
-            $("#step-2").hide();
-            $("#return-to-step-2").show();
-            $("#next-step-job-details").hide();
-            //reset error messages
-            var validator = $("#form_step_2").valid();
-            validator.resetForm();
-        });
-
-        $("#return-to-step-2").click(function (event){
-
-            if ( $("#form_step_2").valid()){
-               $("div#step-2 #job_headline").val($("div#step-1 #job_headline").val());
-               $("#step-2").show();
-               $("#step-1").hide();
-            }
-              else {
-                //to be able to show the validations with the error messages
-                $("#form_step_2").validate();
-                return false;
-            }
-            return false;
-        });
-
-        if ($('a#job_highlight').lenght > 0) {
-            $("a#job_highlight").fancybox();
-        }
+       
+//==============================commit===========================
+       // if ($('a#job_highlight').lenght > 0) {
+       //     $("a#job_highlight").fancybox();
+       // }
 
         // setup checkboxes step 1
         //premium checkbox
@@ -219,19 +159,20 @@ Job = {
         });
 
     },
-    toggleTiers : function (radio_label, other_radio) {
-        if (radio_label.hasClass('label-radio-check')) {
-            radio_label.removeClass('label-radio-check');
-            other_radio.addClass('label-radio-check');
-        } else {
-            radio_label.addClass('label-radio-check');
-            other_radio.removeClass('label-radio-check');
+    //==============================commit===========================
+  //  toggleTiers : function (radio_label, other_radio) {
+ //       if (radio_label.hasClass('label-radio-check')) {
+ //           radio_label.removeClass('label-radio-check');
+ //           other_radio.addClass('label-radio-check');
+ //       } else {
+ //           radio_label.addClass('label-radio-check');
+//            other_radio.removeClass('label-radio-check');
 
 
-        }
+ //       }
 
 
-    }
+ //   }
 };
 
 

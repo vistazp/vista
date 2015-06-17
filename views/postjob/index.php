@@ -393,19 +393,7 @@
                             <input id="job_referrer_code" name="referrer_code" size="40" type="text" />
                         </div>
                     </div>
-                    <!-- right column -->
-                    <div class="span-11 prepend-1 last">
-
-                        <div class="span-11 last" style="display: none">
-                            <p>
-                                <input checked="checked" id="job_account_options_1" name="job[account_options]" type="radio" value="1" />
-                                <label for="job_account_options">I have an account, log me in please.</label>
-                                <br />
-                                <input id="job_account_options_2" name="job[account_options]" type="radio" value="2" />
-                                <label for="job_account_options">I&#x27;m new in the site, create a new account</label>
-                                <br />
-                            </p>
-                        </div>
+                    
 
                         <?php if (Session::get('loggedIn') == TRUE): ?>
                             
@@ -436,8 +424,7 @@
                     <div class="step-nav span-24 last">
                         <div class="next-step last">
                             <input class="button" id="next-step-job-details" name="commit" type="submit" value="Next Step: Job Details &gt;&gt;" />
-                            <a href="" class="button" id="return-to-step-2" style="display:none">Go Step 2 &gt;&gt;</a>
-                        </div>
+                           </div>
                     </div>
                 </div>
             </div>

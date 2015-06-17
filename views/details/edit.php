@@ -14,6 +14,7 @@
   <div class="span-20 errorForsteps">
 
   </div>
+  
   <div class="span-24 last">
     <input class="required" id="job_headline" name="headline" size="50" type="text" value="<?php echo $this->post[0]['title'] ?>" />
     

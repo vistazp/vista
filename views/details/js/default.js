@@ -4,8 +4,8 @@
 var Job;
 
 function removeClassError(){
-  $("#new_job .errorForsteps").html("");
-  $("#new_job .errorForsteps").hide();
+  $("#form_step_2 .errorForsteps").html("");
+  $("#form_step_2 .errorForsteps").hide();
   $("input").removeClass("error");
 }
 
@@ -25,8 +25,8 @@ Job = {
           removeClassError();
         });
 
-        $("#edit_job").validate({
-          errorLabelContainer: $("#edit_job .errorForsteps"),
+        $("#form_step_2").validate({
+          errorLabelContainer: $("#form_step_2 .errorForsteps"),
           rules:{
             "company_name":{ 
                    required: "#step-1:hidden"
@@ -140,35 +140,7 @@ Job = {
         };
 
 
-        $("a#back-to-step-1").click(function (event) {
-
-            // set value to headline field
-            $("div#step-1 #job_headline").val($("div#step-2 #job_headline").val());
-
-            $("#called_from_step").val(1);
-            $("#step-1").show();
-            $("#step-2").hide();
-            $("#return-to-step-2").show();
-            $("#next-step-job-details").hide();
-            //reset error messages
-            var validator = $("#form_step_2").valid();
-            validator.resetForm();
-        });
-
-        $("#return-to-step-2").click(function (event){
-
-            if ( $("#form_step_2").valid()){
-               $("div#step-2 #job_headline").val($("div#step-1 #job_headline").val());
-               $("#step-2").show();
-               $("#step-1").hide();
-            }
-              else {
-                //to be able to show the validations with the error messages
-                $("#form_step_2").validate();
-                return false;
-            }
-            return false;
-        });
+      
 
         if ($('a#job_highlight').lenght > 0) {
             $("a#job_highlight").fancybox();
@@ -189,35 +161,7 @@ Job = {
             $("#job_featured_status_3").attr('checked',false);
             $("#job_featured_status_2").attr('checked',true);
         });
-        //standard checkbox
-        $("#step-1 label[for='job_featured_status_1']").click(function (event) {
-            event.preventDefault();
-            var label2 = $("#step-1 label[for='job_featured_status_2']");
-            var label3 = $("#step-1 label[for='job_featured_status_3']");
-
-            label2.removeClass('label-radio-check');
-            label3.removeClass('label-radio-check');
-            $(this).addClass('label-radio-check');
-
-            $("#job_featured_status_2").attr('checked',false);
-            $("#job_featured_status_3").attr('checked',false);
-            $("#job_featured_status_1").attr('checked',true);
-           
-        });
-        //expert checkbox
-        $("#step-1 label[for='job_featured_status_3']").click(function (event) {
-            event.preventDefault();
-            var label1 = $("#step-1 label[for='job_featured_status_1']");
-            var label2 = $("#step-1 label[for='job_featured_status_2']");
-
-            label1.removeClass('label-radio-check');
-            label2.removeClass('label-radio-check');
-            $(this).addClass('label-radio-check');
-
-            $("#job_featured_status_1").attr('checked',false);
-            $("#job_featured_status_2").attr('checked',false);
-            $("#job_featured_status_3").attr('checked',true);
-        });
+       
 
     },
     toggleTiers : function (radio_label, other_radio) {
@@ -227,8 +171,6 @@ Job = {
         } else {
             radio_label.addClass('label-radio-check');
             other_radio.removeClass('label-radio-check');
-
-
         }
 
 
