@@ -2,16 +2,12 @@
 <div id="content span-24">
 
     <div id="steps" class="span-24 last">
-        <form accept-charset="UTF-8" action="<?php echo URL; ?>postjob/nextstep" class="new_job" id="new_job" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="z3tVa/QxSLZWcMP/dYhNj3/D1oLXg+8E3schsdIvRCk=" /></div>
+        <form accept-charset="UTF-8" action="<?php echo URL; ?>postjob/nextstep" class="new_job" id="new_job" method="post"><div style="margin:0;padding:0;display:inline">
 
             <div id="step-1" class="span-24 last ">
                 <div class="tier-options span-24 last">
 
-
-
-
-
-                    <br/>
+                   <br/>
 
 
                     <div class="span-24 last">
@@ -446,8 +442,7 @@
                 </div>
             </div>
 
-            <input id="job_step" name="job[step]" type="hidden" value="1" />
-        </form></div>
+              </form></div>
 
 
 </div>

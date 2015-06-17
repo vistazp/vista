@@ -52,6 +52,7 @@ Job = {
              },
              "url": {
                       required: "Please enter a Company"
+                      
                     },
             "description": {required: "Please enter a Description"},
             "instructions": {required: "Please enter the Instructions"}

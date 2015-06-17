@@ -7,8 +7,8 @@ class Details extends Controller {
     function __construct() {
         parent::__construct();
         Auth::HandleLogin();
-    
-    }
+         $this->view->js = array('details/js/default.js', 'details/js/jquery.fancybox-1.3.4.pack.js', 'details/js/jquery.validate.min.js');
+        }
 
     
             function index() {
