@@ -50,7 +50,8 @@ class Details extends Controller {
         public function view($id) {
         
         $this->view->postPreview = $this->model->postSingleList($id);
-        (count($this->view->postPreview)== 0) ? $this->view->render('error/index') : $this->view->render('details/view');
+        if (count($this->view->postPreview)> 0) $this->view->titl = $this->view->postPreview[0]['title'];
+        (count($this->view->postPreview)== 0) ? header('location:' . URL . 'error') : $this->view->render('details/view');
         
         
        
