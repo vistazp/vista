@@ -1,0 +1,36 @@
+.error {padding:0.1em;margin-bottom:1em;border:2px solid #ddd !important;}
+.error {background:#fbe3e4;color:#8a1f11;border-color:#fbc2c4 !important;}
+input.error {
+  border: 1px dotted red;
+}
+
+.errorForsteps {
+   display: none;
+   padding:0.1em;margin-bottom:1em;border:2px solid #ddd !important;
+   color:#8a1f11;border-color:#fbc2c4 !important;
+   background: none;
+}
+
+form.new_job label.error {
+display: block;
+margin-left: 1em;
+width: auto;
+background: none;
+border: none !important;
+}
+
+.form_step label.error {
+display: block;
+margin-left: 1em;
+width: auto;
+background: none !important;
+border: none !important;
+}
+
+#payment_confirmation_form label.error{
+ display: block;
+ margin-left: 1em;
+ width: auto;
+ background: none;
+ border: none !important;
+}

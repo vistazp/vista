@@ -12,52 +12,19 @@ function removeClassError(){
 Job = {
     setup : function () {
 
-        // setup validations
-        $("#job_account_options_1").click(function(){
-          $("#newAccountForm").hide();
-          $("#loginForm").show();
-          removeClassError();
-
-        });
-        $("#job_account_options_2").click(function(){
-          $("#loginForm").hide();
-          $("#newAccountForm").show();
-          removeClassError();
-        });
 
        $("#new_job").validate( {
           errorLabelContainer: $("#new_job .errorForsteps"),
                                  rules: {
-                                    "user[login]": {
-                                        required: "#job_account_options_1:checked",
-                                        email: "#job_account_options_1:checked",
+                                     
+                                    "login": {
                                         minlength: 3
                                       },
-                                    "user[password]": {
-                                        required: "#job_account_options_1:checked",
+                                    "password": {
+                                        
                                         minlength: 3
-                                      },
+                                      }
 
-                                    "new_user[login]": {
-                                        required: "#job_account_options_2:checked",
-                                        email: "#job_account_options_2:checked",
-                                        minlength: 3
-                                      },
-                                    "new_user[name]": {
-                                        required: "#job_account_options_2:checked"
-                                      },
-                                    "new_user[password]": {
-                                        required: "#job_account_options_2:checked",
-                                        minlength: 3
-                                      },
-                                    "new_user[password_confirmation]": {
-                                                      required: "#job_account_options_2:checked",
-                                                      equalTo: '#new_user_password',
-                                                      minlength: 3
-                                     },
-                                     "new_user[terms]":{
-                                         required: "#job_account_options_2:checked"
-                                     }
                                  },
                                  messages: {
                                   "login": {
@@ -68,53 +35,14 @@ Job = {
 
                                  "password": {
                                         required: "Please enter a Password",
-                                        minlength: "Your password must consist of at least 5 characters"
-                                      },
-                                    "new_user[login]": {
-                                        required: "Please enter a Login",
-                                        email: "Please enter a valid email address for the login",
-                                        minlength: "Your login must consist of at least 3 characters"
-                                      },
-                                    "new_user[name]": {
-                                        required: "Please enter a Name"
-                                      },
-                                    "new_user[password]": {
-                                        required: "Please enter a Password",
-                                        minlength: "Your password must consist of at least 5 characters"
+                                        minlength: "Your password must consist of at least 3 characters"
+                                      }
+                                      
 
-                                      },
-                                    "new_user[password_confirmation]": {
-                                        required: "Please enter a confirmation for the Password",
-                                        minlength: "Your password must consist of at least 5 characters",
-                                       equalTo: "The passwords doesn't match"
-                                                      
-                                     },
-                                     "new_user[terms]":{
-                                         required: "Please accept our terms"
-                                     }
 		}
          });
-//==============================commit===========================
- //    if ($('#job_description').length > 0) {
-  //          $('#job_description').markItUp(myMarkdownSettings);
-  //      };
-
-//==============================commit===========================
-    //    if ($("div#step-2 #job_headline").length > 0) {
-//            $("div#step-1 #job_headline").onchange(function (event){
-//                $("div#step-2 #job_headline").val($("div#step-1 #job_headline").val());
-//            });
- //       };
 
 
-       
-//==============================commit===========================
-       // if ($('a#job_highlight').lenght > 0) {
-       //     $("a#job_highlight").fancybox();
-       // }
-
-        // setup checkboxes step 1
-        //premium checkbox
         $("#step-1 label[for='job_featured_status_2']").click(function (event) {
             event.preventDefault();
             var label1 = $("#step-1 label[for='job_featured_status_1']");

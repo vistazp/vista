@@ -17,7 +17,7 @@
 
 		<div class="quiet" style="font-size:1.25em;">
                     <a href="mailto:admin@dotnetnow.com" alt="Mail to: admin@dotnetnow.com"><img src="<?php echo URL; ?>public/images/ad_banner.jpg" alt="Place your Ad here, just $299 per month"></a>
-		</div>s
+		</div>
 	</div>
 
 	<hr />

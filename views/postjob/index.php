@@ -388,10 +388,7 @@
                             <hr class="space"/>
 
                         </div>
-                        <div class="span-12 last">
-                            <label for="job_referrer_code">Referrer Code:</label>
-                            <input id="job_referrer_code" name="referrer_code" size="40" type="text" />
-                        </div>
+                        
                     </div>
                     
 
@@ -403,10 +400,10 @@
 
                         <div id="loginForm" style="display:  block ">
                             <label for="user_login">Email:</label><br />
-                            <input id="user_login" name="login" size="45" type="text" value="" /><br />
+                            <input id="user_login" class="required email" title="Please enter email" name="login" size="45" type="text" value="" /><br />
 
                             <label for="user_password">Password:</label><br />
-                            <input id="user_password" name="password" size="45" type="password" value="" /><br />
+                            <input id="user_password" class="required"  name="password" size="45" type="password" value="" /><br />
                             <a href="<?php echo URL; ?>signup/reset">Forgot your password?</a><br />
                             If you don't have an account, then go to the <a href="<?php echo URL; ?>signup">create account</a> page.<br/>
                         </div>

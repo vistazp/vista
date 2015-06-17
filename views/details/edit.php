@@ -1,6 +1,6 @@
 <div id="steps" class="span-24 last">
 
-  <form accept-charset="UTF-8" action="<?php echo URL; ?>details/preview" class="form_step" id="form_step_2" method="post"><div style="margin:0;padding:0;display:inline"></div>
+  <form accept-charset="UTF-8" action="<?php echo URL; ?>details/preview" class="form_step" id="form_step" method="post"><div style="margin:0;padding:0;display:inline"></div>
       <!-- Step 2 -->
 <div id="step-2" class="span-24 last">
 
@@ -30,7 +30,7 @@
       </div>
       <div class="span-9 last">
         <strong>Company URL: *</strong><span class="hint">(start with http://)</span><br />
-        <input id="job_url" name="url" size="33" type="text" value="<?= (isset($this->post[0]['url'])) ? $this->post[0]['url'] : 'http://'; ?>" />
+        <input class="required" id="job_url" name="url" size="33" type="text" value="<?= (isset($this->post[0]['url'])) ? $this->post[0]['url'] : 'http://'; ?>" />
       </div>
 
       <div class="span-21 last">
