@@ -107,7 +107,7 @@ class Signup extends Controller {
 
             $form = new Form();
 
-            $form   ->post('email')
+            $form->post('email')
                     ->val('minlength', 5)
                     ->val('emailExist');
 
