@@ -91,5 +91,4 @@ class Dashboard extends Controller {
         $this->model->deletePost($id);
         header('location:' . URL . 'dashboard');
     }
-
 }

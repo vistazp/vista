@@ -97,5 +97,78 @@ Follow us on Twitter! @FindDotNetJobs (http://twitter.com/FindDotNetJobs)';
         mail($to, $subject, $message, $headers);
         
     }
+    
+    
+    public function sendNewPassword($email,$newPassword){
+        
+              $to = $email;
+
+        $subject = "DotNetNow - password reset";
+
+        $message = '
+
+Your password has been reset to '.$newPassword.' 
+
+-------------------------------------------------------------
+If this email has reached you in error, please notify us at:
+admin@rubynow.com
+For daily-digest and other delivery options, click here:
+http://dotnetnow.com/updates/email_preference
+
+To be removed from this list, click here:
+http://dotnetnow.com/updates/unsubscribe';
+
+        $headers = "Content-type: text/plain; charset=UTF-8 \r\n";
+        $headers .= "From: DotNetNow Job <no-reply@dotnetnow.com>\r\n";
+        
+
+        mail($to, $subject, $message, $headers);  
+        
+    }
+    
+    public function getNewPassword($email){
+        
+        $newPassword = $this->generate_password();
+
+        
+        $postData = array(
+            'password' => Hash::create('md5', $newPassword, HASH_KEY));
+        
+        //echo $postData['password'];
+        //echo $email;
+        //die();
+
+        $this->db->update('users', $postData, "`email` = {$email}");
+        
+        return $newPassword;
+        
+    }
+
+    
+
+  
+  private function generate_password()
+  {
+    $number = '10';  
+    $arr = array('a','b','c','d','e','f',
+                 'g','h','i','j','k','l',
+                 'm','n','o','p','r','s',
+                 't','u','v','x','y','z',
+                 'A','B','C','D','E','F',
+                 'G','H','I','J','K','L',
+                 'M','N','O','P','R','S',
+                 'T','U','V','X','Y','Z',
+                 '1','2','3','4','5','6',
+                 '7','8','9','0');
+    // Генерируем пароль
+    $pass = "";
+    for($i = 0; $i < $number; $i++)
+    {
+      // Вычисляем случайный индекс массива
+      $index = rand(0, count($arr) - 1);
+      $pass .= $arr[$index];
+    }
+    return $pass;
+  }
 
 }

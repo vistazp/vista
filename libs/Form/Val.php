@@ -66,6 +66,26 @@ class Val extends Model {
           } 
     }
 
+    public function emailExist($email_a)
+    {
+        if ((filter_var($email_a, FILTER_VALIDATE_EMAIL))==FALSE){
+            return "Your email <b>$email_a</b> is not correct";
+          }
+          
+        $sth = $this->db->prepare("SELECT id, name, role FROM users WHERE email=:email");
+        $sth->execute(array(
+            ':email' => $email_a 
+                ));
+
+        $data = $sth->fetch();
+
+        $count = $sth->rowCount();
+
+        if ($count == 0) {
+          return "User <b>$email_a</b> doesn't exist";
+        } 
+    }
+
                 
     }
 
