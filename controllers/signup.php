@@ -99,6 +99,8 @@ class Signup extends Controller {
         $newPassword = $this->getNewPassword($email);
         // 3. отправляем на почту новый пароль и вносим его в БД
         $this->sendNewPassword($email, $newPassword);
+        
+        $this->view->render('signup/reset');        
     }
 
     public function emailValidation() {
