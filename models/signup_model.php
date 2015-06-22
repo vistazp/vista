@@ -10,6 +10,7 @@ class Signup_model extends Model {
         $this->db->insert('subscriber', array(
             'email' => $data['email'],
             'datesub' => date('Y-m-d H:i:s'),
+            'notify' => '1'
         ));
     }
 

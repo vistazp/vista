@@ -38,6 +38,12 @@ class Val extends Model {
         }
     }
 
+        public function emailCorr($email_a) {
+        if ((filter_var($email_a, FILTER_VALIDATE_EMAIL)) == FALSE) {
+            return "Your email '<b>$email_a</b>' is not correct ";
+        }
+        }
+    
     public function emailCorrect($email_a) {
         if ((filter_var($email_a, FILTER_VALIDATE_EMAIL)) == FALSE) {
             return "Your email '<b>$email_a</b>' is not correct ";

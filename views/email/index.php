@@ -5,7 +5,7 @@
 <div style="color: red;"><?= (isset($this->ValError)) ? $this->ValError : ''; ?></div><br/>
 <div style="color: blue;"><?= (isset($this->ValError2)) ? $this->ValError2 : ''; ?></div><br/>
 <form method='post' action="<?php echo URL; ?>email/update">
-<h3><label for="email">Step 1:</label> Enter your email address : <input type="text" name="email" value="<?php echo $_GET['email'] ?>" size="60"><h3>
+<h3><label for="email">Step 1:</label> Enter your email address : <input type="text" name="email" value="<?= (isset($_GET['email'])) ? $_GET['email'] : ''; ?>" size="60"><h3>
 
 <h3><label for="email">Step 2:</label> Set your preference for updates on new jobs</h3>
 

@@ -27,12 +27,13 @@ class Signup extends Controller {
 
             $form->post('email')
                     ->val('minlength', 5)
-                    ->val('emailCorrect');
+                    ->val('emailCorr');
 
 
             $form->mit();
             $data = $form->fetch();
-
+            
+            
             $this->addSubscribe($data);
         } catch (Exception $e) {
             //$str = $form->mit2();
