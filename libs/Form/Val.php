@@ -78,5 +78,23 @@ class Val extends Model {
             return "User <b>$email_a</b> doesn't exist";
         }
     }
+    public function subExist($email_a) {
+        if ((filter_var($email_a, FILTER_VALIDATE_EMAIL)) == FALSE) {
+            return "Your email <b>$email_a</b> is not correct";
+        }
+
+        $sth = $this->db->prepare("SELECT * FROM subscriber WHERE email=:email");
+        $sth->execute(array(
+            ':email' => $email_a
+        ));
+
+        $data = $sth->fetch();
+
+        $count = $sth->rowCount();
+
+        if ($count == 0) {
+            return "Subscriber <b>$email_a</b> doesn't exist";
+        }
+    }
 
 }

@@ -17,6 +17,7 @@
         echo '<td>'.$value['subid'].'</td>';
         echo '<td>'.$value['email'].'</td>';
         echo '<td>'.$value['datesub'].'</td>';
+        echo '<td>'.$value['notify'].'</td>';
         echo '<td><a class ="delete" href="'.URL.'subscription/delete/'.$value['subid'].'">Delete</a>';
         echo '</tr>';
     }

@@ -58,7 +58,7 @@
 $(function(){
     $('.delete').click(function(e){
                
-        var c = confirm("Are you Youtubers?");
+        var c = confirm("Are you sure?");
         if (c == false) return false;
         
     });

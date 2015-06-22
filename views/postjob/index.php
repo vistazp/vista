@@ -79,10 +79,10 @@
                                 <div class="header">
 
                                     <h3 class="title">Ultra</h3>
-                                    Premium + Podcast Broadcast
+                                    Premium + Ad Banner
                                 </div>
                                 <p class="middle">
-                                    All the benefits of Premium plus your job will be prominently mentioned on the next recorded podcast episode. For more details check out the <a href="https://itunes.apple.com/us/podcast/tech-leaders-in-action-rubynow.com/id954072358?mt=2">Tech Leaders in Action</a>.
+                                    All the benefits of Premium plus Ad banner 150x200 px for 7 days.
                                 </p>
                                 <p class="middle">
                                     Pin your post to the top of the board for 7
