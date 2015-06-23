@@ -13,6 +13,7 @@ class Feedback extends Controller {
     function index() {
 //        echo 'inside index index';
         $this->view->feedList = $this->model->feedList();
+        $this->view->payedList = $this->model->payedList();
         $this->view->render('feedback/index');
     }
     
@@ -66,5 +67,8 @@ class Feedback extends Controller {
          $sitemap->createSitemapIndex(URL, 'Today');
          header('location:' . URL . 'feedback');
     }
-
+    public function publish($postid){
+        $this->model->publishPost($postid);
+        header('location:' . URL . 'feedback');
+    }
 }

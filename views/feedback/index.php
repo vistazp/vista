@@ -30,6 +30,39 @@
   <input class="button" id="next-step-job-details" name="commit" type="submit" value="Generate Sitemap &gt;&gt;" />
  </div>
  </form>
+<br/>
+<br/>
+<h2>Paid posts</h2>
+<table>
+            <th>Post ID</th>
+            <th>User ID</th>
+            <th>Title</th>
+            <th>Paid</th>
+            <th>Published</th>
+            <th>Created</th>
+            <th>Published</th>
+
+<?php
+    foreach ($this->payedList as $key=>$value)
+    {
+        echo '<tr>';
+        echo '<td>'.$value['postid'].'</td>';
+        echo '<td>'.$value['userid'].'</td>';
+        echo '<td><a href="'.URL.'jobs/view/'.$value['postid'].'">'.$value['title'].'</a></td>';
+        echo '<td>'.$value['paid'].'</td>';
+        echo '<td><a href="'.URL.'feedback/publish/'.$value['postid'].'">'.$value['published'].'</a></td>';
+        echo '<td>'.$value['date_create'].'</td>';
+        echo '<td>'.$value['date_pablish'].'</td>';
+        
+//        echo '<td><a class ="delete" href="'.URL.'feedback/delete/'.$value['feedid'].'">Delete</a>';
+//        echo '<td><a href="'.URL.'feedback/view/'.$value['feedid'].'">View</a>';
+        echo '</tr>';
+    }
+
+//print_r($this->userList);
+?>
+</table>
+
 <script>
 $(function(){
     $('.delete').click(function(e){
