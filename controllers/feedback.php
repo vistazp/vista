@@ -40,12 +40,17 @@ class Feedback extends Controller {
     }
     
      public function generate() {
-         include  'libs\sitemap.php';
-         $sitemap = new Sitemap('http://localhost/vista');   
-         $sitemap->setPath('c:/xampp/htdocs/vista/xmls/');
+         require "libs/Sitemap.php";
+         $sitemap = new Sitemap(URL);   
+         //$sitemap->setPath(URL.'xmls/');
+         $sitemap->setPath('/var/www/cdvista7738/data/www/vista.zp.ua/dot/xmls/');
          $sitemap->setFilename('customsitemap');
          
-      $sitemap->addItem('/about', '0.8', 'monthly', 'Jun 25');   
+        
+
+         
+         
+      $sitemap->addItem('about', '0.8', 'monthly', 'Jun 25');   
     //     $query = Doctrine_Query::create()
      //           ->select('.created_at, p.slug')
      //           ->from('Posts p')
@@ -56,9 +61,9 @@ class Feedback extends Controller {
              
            
              foreach ($posts as $post) {
-                              $sitemap->addItem('/jobs/view/' . $post['postid'], '0.6', 'weekly', $post['date_create']);
+                              $sitemap->addItem('jobs/view/' . $post['postid'], '0.6', 'weekly', $post['date_create']);
                         }
-         $sitemap->createSitemapIndex('http://localhost/vista', 'Today');
+         $sitemap->createSitemapIndex(URL, 'Today');
          header('location:' . URL . 'feedback');
     }
 
