@@ -13,7 +13,7 @@ a.rss {
     margin:-2px 0;
     background-repeat: no-repeat;
     background-position: right center;
-    background-image: url(blueprint/plugins/link-icons/icons/feed.png)
+    background-image: url(../images/feed.png);
 }
 
 .submit {

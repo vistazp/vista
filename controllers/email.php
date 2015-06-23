@@ -37,9 +37,9 @@ class Email extends Controller {
 
             $this->model->updateEmail($data);
             $this->view->ValError2 = 'Email options successfully updated!';
-            
             header('location: '.URL.'email?email='.$data['email']);            
-            //$this->view->render('email/index');
+                      
+//            $this->view->render('email/index');
             
         } catch (Exception $e) {
             $str = $form->mit2();

@@ -50,7 +50,7 @@
                     <div id="top-nav" class="span-17 last">
                         <a href="<?php echo URL; ?>">Home</a> |
                         <a href="<?php echo URL; ?>postjob">Post a job</a> |
-                        <a href="<?php echo URL; ?>help">Help</a> |
+                        <a href="http://feeds.feedburner.com/dotnetnow" class="rss">RSS</a> |
                         <?php if (Session::get('loggedIn') == FALSE): ?>
                         <a href="<?php echo URL; ?>signup">Sign Up</a> |
                         <?php endif; ?>                               
