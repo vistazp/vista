@@ -38,5 +38,28 @@ class Feedback extends Controller {
         $this->model->delete($id);
         header('location:' . URL . 'feedback');
     }
+    
+     public function generate() {
+         include  'libs\sitemap.php';
+         $sitemap = new Sitemap('http://localhost/vista');   
+         $sitemap->setPath('c:/xampp/htdocs/vista/xmls/');
+         $sitemap->setFilename('customsitemap');
+         
+      $sitemap->addItem('/about', '0.8', 'monthly', 'Jun 25');   
+    //     $query = Doctrine_Query::create()
+     //           ->select('.created_at, p.slug')
+     //           ->from('Posts p')
+     //           ->orderBy('p.id DESC')
+     //           ->useResultCache(true);
+    //     
+              $posts =  $this->model->sitemapList();
+             
+           
+             foreach ($posts as $post) {
+                              $sitemap->addItem('/jobs/view/' . $post['postid'], '0.6', 'weekly', $post['date_create']);
+                        }
+         $sitemap->createSitemapIndex('http://localhost/vista', 'Today');
+         header('location:' . URL . 'feedback');
+    }
 
 }

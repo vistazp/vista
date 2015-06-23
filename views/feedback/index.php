@@ -25,6 +25,11 @@
 ?>
 </table>
 
+ <form accept-charset="UTF-8" action="<?php echo URL; ?>feedback/generate" class="new_job" id="new_job" method="post"><div style="margin:0;padding:0;display:inline">
+<div class="next-step last">
+  <input class="button" id="next-step-job-details" name="commit" type="submit" value="Generate Sitemap &gt;&gt;" />
+ </div>
+ </form>
 <script>
 $(function(){
     $('.delete').click(function(e){

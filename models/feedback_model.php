@@ -11,6 +11,10 @@ class Feedback_model extends Model {
         return $this->db->select('SELECT * FROM feedback');
         
     }
+    
+      public function sitemapList() {
+        return $this->db->select('SELECT postid, date_create FROM post WHERE published= :published', array(':published' => 'yes'));
+          }
 
     public function feedSingleList($id) {
         return $this->db->select('SELECT * FROM feedback WHERE feedid= :feedid', array(':feedid' => $id));
