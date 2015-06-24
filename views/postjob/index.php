@@ -82,7 +82,7 @@
                                     Premium + Ad Banner
                                 </div>
                                 <p class="middle">
-                                    All the benefits of Premium plus Ad banner 150x200 px for 7 days.
+                                    All the benefits of Premium plus Ad banner 150x200 px for 30 days.
                                 </p>
                                 <p class="middle">
                                     Pin your post to the top of the board for 7
