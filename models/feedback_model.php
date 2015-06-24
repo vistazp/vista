@@ -15,6 +15,10 @@ class Feedback_model extends Model {
 
         return $this->db->select('SELECT * FROM post WHERE paid= :paid', array(':paid' => 'yes'));
     }
+     public function subList() {
+
+        return $this->db->select('SELECT * FROM subscriber');
+    }
 
     public function sitemapList() {
         return $this->db->select('SELECT postid, date_create FROM post WHERE published= :published', array(':published' => 'yes'));
@@ -43,6 +47,10 @@ class Feedback_model extends Model {
 
     public function delete($id) {
         $this->db->delete('feedback', "feedid = '$id'");
+    }
+    
+    public function deleteSub($id) {
+        $this->db->delete('subscriber', "subid = '$id'");
     }
 
     public function publishPost($postid) {

@@ -29,7 +29,7 @@
 <div class="next-step last">
   <input class="button" id="next-step-job-details" name="commit" type="submit" value="Generate Sitemap &gt;&gt;" />
  </div>
- </form>
+  </form>
 <br/>
 <br/>
 <h2>Paid posts</h2>
@@ -62,6 +62,32 @@
 //print_r($this->userList);
 ?>
 </table>
+<h2>Subscriber list</h2>
+<table>
+            <th>ID</th>
+            <th>Email</th>
+            <th>Date</th>
+            
+<?php
+    foreach ($this->subList as $key=>$value)
+    {
+        echo '<tr>';
+        echo '<td>'.$value['subid'].'</td>';
+        echo '<td>'.$value['email'].'</td>';
+        echo '<td>'.$value['datesub'].'</td>';
+        echo '<td>'.$value['notify'].'</td>';
+        echo '<td><a class ="delete" href="'.URL.'feedback/deleteSub/'.$value['subid'].'">Delete</a>';
+        echo '</tr>';
+    }
+
+//print_r($this->userList);
+?>
+</table>
+<form accept-charset="UTF-8" action="<?php echo URL; ?>feedback/sendmail" class="new_job" id="new_job" method="post"><div style="margin:0;padding:0;display:inline">
+<div class="next-step last">
+  <input class="button" id="next-step-job-details" name="commit" type="submit" value="Send Mail &gt;&gt; " />
+ </div>       
+  </form>
 
 <script>
 $(function(){

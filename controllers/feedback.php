@@ -14,6 +14,7 @@ class Feedback extends Controller {
 //        echo 'inside index index';
         $this->view->feedList = $this->model->feedList();
         $this->view->payedList = $this->model->payedList();
+         $this->view->subList = $this->model->subList();
         $this->view->render('feedback/index');
     }
     
@@ -39,8 +40,13 @@ class Feedback extends Controller {
         $this->model->delete($id);
         header('location:' . URL . 'feedback');
     }
+    public function deleteSub($id) {
+        $this->model->deleteSub($id);
+        header('location:' . URL . 'feedback');
+    }
+     
     
-     public function generate() {
+    public function generate() {
          require "libs/Sitemap.php";
          $sitemap = new Sitemap(URL);   
          //$sitemap->setPath(URL.'xmls/');
