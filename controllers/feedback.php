@@ -46,11 +46,12 @@ class Feedback extends Controller {
     }
     
     
-     public function sendmail1() {
-        $this->model->sendmail($id);
+     public function sendMailEachPost($postid) {
+        $this->model->sendMailEachPost($postid);
         header('location:' . URL . 'feedback');
     }
-     
+
+
     
     public function generate() {
          require "libs/Sitemap.php";
@@ -74,4 +75,7 @@ class Feedback extends Controller {
         $this->model->publishPost($postid);
         header('location:' . URL . 'feedback');
     }
+    
+    
+    
 }
