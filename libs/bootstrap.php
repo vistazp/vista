@@ -1,6 +1,6 @@
 <?php
 
-class Bootstrap {
+class bootstrap {
 
     private $_url = null;
     private $_controller = null;
@@ -30,7 +30,7 @@ class Bootstrap {
     private function _loadDefaultController() {
         require 'controllers/index.php';
         $this->_controller = new index;
-        $this->_controller->loadModel('Index');
+        $this->_controller->loadModel('index');
         $this->_controller->index();
      }
 
@@ -69,7 +69,7 @@ class Bootstrap {
 
     private function _error() {
         require 'controllers/error.php';
-        $this->_controller = new Error();
+        $this->_controller = new error();
         $this->_controller->index();
         return false;
     }

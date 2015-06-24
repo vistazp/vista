@@ -1,6 +1,6 @@
 <?php
 
-class Privacy extends Controller {
+class privacy extends controller {
 
     function __construct() {
         parent::__construct();

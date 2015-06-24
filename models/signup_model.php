@@ -1,6 +1,6 @@
 <?php
 
-class Signup_model extends Model {
+class signup_model extends model {
 
     function __construct() {
         parent::__construct();
@@ -18,7 +18,7 @@ class Signup_model extends Model {
         $this->db->insert('users', array(
             'name' => $data['name'],
             'email' => $data['email'],
-            'password' => Hash::create('md5', $data['password'], HASH_KEY),
+            'password' => hash::create('md5', $data['password'], HASH_KEY),
             'role' => 'default'
         ));
     }
@@ -40,12 +40,12 @@ class Signup_model extends Model {
 
         if ($count > 0) {
             //login
-            Session::init();
-            Session::set('role', $data['role']);
-            Session::set('userId', $data['id']);
-            Session::set('userName', $data['name']);
-            Session::set('userEmail', $log);
-            Session::set('loggedIn', TRUE);
+            session::init();
+            session::set('role', $data['role']);
+            session::set('userId', $data['id']);
+            session::set('userName', $data['name']);
+            session::set('userEmail', $log);
+            session::set('loggedIn', TRUE);
             header('location: ../dashboard');
         } else {
             //error
@@ -129,7 +129,7 @@ http://dotnetnow.com/updates/unsubscribe';
 
 
         $postData = array(
-            'password' => Hash::create('md5', $newPassword, HASH_KEY));
+            'password' => hash::create('md5', $newPassword, HASH_KEY));
 
         //echo $postData['password'];
         //echo $email;

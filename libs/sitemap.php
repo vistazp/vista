@@ -10,7 +10,7 @@
  * @license    http://opensource.org/licenses/MIT MIT License
  * @link       http://github.com/o/sitemap-php
  */
-class Sitemap {
+class sitemap {
 	/**
 	 *
 	 * @var XMLWriter

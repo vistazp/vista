@@ -1,10 +1,10 @@
 <?php
-class Controller {
+class controller {
 
     function __construct() {
         
         //echo 'Main controller';
-        $this->view= new View();
+        $this->view= new view;
     }
     
     public function loadModel($name){
@@ -13,7 +13,7 @@ class Controller {
         if (file_exists($path)){
             require 'models/'.$name.'_model.php';
             
-            $modelName=$name.'_Model';
+            $modelName=$name.'_model';
             $this->model=new $modelName();
         }
     }

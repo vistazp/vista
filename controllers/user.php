@@ -1,11 +1,11 @@
 <?php
 
-class User extends Controller {
+class user extends controller {
 
     function __construct() {
         parent::__construct();
         
-        Auth::HandleLogin();
+        auth::HandleLogin();
         
         
         $this->view->titl = 'Тайтл для ' . $_SESSION['role'] . ' страницы с Дашбордом';

@@ -1,6 +1,6 @@
 <?php
 
-class Auth {
+class auth {
 
     function __construct() {
         

@@ -1,5 +1,5 @@
 <?php
-class Thanks extends Controller{
+class thanks extends controller{
 
     function __construct() {
         parent::__construct();

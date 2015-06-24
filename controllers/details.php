@@ -1,6 +1,6 @@
 <?php
 
-class Details extends Controller {
+class details extends controller {
 
     
     

@@ -1,5 +1,5 @@
 <?php
-class Index_model extends Model{
+class index_model extends model{
 
     function __construct() {
         parent::__construct();

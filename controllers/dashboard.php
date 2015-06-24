@@ -1,11 +1,11 @@
 <?php
 
-class Dashboard extends Controller {
+class dashboard extends controller {
 
     function __construct() {
         parent::__construct();
         
-        Auth::HandleLogin();
+        auth::HandleLogin();
         
         //print_r($_SESSION);
         

@@ -1,6 +1,6 @@
 <?php
 
-class Signup extends Controller {
+class signup extends controller {
 
     function __construct() {
         parent::__construct();

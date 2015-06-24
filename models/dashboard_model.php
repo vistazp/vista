@@ -1,6 +1,6 @@
 <?php
 
-class Dashboard_Model extends Model {
+class dashboard_Model extends model {
 
     function __construct() {
         parent::__construct();

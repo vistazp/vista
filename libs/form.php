@@ -1,8 +1,8 @@
 <?php
 error_reporting(E_ALL & ~E_NOTICE);
-require 'Form/Val.php';
+require 'form/val.php';
 
-class Form {
+class form {
     //public $strError = null;
     private $_postData = array();
     private $_currentItem = null;
@@ -10,7 +10,7 @@ class Form {
     private $_error = array();
 
     function __construct() {
-        $this->_val = new Val();
+        $this->_val = new val();
     }
 
     public function post($field) {

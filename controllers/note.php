@@ -1,10 +1,10 @@
 <?php
 
-class Note extends Controller {
+class note extends controller {
 
     function __construct() {
         parent::__construct();
-        Auth::HandleLogin();
+        auth::HandleLogin();
 
 
         $this->view->titl = 'Note для ' . $_SESSION['role']  . ' страницы с Дашбордом';

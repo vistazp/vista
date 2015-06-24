@@ -1,6 +1,6 @@
 <?php
 
-class Postjob_model extends Model {
+class postjob_model extends model {
     
             function __construct() {
         parent::__construct();
@@ -39,11 +39,11 @@ class Postjob_model extends Model {
         if ($count > 0) {
             //login
             //Session::init();
-            Session::set('role', $data['role']);
-            Session::set('userId', $data['id']);
-            Session::set('userName', $data['name']);
-            Session::set('userEmail', $log);
-            Session::set('loggedIn', TRUE);
+            session::set('role', $data['role']);
+            session::set('userId', $data['id']);
+            session::set('userName', $data['name']);
+            session::set('userEmail', $log);
+            session::set('loggedIn', TRUE);
             //header('location: ../dashboard');
         } else {
             //error

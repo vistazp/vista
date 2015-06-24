@@ -1,6 +1,6 @@
 <?php
 
-class Postjob extends Controller {
+class postjob extends controller {
 
     function __construct() {
         parent::__construct();

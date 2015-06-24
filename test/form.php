@@ -1,11 +1,11 @@
 <?php
 require '../config/database.php';
-require '../libs/Form.php';
+require '../libs/form.php';
 require '../libs/database.php';
 
 if (isset($_REQUEST['run'])) {
 try{
-    $form = new Form();
+    $form = new form();
 
     $form   ->post('name')
             ->val('minlength', 5)

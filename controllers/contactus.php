@@ -1,6 +1,6 @@
 <?php
 
-class Contactus extends Controller {
+class contactus extends controller {
 
     function __construct() {
         parent::__construct();

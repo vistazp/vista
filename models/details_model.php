@@ -1,6 +1,6 @@
 <?php
 
-class Details_model extends Model {
+class details_model extends model {
 
     function __construct() {
         parent::__construct();

@@ -1,10 +1,10 @@
 <?php
 
-class Subscription extends Controller {
+class subscription extends controller {
 
     function __construct() {
         parent::__construct();
-        Auth::HandleLogin();
+        auth::HandleLogin();
 
 
         $this->view->titl = 'Subscriber page';

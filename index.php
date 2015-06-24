@@ -22,4 +22,4 @@ function __autoload($class){
 //require 'libs/session.php';
 //require 'libs/hash.php';
 
-$app = new Bootstrap(); 
+$app = new bootstrap(); 

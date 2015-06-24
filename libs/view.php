@@ -1,5 +1,5 @@
 <?php
-class View {
+class view {
 
     function __construct() {
         //echo 'This is a view';

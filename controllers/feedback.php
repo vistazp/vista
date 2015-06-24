@@ -1,10 +1,10 @@
 <?php
 
-class Feedback extends Controller {
+class feedback extends controller {
 
     function __construct() {
         parent::__construct();
-        Auth::HandleLogin();
+        auth::HandleLogin();
 
 
         $this->view->titl = 'Feedback page';

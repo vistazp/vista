@@ -1,14 +1,10 @@
 <?php
-class Help_Model extends Model{
+class help_model extends model{
 
     function __construct() {
-    //    echo 'Help model'; 
+
         
     }
     
-    function blah(){
-        echo '1';
-        return 10+10;
-           }
 
 }

@@ -1,6 +1,6 @@
 <?php
 
-class Email extends Controller {
+class email extends controller {
 
     function __construct() {
         parent::__construct();

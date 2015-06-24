@@ -1,6 +1,6 @@
 <?php
 
-class User_model extends Model {
+class user_model extends model {
 
     function __construct() {
         parent::__construct();
@@ -25,7 +25,7 @@ class User_model extends Model {
         $this->db->insert('users', array(
             'name' => $data['name'],
             'email' => $data['email'],
-            'password' => Hash::create('md5', $data['password'], HASH_KEY),
+            'password' => hash::create('md5', $data['password'], HASH_KEY),
             'role' => $data['role']
         ));
     }
@@ -35,7 +35,7 @@ class User_model extends Model {
         $postData = array(
             'name' => $data['name'],
             'email' => $data['email'],
-            'password' => Hash::create('md5', $data['password'], HASH_KEY),
+            'password' => hash::create('md5', $data['password'], HASH_KEY),
             'role' => $data['role']);
 
         $this->db->update('users', $postData, "`id` = {$data['id']}");

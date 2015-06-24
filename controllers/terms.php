@@ -1,6 +1,6 @@
 <?php
 
-class Terms extends Controller {
+class terms extends controller {
 
     function __construct() {
         parent::__construct();
