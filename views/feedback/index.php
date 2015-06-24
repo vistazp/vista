@@ -83,12 +83,18 @@
 //print_r($this->userList);
 ?>
 </table>
-<form accept-charset="UTF-8" action="<?php echo URL; ?>feedback/sendmail" class="new_job" id="new_job" method="post"><div style="margin:0;padding:0;display:inline">
-<div class="next-step last">
-  <input class="button" id="next-step-job-details" name="commit" type="submit" value="Send Mail &gt;&gt; " />
- </div>       
-  </form>
 
+<div class="next-step last">
+  <form accept-charset="UTF-8" action="<?php echo URL; ?>feedback/sendmail1" class="new_job" id="new_job" method="post"><div style="margin:0;padding:0;display:inline">
+  <input class="button" id="next-step-job-details" name="commit" type="submit" value="One email post &gt;&gt; " />
+ </form>
+<form accept-charset="UTF-8" action="<?php echo URL; ?>feedback/sendmail2" class="new_job" id="new_job" method="post"><div style="margin:0;padding:0;display:inline">
+  <input class="button" id="next-step-job-details" name="commit" type="submit" value="Daily digest       &gt;&gt; " />
+ </form>
+<form accept-charset="UTF-8" action="<?php echo URL; ?>feedback/sendmail3" class="new_job" id="new_job" method="post"><div style="margin:0;padding:0;display:inline">
+  <input class="button" id="next-step-job-details" name="commit" type="submit" value="Weekly digest   &gt;&gt; " />
+ </form>
+  </div>
 <script>
 $(function(){
     $('.delete').click(function(e){

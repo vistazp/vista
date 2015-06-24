@@ -44,6 +44,12 @@ class Feedback extends Controller {
         $this->model->deleteSub($id);
         header('location:' . URL . 'feedback');
     }
+    
+    
+     public function sendmail1() {
+        $this->model->sendmail($id);
+        header('location:' . URL . 'feedback');
+    }
      
     
     public function generate() {
@@ -52,18 +58,9 @@ class Feedback extends Controller {
          //$sitemap->setPath(URL.'xmls/');
          $sitemap->setPath('/var/www/cdvista7738/data/www/vista.zp.ua/dot/xmls/');
          $sitemap->setFilename('customsitemap');
-         
-        
-
-         
-         
+              
       $sitemap->addItem('about', '0.8', 'monthly', 'Jun 25');   
-    //     $query = Doctrine_Query::create()
-     //           ->select('.created_at, p.slug')
-     //           ->from('Posts p')
-     //           ->orderBy('p.id DESC')
-     //           ->useResultCache(true);
-    //     
+     
               $posts =  $this->model->sitemapList();
              
            

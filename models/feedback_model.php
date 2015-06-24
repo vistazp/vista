@@ -16,7 +16,6 @@ class Feedback_model extends Model {
         return $this->db->select('SELECT * FROM post WHERE paid= :paid', array(':paid' => 'yes'));
     }
      public function subList() {
-
         return $this->db->select('SELECT * FROM subscriber');
     }
 
