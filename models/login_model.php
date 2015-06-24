@@ -12,7 +12,7 @@ class login_model extends model {
         $sth = $this->db->prepare("SELECT id, name, role FROM users WHERE email=:email AND password=:password");
         $sth->execute(array(
             ':email' => $_POST['email'],
-            ':password' => Hash::create('md5', $_POST['password'], HASH_KEY)
+            ':password' => hash::create('md5', $_POST['password'], HASH_KEY)
             
         ));
 

@@ -78,7 +78,7 @@ class signup extends controller {
              * отправляем почту с уведомлением об успешной регистрации
              */
             $this->model->addUser($data);
-            $this->model->runReg($data['email'], Hash::create('md5', $data['password'], HASH_KEY));
+            $this->model->runReg($data['email'], hash::create('md5', $data['password'], HASH_KEY));
 
             $this->model->mailSuck($data['email']);
         } catch (Exception $e) {

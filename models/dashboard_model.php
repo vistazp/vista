@@ -36,7 +36,7 @@ class dashboard_Model extends model {
 
         $postData = array(
             'name' => $data['name'],
-            'password' => Hash::create('md5', $data['password'], HASH_KEY));
+            'password' => hash::create('md5', $data['password'], HASH_KEY));
 
         $this->db->update('users', $postData, "`id` = {$data['id']}");
        }

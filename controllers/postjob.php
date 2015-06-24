@@ -33,7 +33,7 @@ class postjob extends controller {
             $data['email']=$_POST['login'];
             $data['password']=$_POST['password'];
             
-            $this->model->runReg($data['email'], Hash::create('md5', $data['password'], HASH_KEY));
+            $this->model->runReg($data['email'], hash::create('md5', $data['password'], HASH_KEY));
             // 
             // добавляем в бд данные из step1
             $pId = $this->addStepOne();

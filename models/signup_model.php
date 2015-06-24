@@ -139,7 +139,7 @@ http://dotnetnow.com/updates/unsubscribe';
 //        $this->db->update('users', $postData, "`email` = {$email}");
         $sth = $this->db->prepare('UPDATE users SET password = :password WHERE email= :email');
         $sth->execute(array(
-                            ':password' => Hash::create('md5', $newPassword, HASH_KEY),
+                            ':password' => hash::create('md5', $newPassword, HASH_KEY),
                             ':email' => $email,
             
                 ));
