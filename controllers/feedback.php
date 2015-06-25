@@ -55,7 +55,7 @@ class feedback extends controller {
     
     public function generate() {
          require "libs/sitemap.php";
-         $sitemap = new Sitemap(URL);   
+         $sitemap = new sitemap(URL);   
          //$sitemap->setPath(URL.'xmls/');
          $sitemap->setPath('/var/www/cdvista7738/data/www/vista.zp.ua/dot/xmls/');
          $sitemap->setFilename('customsitemap');

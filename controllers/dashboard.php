@@ -56,7 +56,7 @@ class dashboard extends controller {
     
     public function subVal(){
         try {
-            $form = new Form();
+            $form = new form();
             
             $form   ->post('name')
                     ->val('minlength', 2)

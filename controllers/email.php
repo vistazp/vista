@@ -24,7 +24,7 @@ class email extends controller {
     
         public function update() {
         try {
-            $form = new Form();
+            $form = new form();
 
             $form->post('email')
                     ->val('minlength', 5)

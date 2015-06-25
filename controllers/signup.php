@@ -23,7 +23,7 @@ class signup extends controller {
 
     public function subVal() {
         try {
-            $form = new Form();
+            $form = new form();
 
             $form->post('email')
                     ->val('minlength', 5)
@@ -51,7 +51,7 @@ class signup extends controller {
         try {
 
 
-            $form = new Form();
+            $form = new form();
 
             $form->post('name')
                     ->val('minlength', 2)
@@ -108,7 +108,7 @@ class signup extends controller {
         try {
 
 
-            $form = new Form();
+            $form = new form();
 
             $form->post('email')
                     ->val('minlength', 5)
