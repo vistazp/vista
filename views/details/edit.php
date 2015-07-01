@@ -16,7 +16,7 @@
   </div>
   
   <div class="span-24 last">
-    <input class="required" id="job_headline" name="headline" size="50" type="text" value="<?php echo $this->post[0]['title'] ?>" />
+    <input class="required" id="job_headline" name="headline" size="200" type="text" value="<?php echo $this->post[0]['title'] ?>" />
     
       <h3 id="location"><?php echo $this->post[0]['city'] ?>, <?php echo $this->post[0]['country'] ?></h3>
 
