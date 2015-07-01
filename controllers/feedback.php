@@ -73,6 +73,7 @@ class feedback extends controller {
     }
     public function publish($postid){
         $this->model->publishPost($postid);
+        //$this->sendMailEachPost($postid);
         header('location:' . URL . 'feedback');
     }
     

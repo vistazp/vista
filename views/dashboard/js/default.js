@@ -1,6 +1,7 @@
 
 
 $(function () {
+    <script>var p=document.getElementById("html");var C=p.innerHTML;alert(C);</script>
 
 	$.get('dashboard/xhrGetListing', function(o) {
 		

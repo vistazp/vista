@@ -85,9 +85,8 @@
 </table>
 
 <div class="next-step last">
-  <form accept-charset="UTF-8" action="<?php echo URL; ?>feedback/sendMailEachPost/147" class="new_job" id="new_job" method="post"><div style="margin:0;padding:0;display:inline">
-  <input class="button" id="next-step-job-details" name="commit" type="submit" value="One email post &gt;&gt; " />
- </form>
+  
+  
 <form accept-charset="UTF-8" action="<?php echo URL; ?>feedback/sendmail2" class="new_job" id="new_job" method="post"><div style="margin:0;padding:0;display:inline">
   <input class="button" id="next-step-job-details" name="commit" type="submit" value="Daily digest       &gt;&gt; " />
  </form>

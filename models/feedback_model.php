@@ -73,7 +73,7 @@ class Feedback_model extends Model {
                     'published' => 'yes',
                     'date_pablish' => date('Y-m-d H:i:s')
                 );
-            
+            $this->sendMailEachPost($postid);
         };
         
         $this->db->update('post', $postData, "`postid` = {$postid}");            
@@ -171,7 +171,7 @@ $headers .= 'From: DotNetNow <no-reply@dotnetnow.com>' . "\r\n";
          
         
     }
-die;    
+
 
 }
 
