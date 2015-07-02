@@ -1,12 +1,24 @@
 <?php
 
 class postjob_model extends model {
-    
-            function __construct() {
+
+    function __construct() {
         parent::__construct();
     }
-
+    private $_price;
     public function addStepOne($data) {
+
+        switch ($data['type']) {
+            case 'standart':
+                $_price= 49;
+                break;
+            case 'premium':
+                $_price= 99;
+                break;
+            case 'ultra':
+               $_price= 149;
+                break;
+        }
 
         $this->db->insert('post', array(
             'title' => $data['title'],
@@ -14,10 +26,11 @@ class postjob_model extends model {
             'country' => $data['country'],
             'telec' => $data['telec'],
             'type' => $data['type'],
+            'price' => $_price,
             'date_create' => date('Y-m-d H:i:s'),
             'userid' => $data['userid']
         ));
-        
+
         return $this->db->lastInsertId();
     }
 
@@ -50,8 +63,7 @@ class postjob_model extends model {
             header('location: ../login');
         }
     }
-    
-      
+
     public function mailSuck($mail) {
 
 
@@ -91,10 +103,9 @@ Follow us on Twitter! @FindDotNetJobs (http://twitter.com/FindDotNetJobs)';
 
         $headers = "Content-type: text/plain; charset=UTF-8 \r\n";
         $headers .= "From: Jessy Fishman <jessy@dotnetnow.com>\r\n";
-        
+
 
         mail($to, $subject, $message, $headers);
-        
     }
 
 }

@@ -1,6 +1,6 @@
 
 <div id="steps" class="span-24 last">
-  <form accept-charset="UTF-8" action="<?php echo URL; ?>payment/<?php echo  $this->postPreview[0]['postid']; ?>" class="edit_job" method="post"><div style="margin:0;padding:0;display:inline"></div>
+  <form accept-charset="UTF-8" action="<?php echo URL; ?>payment/view/<?php echo  $this->postPreview[0]['postid']; ?>" class="edit_job" method="post"><div style="margin:0;padding:0;display:inline"></div>
     <!-- Step 3 -->
 <div id="step-3" class="span-24 last">
   <div class="intro span-24 last">

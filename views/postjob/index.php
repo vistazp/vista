@@ -100,8 +100,8 @@
                                 </p>
                                 <p class="footer">
                                     <label class='label-radio ' for='job_featured_status_3'>
-                                        <input class="featured_status" id="job_featured_status_3" name="featured_status" type="radio" value="ultra" />
-                                        <span>$</span><span id="job_premium_c_amount">199</span> 
+                                        <input class="featured_status" id="job_featured_status_3" name="featured_status" type="radio" value="ultra" /><strike>$199</strike> 
+                                        <span>$</span><span id="job_premium_c_amount">149</span> (till 08/01)
                                     </label>
                                 </p>
                             </div> <!-- end - box -->
