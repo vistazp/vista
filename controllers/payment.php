@@ -26,13 +26,13 @@ $signature="HQHGNv3I91aRmEUs62j26Ubjkc9DM0b5dycWelH6"; //Сюда вносите
 //$desc = $_GET['desc']; //Можно так принять назначение платежа
 //$order_id = $_GET['order_id']; //Можно так принять назначение платежа
 $price = $this->view->post[0]['price']; //Все что нужно скрипту - передать в него сумму (вы можете передавать все, вплоть до ордера и описания ...)
- 
+$postToPay = $this->view->post[0]['postid']; 
 $liqpay = new LiqPay($merchant_id, $signature);
 $html = $liqpay->cnb_form(array(
  'version' => '3',
  'amount' => "$price",
  'currency' => 'USD',     //Можно менять  'EUR','UAH','USD','RUB','RUR'
- 'description' => "Назначение платежа укажите свое",  //Или изменить на $desc
+ 'description' => "Post №$postToPay",  //Или изменить на $desc
  'order_id' => $order_id,
  'language' =>'en'
  ));

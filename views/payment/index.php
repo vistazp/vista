@@ -53,30 +53,13 @@
               </div>
             </div>
 
-            <div class="span-24 last">
-              <div class="column last span-1" style="padding-top: 10px">
-                  <input class="radio_payment" id="transaction_payment_method_paypal" name="paymentMethod" type="radio" value="paypal" />
-              </div>
-              <div class="column last span-5">
-                <label for="transaction_payment_method_paypal">
-                  <img alt="Paypal" src="<?php echo URL; ?>public/images/paypal_logo.gif" />
-                </label>
-              </div>
-            </div>
 
 
 
 </fieldset>  
 </div>
 
-  <div class="span-24 last">
-   <hr class="space"/>
-  <div class="step-nav span-24 last">
-    <div class="prev-step column span-12">
-      <a href="<?php echo URL; ?>details/view/<?php echo $_SESSION['postId'] ?>" class="button" id="back-to-select-payment">&lt;&lt; Go back</a>
-    </div>
-    </div>
-  </div>
+
 </form>
 <?php echo $this->htm; ?>
  </div>  
