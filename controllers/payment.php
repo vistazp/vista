@@ -33,7 +33,8 @@ $html = $liqpay->cnb_form(array(
  'amount' => "$price",
  'currency' => 'USD',     //Можно менять  'EUR','UAH','USD','RUB','RUR'
  'description' => "Назначение платежа укажите свое",  //Или изменить на $desc
- 'order_id' => $order_id
+ 'order_id' => $order_id,
+ 'language' =>'en'
  ));
 
 $this->view->htm = $html;

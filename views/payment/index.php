@@ -30,9 +30,6 @@
 	</div>
 	<div id="job_information_right">
 	       
-  <input id="user_id" name="user_id" type="hidden" value="5516" />
-  <input id="coupon_id" name="coupon_id" type="hidden" />
-  <input id="job_amount" name="job_amount" type="hidden" value="99" />
 
 
     <div class="span-20">
