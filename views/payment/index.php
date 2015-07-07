@@ -78,10 +78,9 @@
     <div class="prev-step column span-12">
       <a href="<?php echo URL; ?>details/view/<?php echo $_SESSION['postId'] ?>" class="button" id="back-to-select-payment">&lt;&lt; Go back</a>
     </div>
-   </div>
+    </div>
   </div>
 </form>
- <?php echo $this->htm; ?>
-
- 
+<?php echo $this->htm; ?>
+ </div>  
    

@@ -15,8 +15,7 @@ class payment extends controller {
     function view($postId) {
         $this->view->titl = 'Select payment method';
         $this->view->post = $this->model->singlePost($postId);
-          
-          
+         
 $micro = sprintf("%06d",(microtime(true) - floor(microtime(true))) * 1000000); // Ну раз что-то нужно добавить для полной уникализации то ..
 $number = date("YmdHis"); //Все вместе будет первой частью номера ордера
 $order_id = $number.$micro; //Будем формировать номер ордера таким образом...
