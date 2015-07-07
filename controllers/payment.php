@@ -15,10 +15,8 @@ class payment extends controller {
     function view($postId) {
         $this->view->titl = 'Select payment method';
         $this->view->post = $this->model->singlePost($postId);
-        $this->view->render('payment/index');
-    }
-    
- function paypal() {
+          
+          
 $micro = sprintf("%06d",(microtime(true) - floor(microtime(true))) * 1000000); // Ну раз что-то нужно добавить для полной уникализации то ..
 $number = date("YmdHis"); //Все вместе будет первой частью номера ордера
 $order_id = $number.$micro; //Будем формировать номер ордера таким образом...
@@ -28,7 +26,7 @@ $signature="HQHGNv3I91aRmEUs62j26Ubjkc9DM0b5dycWelH6"; //Сюда вносите
  
 //$desc = $_GET['desc']; //Можно так принять назначение платежа
 //$order_id = $_GET['order_id']; //Можно так принять назначение платежа
-$price = 11; //Все что нужно скрипту - передать в него сумму (вы можете передавать все, вплоть до ордера и описания ...)
+$price = $this->view->post[0]['price']; //Все что нужно скрипту - передать в него сумму (вы можете передавать все, вплоть до ордера и описания ...)
  
 $liqpay = new LiqPay($merchant_id, $signature);
 $html = $liqpay->cnb_form(array(
@@ -39,8 +37,10 @@ $html = $liqpay->cnb_form(array(
  'order_id' => $order_id
  ));
 
-echo $html;
+$this->view->htm = $html;
+$this->view->render('payment/index');
     }
+    
 
     
 }
