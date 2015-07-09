@@ -19,7 +19,7 @@ class details extends controller {
     
       public function edit($id) {
         
-        Session::set('postId', $id);
+        session::set('postId', $id);
         
         $this->view->post = $this->model->postSingleList($id);
         (count($this->view->post)== 0) ? $this->view->render('error/index') : $this->view->render('details/edit');

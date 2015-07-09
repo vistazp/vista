@@ -22,5 +22,10 @@ class thanks extends controller{
         $this->view->render('thanks/index');        
         
     }
+    public function success(){
+        $this->view->thanksMessage='Your post has been paid. Thank you for posting with us.';        
+        $this->view->render('thanks/index');        
+        
+    }
     
 }

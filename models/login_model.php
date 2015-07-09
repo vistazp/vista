@@ -25,12 +25,12 @@ class login_model extends model {
 
         if ($count > 0) {
             //login
-            Session::init();
-            Session::set('role', $data['role']);
-            Session::set('userName', $data['name']);
-            Session::set('userId', $data['id']);
-            Session::set('userEmail', $_POST['email']);
-            Session::set('loggedIn', TRUE);
+            session::init();
+            session::set('role', $data['role']);
+            session::set('userName', $data['name']);
+            session::set('userId', $data['id']);
+            session::set('userEmail', $_POST['email']);
+            session::set('loggedIn', TRUE);
             header('location: ../dashboard');
         } else {
             //error

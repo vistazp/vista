@@ -1,8 +1,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <meta name="author" content="dotnetnow.com" />
-        <link rel="canonical" href="http://dotnetnow.com/" />
+        <meta name="author" content="webjobnow.com" />
+        <link rel="canonical" href="http://webjobnow.com/" />
         <title><?= (isset($this->titl)) ? $this->titl : 'Test'; ?></title>
         <meta name="description" content="<?= (isset($this->description)) ? $this->description : 'Page description'; ?>"/>
         <link rel="shortcut icon" type="image/x-icon" href="<?php echo URL; ?>public/images/favicon.ico" />
@@ -35,14 +35,14 @@
             
     </head>
 
-    <?php Session::init(); ?>
+    <?php session::init(); ?>
 
     <body>        
 
         <div class="container">
             <div id="header" class="span-24">
                 <div id="logo" class="span-7">
-                    <a href="http://dotnetnow.com/"><h1>DotNetnow: Ruby Jobs | Niche Ruby on Rails Jobs Board</h1></a>
+                    <a href="http://webjobnow.com/"><h1>WebJobNow: WEB Jobs | Web Jobs Developer Board</h1></a>
                 </div>
 
 
@@ -50,21 +50,21 @@
                     <div id="top-nav" class="span-17 last">
                         <a href="<?php echo URL; ?>">Home</a> |
                         <a href="<?php echo URL; ?>postjob">Post a job</a> |
-                        <a href="http://feeds.feedburner.com/dotnetnow" class="rss">RSS</a> |
-                        <?php if (Session::get('loggedIn') == FALSE): ?>
+                        <a href="http://feeds.feedburner.com/webjobnow" class="rss">RSS</a> |
+                        <?php if (session::get('loggedIn') == FALSE): ?>
                         <a href="<?php echo URL; ?>signup">Sign Up</a> |
                         <?php endif; ?>                               
                         
                         
-                        <?php if (Session::get('loggedIn') == TRUE): ?>
+                        <?php if (session::get('loggedIn') == TRUE): ?>
                             <a href="<?php echo URL; ?>dashboard">Account</a> |
                             
                         <?php endif; ?>                               
 
-                        <?php if (Session::get('loggedIn') == FALSE): ?>
+                        <?php if (session::get('loggedIn') == FALSE): ?>
                             <a href="<?php echo URL; ?>login">Login</a>
                         <?php else: ?>   
-                                <?php if (Session::get('role') == 'owner'): ?>
+                                <?php if (session::get('role') == 'owner'): ?>
                                     <a href="<?php echo URL; ?>user">Users</a> |
                                     <a href="<?php echo URL; ?>feedback">Feedback</a> |
                                     <a href="<?php echo URL; ?>subscription">Subscription</a> |
@@ -80,12 +80,12 @@
                     <div id="subscribe" class="span-17 prepend-0 last">
                         <div class="span-11 prepend-4 last">
                             <div class="span-11">
-                                <div class="span-6"><h2>.Net Job Alerts</h2></div>
+                                <div class="span-6"><h2>WEB Job Alerts</h2></div>
                                 <div class="span-4" id="twitter-div"><a href="https://twitter.com/FindDotNetJobs" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @FindDotNetJobs</a></div>
                             </div>
                             <div class="span-11">
                                 <div class="quiet" style="font-size:1.25em;">
-                                    Latest .Net jobs posted from London, Berlin, California, and the world, sent to your inbox (digest options available).
+                                    Latest WEB jobs posted from London, Berlin, California, and the world, sent to your inbox (digest options available).
                                 </div>
                                 <div class="inline">
                                     <span style='font-size:16px;'>Email :</span> 

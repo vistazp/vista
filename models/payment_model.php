@@ -7,7 +7,7 @@ class payment_model extends model {
     }
 
     public function singlePost($id) {
-        return $this->db->select('SELECT title, type, price FROM post WHERE postid = :postid and userid= :userid', array(':postid' => $id,
+        return $this->db->select('SELECT title, type, price, postid FROM post WHERE postid = :postid and userid= :userid', array(':postid' => $id,
                                                                                                         ':userid' => $_SESSION['userId']    ));
         //$sth = $this->db->prepare('SELECT id, login, role FROM users WHERE id= :id');
         //$sth->execute(array(':id' => $id));

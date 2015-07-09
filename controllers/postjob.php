@@ -11,7 +11,7 @@ class postjob extends controller {
 
     function index() {
 //        echo 'inside index index';
-        $this->view->titl = 'Post a new job on DotNetNow.com';
+        $this->view->titl = 'Post a new job on WebJobNow.com';
         $this->view->description = 'home page meta description';
         $this->view->render('postjob/index');
     }
@@ -19,7 +19,7 @@ class postjob extends controller {
     public function nextStep() {
         
         
-        if (Session::get('loggedIn') == TRUE) 
+        if (session::get('loggedIn') == TRUE) 
             {
             // добавляем в бд данные из step1
             $pId = $this->addStepOne();
@@ -51,7 +51,7 @@ class postjob extends controller {
             $data['country'] = $_POST['country'];
             $data['telec'] = $_POST['telecomute'];
             $data['type'] = $_POST['featured_status'];
-            $data['userid'] = Session::get('userId');
+            $data['userid'] = session::get('userId');
             return $this->model->addStepOne($data);
             
     }

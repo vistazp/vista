@@ -29,14 +29,14 @@
     <h3 class="widgettitle">Contact Us</h3>      
     <div class="textwidget">
       <p class="txt12">Phone: +44 20 7832 4901
-      </br>E-mail: <a href="mailto:admin@dotnetnow.com">admin@dotnetnow.com</a></p>
+      </br>E-mail: <a href="mailto:admin@webjobnow.com">admin@webjobnow.com</a></p>
       <p></p>
     </div>
 
-    <h3 class="widgettitle">DotNetNow HQ</h3>
+    <h3 class="widgettitle">WebJobNow HQ</h3>
     <div class="textwidget">
       <p class="txt12">
-        Dotnetnow (a subsidiary of Rosenblatt Solicitors Software LLC), <br />
+        Webjobnow (a subsidiary of Rosenblatt Solicitors Software LLC), <br />
         9-13 St Andrew St<br />
         London EC4A 3AF, UK
         

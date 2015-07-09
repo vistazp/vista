@@ -69,9 +69,9 @@ class postjob_model extends model {
 
         $to = $mail;
 
-        $subject = "DotNetNow - Thank you for posting with us";
+        $subject = "WebJobNow - Thank you for posting with us";
 
-        $message = 'Thank you for your interest in using DotNetNow!
+        $message = 'Thank you for your interest in using WebJobNow!
 
 To help you craft your job post I have created a job posting how-to guide
 that focusses on strategy, messaging and broadcasting best practices.
@@ -85,24 +85,24 @@ I developed this based of my experiences working with many well known clien
 ts looking for top developer talent. Hopefully it will be of help to you.
 
 For your reference, here are links for the :
-    - Submitted job post (http://dotnetnow.com/postajob) 
-    - Posting managment dashboard (http://dotnetnow.com/dashboard)
+    - Submitted job post (http://webjobnow.com/postajob) 
+    - Posting managment dashboard (http://webjobnow.com/dashboard)
 
 If you have any questions about the site, or the submission process, please
  do not hesitate to reach out. Happy developer hunting!
 
 Best,
 
-Jessy and the DotNetNow team
+Jessy and the WebJobNow team
 
 Jessy Fishman
-jessy@dotnetnow.com
+jessy@webjobnow.com
 
-dotnetnow.com
-Follow us on Twitter! @FindDotNetJobs (http://twitter.com/FindDotNetJobs)';
+webjobnow.com
+Follow us on Twitter! @FindWebJob (http://twitter.com/FindWebJob)';
 
         $headers = "Content-type: text/plain; charset=UTF-8 \r\n";
-        $headers .= "From: Jessy Fishman <jessy@dotnetnow.com>\r\n";
+        $headers .= "From: Jessy Fishman <jessy@webjobnow.com>\r\n";
 
 
         mail($to, $subject, $message, $headers);

@@ -77,6 +77,11 @@ class feedback extends controller {
         header('location:' . URL . 'feedback');
     }
     
-    
+    public function callback($data, $signature){
+        //$data=$_POST[''];
+        var_dump($data);
+        var_dump($_POST['data']);
+        die();
+    }
     
 }
