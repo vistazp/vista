@@ -1,6 +1,6 @@
 <h1>Note</h1>
 <h2>Add new note</h2>
-<form method="post" action="<?php echo URL; ?>note/create">
+<form method="post" action="<?php echo URL; ?>feedback/callback">
     <label>Title</label><input type="text" name="title" /><br />
     <label>Content</label><textarea type="text" name="content"></textarea><br />
     <label>&nbsp;</label><input type="submit" />

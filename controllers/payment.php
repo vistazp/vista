@@ -30,15 +30,14 @@ class payment extends controller {
         $liqpay = new LiqPay($merchant_id, $signature);
         $html = $liqpay->cnb_form(array(
             'version' => '3',
-            //'amount' => "$price",
-            'amount' => "1",
-            'currency' => 'UAH', //Можно менять  'EUR','UAH','USD','RUB','RUR'
+            'amount' => "$price",
+            'currency' => 'USD', //Можно менять  'EUR','UAH','USD','RUB','RUR'
             'description' => "Post №$postToPay", //Или изменить на $desc
             'order_id' => $order_id,
             'language' => 'en',
             'server_url' => 'http://webjobnow.com/feedback/callback',
-            'result_url' => 'http://webjobnow.com/thanks/success'
-            //'sandbox' => '1'
+            'result_url' => 'http://webjobnow.com/thanks/success',
+            'sandbox' => '1'
         ));
 
         $this->view->htm = $html;

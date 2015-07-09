@@ -31,7 +31,7 @@ class postjob_model extends model {
             'userid' => $data['userid']
         ));
 
-        return $this->db->lastInsertId();
+        return $this->db->lastInsertId("post");
     }
 
     public function runReg($log, $pass) {
