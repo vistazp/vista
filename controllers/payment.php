@@ -34,7 +34,10 @@ $html = $liqpay->cnb_form(array(
  'currency' => 'USD',     //Можно менять  'EUR','UAH','USD','RUB','RUR'
  'description' => "Post №$postToPay",  //Или изменить на $desc
  'order_id' => $order_id,
- 'language' =>'en'
+ 'language' =>'en',
+ 'server_url' =>'http://webjobnow.com/feedback/callback',
+ 'result_url' =>'http://webjobnow.com/thanks/success',
+ 'sandbox' =>'1'
  ));
 
 $this->view->htm = $html;

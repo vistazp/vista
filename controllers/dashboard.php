@@ -21,7 +21,7 @@ class dashboard extends controller {
     }
 
     function logout() {
-        Session::destroy();
+        session::destroy();
         header('location: '.URL.'login');
         exit();
     }
@@ -47,7 +47,7 @@ class dashboard extends controller {
         $data['id'] = $_SESSION['userId'];
         $data['name'] = $_POST['name'];
         $data['password'] = $_POST['password'];
-        Session::set('userName', $_POST['name']);
+        session::set('userName', $_POST['name']);
         $this->model->editSave($data);
         
         header('location:' . URL . 'dashboard');

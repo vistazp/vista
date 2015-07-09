@@ -1,6 +1,6 @@
 <?php
 
-class Feedback_model extends Model {
+class feedback_model extends model {
 
     function __construct() {
         parent::__construct();
@@ -93,7 +93,7 @@ $to  = 'aidan@example.com' . ', '; // обратите внимание на з�
 $to .= 'wez@example.com';
 
 // тема письма
-$subject = 'Dotnetnow Jobs: .NET Developer';
+$subject = 'Webjobnow Jobs: WEB Developer';
 
 foreach ($mailList as $key=>$value)    {   
 // текст письма
@@ -102,15 +102,15 @@ $message = '
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <title>Dotnetnow.com</title>
+        <title>Webjobnow.com</title>
     </head>
     <body>
         <div style="margin-left: auto; margin-right: auto; padding: 30px; color:#666; text-align:left; min-width:628px;">
             <table width="608" border="0" cellpadding="0" cellspacing="0" align="center" style="text-align:left; font-family: "Helvetica Neue", helvetica, arial, sans-serif;">
                 <tr>
-                    <td colspan="2"><img src="http://dotnetnow.com/public/images/logo.png" height="80" alt="DotNetNow" style="border: 0;" /></td>
+                    <td colspan="2"><img src="http://webjobnow.com/public/images/logo.png" height="80" alt="WebJobNow" style="border: 0;" /></td>
                     <td align="right">
-                        <p><span>Click to <a href="http://dotnetnow.com/email?email='.$value['email'].'">
+                        <p><span>Click to <a href="http://webjobnow.com/email?email='.$value['email'].'">
                                     Update email settings</a> and</span><br/>
                             <span>change email delivery frequency.</span></p>
                     </td>
@@ -124,27 +124,27 @@ $message = '
                 <tr>
                     <td colspan="3">
                         <br/>
-                        <h3>New job posted on dotnetnow.com</h3>
+                        <h3>New job posted on webjobnow.com</h3>
                         <div>
-                            <h3 style="margin-bottom:1px;"><a href="http://dotnetnow.com/jobs/view/'.$postData[0]['postid'].'" style="color:#DA7B32;">'.$postData[0]['title'].'</a> </h3>
+                            <h3 style="margin-bottom:1px;"><a href="http://webjobnow.com/jobs/view/'.$postData[0]['postid'].'" style="color:#DA7B32;">'.$postData[0]['title'].'</a> </h3>
                             <span style="color:gray;font-size:14px">'.$postData[0]['company'].' ('.$postData[0]['city'].', '.$postData[0]['country'].')</span>
                             <p style="margin-top:4px;">
                             
                             '.nl2br(strip_tags($postData[0]['jobdescription'], '<b> <a>')).'
                             </p>
 
-                            (<a href="http://dotnetnow.com/jobs/view/'.$postData[0]['postid'].'">Click for full details ...</a>)
+                            (<a href="http://webjobnow.com/jobs/view/'.$postData[0]['postid'].'">Click for full details ...</a>)
                         </div>
                     </td>
                 </tr>
                 <tr>
                     <td colspan="3">
                         <hr/>
-                        Follow us on Twitter for more jobs: <a href="https://twitter.com/FindDotNetJobs">@FindTechJobs</a>
+                        Follow us on Twitter for more jobs: <a href="https://twitter.com/FindWebJob">@FindTechJob</a>
                         <br/>
                         <hr/>
-                        <p>Click for delivery options: <a href="http://dotnetnow.com/email?email='.$value['email'].'">update email settings</a></p>
-                        <p>To be removed from this list, <a href="http://dotnetnow.com/email?email='.$value['email'].'">click here</a></p>
+                        <p>Click for delivery options: <a href="http://webjobnow.com/email?email='.$value['email'].'">update email settings</a></p>
+                        <p>To be removed from this list, <a href="http://webjobnow.com/email?email='.$value['email'].'">click here</a></p>
 
                     </td>
                 </tr>
@@ -162,7 +162,7 @@ $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
 
 // Дополнительные заголовки
 
-$headers .= 'From: DotNetNow <no-reply@dotnetnow.com>' . "\r\n";
+$headers .= 'From: WebJobNow <no-reply@webjobnow.com>' . "\r\n";
 
 // Отправляем
      

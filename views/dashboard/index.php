@@ -10,7 +10,7 @@
             <li>All posts are approved manually to ensure a quality experience for our members. We try to optimize for a best time of day to publish posts to get the maximum traffic for you and this is typically within 24 hours of submission.</li>
             <li>For Premium posts we'll reach out for a time to review your post. Please let us know if you want the post sent out immediately.</li>
             <li>Jobs are active for 30 days. After that they are no longer listed on the site.</li>
-            <li>If you have any questions, please call +44 20 7832 4901  or email at <a href="mailto:admin@dotnetnow.com">admin@dotnetnow.com</a></li>
+            <li>If you have any questions, please call +44 20 7832 4901  or email at <a href="mailto:admin@webjobnow.com">admin@webjobnow.com</a></li>
         </ul>
         </p>
 

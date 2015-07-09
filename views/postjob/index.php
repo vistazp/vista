@@ -392,7 +392,7 @@
                     </div>
                     
 
-                        <?php if (Session::get('loggedIn') == TRUE): ?>
+                        <?php if (session::get('loggedIn') == TRUE): ?>
                             
                         <p class="current-user">Logged in as: <span><?php echo $_SESSION['userEmail'] ?></span></p>
                             
