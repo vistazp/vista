@@ -35,7 +35,7 @@ class payment extends controller {
             'description' => "Post №$postToPay", //Или изменить на $desc
             'order_id' => $order_id,
             'language' => 'en',
-            'server_url' => 'http://webjobnow.com/feedback/callback',
+            'server_url' => 'http://webjobnow.com/thanks/callback',
             'result_url' => 'http://webjobnow.com/thanks/success',
             'sandbox' => '1'
         ));

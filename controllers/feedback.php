@@ -74,20 +74,5 @@ class feedback extends controller {
         header('location:' . URL . 'feedback');
     }
 
-    public function callback() {
-        $data = $_POST;
-
-               
-        $fp = fopen("/var/www/cdwebjo14041/data/www/webjobnow.com/call.txt", "a"); // Открываем файл в режиме записи 
-        $mytext = $data; // Исходная строка
-        
-        $test = fwrite($fp, $mytext); // Запись в файл
-        
-        fclose($fp); //Закрытие файла
-        //
-        //var_dump($_POST['data']);
-        
-        die();
-    }
 
 }
