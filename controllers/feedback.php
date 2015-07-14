@@ -54,15 +54,21 @@ class feedback extends controller {
         $sitemap = new sitemap(URL);
         //$sitemap->setPath(URL.'xmls/');
         $sitemap->setPath('/var/www/cdwebjo14041/data/www/webjobnow.com/');
-        $sitemap->setFilename('customsitemap');
+        $sitemap->setFilename('sitemap');
 
-        $sitemap->addItem('about', '0.8', 'monthly', 'Jun 25');
+        $sitemap->addItem('', '0.9', 'weekly', 'Jun 25');
+        $sitemap->addItem('postjob', '0.4', 'monthly', 'Jun 25');
+        $sitemap->addItem('login', '0.4', 'monthly', 'Jun 25');
+        $sitemap->addItem('contactus', '0.4', 'monthly', 'Jun 25');
+        $sitemap->addItem('terms', '0.4', 'monthly', 'Jun 25');
+        $sitemap->addItem('privacy', '0.4', 'monthly', 'Jun 25');
+        $sitemap->addItem('signup', '0.4', 'monthly', 'Jun 25');
 
         $posts = $this->model->sitemapList();
 
 
         foreach ($posts as $post) {
-            $sitemap->addItem('jobs/view/' . $post['postid'], '0.6', 'weekly', $post['date_create']);
+            $sitemap->addItem('jobs/view/' . $post['postid'], '0.7', 'weekly', $post['date_create']);
         }
         $sitemap->createSitemapIndex(URL, 'Today');
         header('location:' . URL . 'feedback');
@@ -70,6 +76,7 @@ class feedback extends controller {
 
     public function publish($postid) {
         $this->model->publishPost($postid);
+        $this->generate();
         //$this->sendMailEachPost($postid);
         header('location:' . URL . 'feedback');
     }
