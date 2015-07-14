@@ -6,8 +6,7 @@ class postjob extends controller {
         parent::__construct();
         @session_start();
         $this->view->js = array('postjob/js/default.js', 'postjob/js/jquery.fancybox-1.3.4.pack.js', 'postjob/js/jquery.validate.min.js');
-        
-    }
+      }
 
     function index() {
 //        echo 'inside index index';
@@ -44,6 +43,11 @@ class postjob extends controller {
        }
 
     public function addStepOne(){
+        if(get_magic_quotes_runtime())
+{
+    // отключение
+    set_magic_quotes_runtime(false);
+}
             $data = array();
             
             $data['title'] = $_POST['headline'];
