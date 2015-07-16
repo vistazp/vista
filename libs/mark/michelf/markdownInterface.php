@@ -17,7 +17,7 @@ namespace Michelf;
 # Markdown Parser Interface
 #
 
-interface MarkdownInterface {
+interface markdownInterface {
 
   #
   # Initialize the parser and return the result of its transform method.

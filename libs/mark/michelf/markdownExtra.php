@@ -17,7 +17,7 @@ namespace Michelf;
 # Markdown Extra Parser Class
 #
 
-class MarkdownExtra extends \Michelf\Markdown {
+class markdownExtra extends \Michelf\markdown {
 
 	### Configuration Variables ###
 

@@ -10,14 +10,14 @@
 # Copyright (c) 2004-2006 John Gruber  
 # <http://daringfireball.net/projects/markdown/>
 #
-namespace Michelf;
+namespace michelf;
 
 
 #
 # Markdown Parser Class
 #
 
-class Markdown implements MarkdownInterface {
+class markdown implements markdownInterface {
 
 	### Version ###
 

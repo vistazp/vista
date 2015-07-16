@@ -8,7 +8,7 @@
 </div>
 <div id="info" class="span-18 colborder">
   <p id="description">
-    <?php $html= \Michelf\Markdown::defaultTransform(htmlspecialchars($this->job[0]['jobdescription'])); echo $html; ?>
+    <?php $html= \michelf\markdown::defaultTransform(htmlspecialchars($this->job[0]['jobdescription'])); echo $html; ?>
     
     
   </p>

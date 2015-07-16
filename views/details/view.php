@@ -17,7 +17,7 @@
   </div>
   <div id="info" class="span-18 borderwithoutcolor">
     <p id="description">
-        <p><?php $html= \Michelf\Markdown::defaultTransform(htmlspecialchars($this->postPreview[0]['jobdescription'])); echo $html; ?></p>
+        <p><?php $html= \michelf\markdown::defaultTransform(htmlspecialchars($this->postPreview[0]['jobdescription'])); echo $html; ?></p>
       
 
     </p>

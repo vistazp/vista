@@ -7,7 +7,7 @@ class details extends controller {
     function __construct() {
         parent::__construct();
         Auth::HandleLogin();
-        require 'libs/mark/michelf/markdown.inc.php';
+        require "libs/mark/michelf/markdown.inc.php";
         
         $this->view->js = array('details/js/default.js', 'details/js/jquery.fancybox-1.3.4.pack.js', 'details/js/jquery.validate.min.js', 'details/js/jquery.markitup.js','details/js/sets/markdown/set.js');
         

@@ -7,11 +7,11 @@
 </form>
     
 <hr />
-<?php $html= \Michelf\Markdown::defaultTransform(htmlspecialchars($this->test[0]['content']));
+<?php $html= \michelf\markdown::defaultTransform(htmlspecialchars($this->test[0]['content']));
 echo $html;?>
 <hr />
 
-<?php $html= \Michelf\Markdown::defaultTransform(strip_tags($this->test[0]['content']));
+<?php $html= \michelf\markdown::defaultTransform(strip_tags($this->test[0]['content']));
 echo $html;?>
 <hr />
 
