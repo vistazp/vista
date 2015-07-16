@@ -7,8 +7,13 @@ class details extends controller {
     function __construct() {
         parent::__construct();
         Auth::HandleLogin();
-         $this->view->js = array('details/js/default.js', 'details/js/jquery.fancybox-1.3.4.pack.js', 'details/js/jquery.validate.min.js');
-        }
+        require 'libs/mark/michelf/markdown.inc.php';
+        
+        $this->view->js = array('details/js/default.js', 'details/js/jquery.fancybox-1.3.4.pack.js', 'details/js/jquery.validate.min.js', 'details/js/jquery.markitup.js','details/js/sets/markdown/set.js');
+        
+        $this->view->css_custom = array('details/css/skins/simple/style.css','details/js/sets/markdown/style.css');
+        
+    }
 
     
             function index() {

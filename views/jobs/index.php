@@ -3,12 +3,13 @@
         <div id="job" class="span-24 last">
     
 <div class="span-24 last">
-  <h2 id="headline"><?php echo  $this->job[0]['title']; ?><span style="color:gray;"> at</span> <a href="<?php echo  $this->job[0]['url']; ?>"><?php echo  $this->job[0]['company']; ?></a></h2>
+  <h1 id="headline"><?php echo  $this->job[0]['title']; ?><span style="color:gray;"> at</span> <a href="<?php echo  $this->job[0]['url']; ?>"><?php echo  $this->job[0]['company']; ?></a></h1>
   <h3 id="location"><?php echo  $this->job[0]['city']; ?>, <?php echo  $this->job[0]['country']; ?></h3>
 </div>
 <div id="info" class="span-18 colborder">
   <p id="description">
-    <?php echo  nl2br(strip_tags($this->job[0]['jobdescription'], '<b> <a>')); ?>  
+    <?php $html= \Michelf\Markdown::defaultTransform(htmlspecialchars($this->job[0]['jobdescription'])); echo $html; ?>
+    
     
   </p>
   

@@ -36,7 +36,7 @@
       <div class="span-21 last">
         <hr class="space"/>
         <strong>Enter the job description: *</strong>
-        <textarea class="required" cols="40" id="job_description" name="description" rows="20"><?= (isset($this->post[0]['jobdescription'])) ? $this->post[0]['jobdescription'] : ''; ?></textarea>
+        <textarea class="required markdown" cols="40" id="job_description" name="description" rows="20"><?= (isset($this->post[0]['jobdescription'])) ? $this->post[0]['jobdescription'] : ''; ?></textarea>
         
         <hr class="space"/>
         <div class="span-9">
@@ -74,3 +74,4 @@
     
     
 </form></div>
+<script language="javascript">$(document).ready(function(){$('.markdown').markItUp(myMarkdownSettings);});</script>

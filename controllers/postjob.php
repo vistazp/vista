@@ -43,11 +43,7 @@ class postjob extends controller {
        }
 
     public function addStepOne(){
-        if(get_magic_quotes_runtime())
-{
-    // отключение
-    set_magic_quotes_runtime(false);
-}
+
             $data = array();
             
             $data['title'] = $_POST['headline'];

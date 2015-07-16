@@ -25,12 +25,17 @@
                 }
             }
             ?>
-            <?php 
-            if (isset($this->js_code))
-                
-                echo $this->js_code;
-            
+            <?php
+            if (isset($this->css_custom)) {
+                foreach ($this->css_custom as $css) {
+                    echo '<link rel="stylesheet" href="' . URL . 'views/' . $css . ' "media="screen" rel="stylesheet" type="text/css"/>';
+                }
+            }
             ?>
+            
+            
+            
+            <?php if (isset($this->js_code)) echo $this->js_code; ?>
             
             
     </head>

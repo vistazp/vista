@@ -6,6 +6,7 @@ class jobs extends controller {
     
     function __construct() {
         parent::__construct();
+        require 'libs/mark/michelf/markdown.inc.php';
         
         $this->view->js_code = '        <script type="text/javascript">var switchTo5x=true;</script>
         <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>

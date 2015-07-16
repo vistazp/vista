@@ -17,7 +17,8 @@
   </div>
   <div id="info" class="span-18 borderwithoutcolor">
     <p id="description">
-      <p><?php echo  nl2br(strip_tags($this->postPreview[0]['jobdescription'], '<b> <a>')); ?></p>
+        <p><?php $html= \Michelf\Markdown::defaultTransform(htmlspecialchars($this->postPreview[0]['jobdescription'])); echo $html; ?></p>
+      
 
     </p>
     <br />
