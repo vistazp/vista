@@ -3,8 +3,8 @@
         <div id="job" class="span-24 last">
     
 <div class="span-24 last">
-  <h1 id="headline"><?php echo  $this->job[0]['title']; ?><span style="color:gray;"> at</span> <a href="<?php echo  $this->job[0]['url']; ?>"><?php echo  $this->job[0]['company']; ?></a></h1>
-  <h3 id="location"><?php echo  $this->job[0]['city']; ?>, <?php echo  $this->job[0]['country']; ?></h3>
+  <h1 id="headline"><?php echo  htmlspecialchars($this->job[0]['title']); ?><span style="color:gray;"> at</span> <a href="<?php echo  htmlspecialchars($this->job[0]['url']); ?>"><?php echo  htmlspecialchars($this->job[0]['company']); ?></a></h1>
+  <h2 id="location"><?php echo  htmlspecialchars($this->job[0]['city']); ?>, <?php echo  $this->job[0]['country']; ?></h2>
 </div>
 <div id="info" class="span-18 colborder">
   <p id="description">
@@ -16,8 +16,8 @@
   <br/><br/>
   
   <p>
-    <strong>Type of position:</strong><?= ($this->job[0]['type_of_position']=='contractor') ? 'CONTRACTOR' : 'PERMANENT'; ?><br />
-    <strong>Work hours:</strong><?= ($this->job[0]['work_hour']=='parttime') ? 'Part-time' : 'Full-time'; ?><br />
+    <strong>Type of position:</strong><?= ($this->job[0]['type_of_position']=='contractor') ? ' CONTRACTOR' : ' PERMANENT'; ?><br />
+    <strong>Work hours:</strong><?= ($this->job[0]['work_hour']=='parttime') ? ' Part-time' : ' Full-time'; ?><br />
   </p>
 </div>
 <div id="sidebar" class="span-4 last">

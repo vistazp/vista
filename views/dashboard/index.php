@@ -32,7 +32,7 @@
             {
                 echo '<tr>';
                 echo '<td>'.$value['postid'].'</td>';
-                echo '<td><a href="'.URL.'details/view/'.$value['postid'].'">'.$value['title'].'</a>';
+                echo '<td><a href="'.URL.'details/view/'.$value['postid'].'">'.htmlspecialchars($value['title'],ENT_QUOTES).'</a>';
                 echo '<td>'.$value['type'].'</td>';
                 echo '<td>'.$value['paid'].'</td>';
                 echo '<td>'.$value['published'].'</td>';

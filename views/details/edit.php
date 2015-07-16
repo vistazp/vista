@@ -16,9 +16,9 @@
   </div>
   
   <div class="span-24 last">
-    <input class="required" id="job_headline" name="headline" size="200" type="text" value="<?php echo $this->post[0]['title'] ?>" />
+    <input class="required" id="job_headline" name="headline" size="200" type="text" value="<?php echo htmlspecialchars($this->post[0]['title'],ENT_QUOTES) ?>" />
     
-      <h3 id="location"><?php echo $this->post[0]['city'] ?>, <?php echo $this->post[0]['country'] ?></h3>
+    <h3 id="location"><?php echo htmlspecialchars($this->post[0]['city']) ?>, <?php echo $this->post[0]['country'] ?></h3>
 
 
     <div class="span-24 borderwithoutcolor">
@@ -26,17 +26,17 @@
 
       <div class="span-9">
         <strong>Company: *</strong><br />
-        <input class="required" id="job_company_name" name="company_name" size="33" type="text" value="<?= (isset($this->post[0]['company'])) ? $this->post[0]['company'] : ''; ?>" />
+        <input class="required" id="job_company_name" name="company_name" size="33" type="text" value="<?= (isset($this->post[0]['company'])) ? htmlspecialchars($this->post[0]['company']) : ''; ?>" />
       </div>
       <div class="span-9 last">
         <strong>Company URL: *</strong><span class="hint">(start with http://)</span><br />
-        <input class="required" id="job_url" name="url" size="33" type="text" value="<?= (isset($this->post[0]['url'])) ? $this->post[0]['url'] : 'http://'; ?>" />
+        <input class="required" id="job_url" name="url" size="33" type="text" value="<?= (isset($this->post[0]['url'])) ? htmlspecialchars($this->post[0]['url']) : 'http://'; ?>" />
       </div>
 
       <div class="span-21 last">
         <hr class="space"/>
         <strong>Enter the job description: *</strong>
-        <textarea class="required markdown" cols="40" id="job_description" name="description" rows="20"><?= (isset($this->post[0]['jobdescription'])) ? $this->post[0]['jobdescription'] : ''; ?></textarea>
+        <textarea class="required markdown" cols="40" id="job_description" name="description" rows="20"><?= (isset($this->post[0]['jobdescription'])) ? htmlspecialchars($this->post[0]['jobdescription']) : ''; ?></textarea>
         
         <hr class="space"/>
         <div class="span-9">

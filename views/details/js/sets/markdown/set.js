@@ -15,8 +15,8 @@ myMarkdownSettings = {
     previewParserPath:  'libs\mark\michelf\markdown.php ',
     onShiftEnter:       {keepDefault:false, openWith:'\n\n'},
     markupSet: [
-        {name:'First Level Heading', key:"1", placeHolder:'Your title here...', closeWith:function(markItUp) { return miu.markdownTitle(markItUp, '-') } },
-        {name:'Second Level Heading', key:"2", openWith:'### ', placeHolder:'Your title here...' },
+        {name:'Heading 1', key:"1", openWith:'#### ', placeHolder:'Your title here...' },
+        {name:'Heading 2', key:"2", openWith:'##### ', placeHolder:'Your title here...' },
         {separator:'---------------' },        
         {name:'Bold', key:"B", openWith:'**', closeWith:'**'},
         {name:'Italic', key:"I", openWith:'_', closeWith:'_'},
@@ -25,8 +25,8 @@ myMarkdownSettings = {
         {name:'Numeric List', openWith:function(markItUp) {
             return markItUp.line+'. ';
         }},
-        {separator:'---------------' },
-        {name:'Link', key:"L", openWith:'[', closeWith:']([![Url:!:http://]!] "[![Title]!]")', placeHolder:'Your text to link here...' },
+        
+        
     ]
 }
 

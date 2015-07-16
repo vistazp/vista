@@ -8,7 +8,7 @@
 		  <strong> Title: </strong>
 		</div>
 		<div class="column span-5 last">
-		   <?php echo $this->post[0]['title']?>
+		   <?php echo htmlspecialchars($this->post[0]['title'])?>
 		</div>
 	  </div>
 	  <div class="span-24 last">

@@ -8,12 +8,12 @@
     <hr />
   </div>
   <div class="span-24 last">
-    <h2 id="headline" >
+    <h1 id="headline" >
       <?php echo  $this->postPreview[0]['title']; ?>
       <span style="color:gray;">at</span> 
-      <a href="<?php echo  $this->postPreview[0]['url']; ?>" target="_blank" rel="nofollow" ><?php echo  $this->postPreview[0]['company']; ?></a>
-    </h2>
-    <h3 id="location"><?php echo  $this->postPreview[0]['city']; ?>, <?php echo  $this->postPreview[0]['country']; ?></h3>
+      <a href="<?php echo  htmlspecialchars($this->postPreview[0]['url']); ?>" target="_blank" rel="nofollow" ><?php echo  htmlspecialchars($this->postPreview[0]['company']); ?></a>
+    </h1>
+    <h2 id="location"><?php echo  htmlspecialchars($this->postPreview[0]['city']); ?>, <?php echo  $this->postPreview[0]['country']; ?></h2>
   </div>
   <div id="info" class="span-18 borderwithoutcolor">
     <p id="description">
@@ -23,8 +23,8 @@
     </p>
     <br />
     <p>
-      <strong>Type of position:</strong> <?= ($this->postPreview[0]['type_of_position']=='contractor') ? 'Contractor' : 'Permanent'; ?><br />
-      <strong>Work hours:</strong> <?= ($this->postPreview[0]['work_hour']=='parttime') ? 'Part time' : 'Full time'; ?>
+      <strong>Type of position:</strong> <?= ($this->postPreview[0]['type_of_position']=='contractor') ? ' Contractor' : ' Permanent'; ?><br />
+      <strong>Work hours:</strong> <?= ($this->postPreview[0]['work_hour']=='parttime') ? ' Part time' : ' Full time'; ?>
           
     </p>
   </div>
