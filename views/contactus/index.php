@@ -28,7 +28,7 @@
   <div class="span-6 last"> 
     <h3 class="widgettitle">Contact Us</h3>      
     <div class="textwidget">
-      <p class="txt12">Phone: +44 20 7832 4901
+      <p class="txt12">Phone: +38 093 377 4748
       </br>E-mail: <a href="mailto:admin@webjobnow.com">admin@webjobnow.com</a></p>
       <p></p>
     </div>

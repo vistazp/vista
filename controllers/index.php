@@ -8,7 +8,7 @@ class index extends controller{
     
     function index(){
 //        echo 'inside index index';
-        $this->view->titl='Home page';
+        $this->view->titl='WebJobNow: WEB Jobs | Best Vacancy on Web Jobs Board ';
         $this->view->description='home page meta description';
         $this->view->alllist= $this->model->postList();      
         

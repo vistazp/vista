@@ -8,36 +8,37 @@
         <link rel="shortcut icon" type="image/x-icon" href="<?php echo URL; ?>public/images/favicon.ico" />
 
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css"/>
 
-            <link rel="stylesheet" href="<?php echo URL; ?>public/css/application.css" media="screen" rel="stylesheet" type="text/css"/>
-            <link rel="stylesheet" href="<?php echo URL; ?>public/css/screen.css" media="screen" rel="stylesheet" type="text/css"/>
-            <link rel="stylesheet" href="<?php echo URL; ?>public/css/formtastic.css" media="screen" rel="stylesheet" type="text/css"/>
-            <link rel="stylesheet" href="<?php echo URL; ?>public/css/jquery.fancybox-1.3.4.css" media="screen" rel="stylesheet" type="text/css"/>
-            <link rel="stylesheet" href="<?php echo URL; ?>public/css/error.css" media="screen" rel="stylesheet" type="text/css"/>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-            <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="<?php echo URL; ?>public/css/application.css" media="screen" type="text/css"/>
+        <link rel="stylesheet" href="<?php echo URL; ?>public/css/screen.css" media="screen" type="text/css"/>
+        <link rel="stylesheet" href="<?php echo URL; ?>public/css/formtastic.css" media="screen" type="text/css"/>
+        <link rel="stylesheet" href="<?php echo URL; ?>public/css/jquery.fancybox-1.3.4.css" media="screen" type="text/css"/>
+        <link rel="stylesheet" href="<?php echo URL; ?>public/css/error.css" media="screen" type="text/css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <link rel="alternate" title="Web jobs board: webjobsnow.com" href="http://feedproxy.google.com/webjobsnow" type="application/rss+xml" />
 
-            <?php
-            if (isset($this->js)) {
-                foreach ($this->js as $js) {
-                    echo '<script type="text/javascript" src="' . URL . 'views/' . $js . '"></script>';
-                }
+        <?php
+        if (isset($this->js)) {
+            foreach ($this->js as $js) {
+                echo '<script type="text/javascript" src="' . URL . 'views/' . $js . '"></script>';
             }
-            ?>
-            <?php
-            if (isset($this->css_custom)) {
-                foreach ($this->css_custom as $css) {
-                    echo '<link rel="stylesheet" href="' . URL . 'views/' . $css . ' "media="screen" rel="stylesheet" type="text/css"/>';
-                }
+        }
+        ?>
+        <?php
+        if (isset($this->css_custom)) {
+            foreach ($this->css_custom as $css) {
+                echo '<link rel="stylesheet" href="' . URL . 'views/' . $css . ' "media="screen" type="text/css"/>';
             }
-            ?>
-            
-            
-            
-            <?php if (isset($this->js_code)) echo $this->js_code; ?>
-            
-            
+        }
+        ?>
+
+
+
+        <?php if (isset($this->js_code)) echo $this->js_code; ?>
+
+
     </head>
 
     <?php session::init(); ?>
@@ -57,27 +58,27 @@
                         <a href="<?php echo URL; ?>postjob">Post a job</a> |
                         <a href="http://feeds.feedburner.com/webjobnow" class="rss">RSS</a> |
                         <?php if (session::get('loggedIn') == FALSE): ?>
-                        <a href="<?php echo URL; ?>signup">Sign Up</a> |
+                            <a href="<?php echo URL; ?>signup">Sign Up</a> |
                         <?php endif; ?>                               
-                        
-                        
+
+
                         <?php if (session::get('loggedIn') == TRUE): ?>
                             <a href="<?php echo URL; ?>dashboard">Account</a> |
-                            
+
                         <?php endif; ?>                               
 
                         <?php if (session::get('loggedIn') == FALSE): ?>
                             <a href="<?php echo URL; ?>login">Login</a>
                         <?php else: ?>   
-                                <?php if (session::get('role') == 'owner'): ?>
-                                    <a href="<?php echo URL; ?>user">Users</a> |
-                                    <a href="<?php echo URL; ?>feedback">Feedback</a> |
-                                    <a href="<?php echo URL; ?>subscription">Subscription</a> |
-                                <?php endif; ?>   
-                            
+                            <?php if (session::get('role') == 'owner'): ?>
+                                <a href="<?php echo URL; ?>user">Users</a> |
+                                <a href="<?php echo URL; ?>feedback">Feedback</a> |
+                                <a href="<?php echo URL; ?>subscription">Subscription</a> |
+                            <?php endif; ?>   
+
                             <a href="<?php echo URL; ?>dashboard/logout">Logout</a>
 
-                            
+
                         <?php endif; ?>                               
 
                     </div>
@@ -108,4 +109,4 @@
             </div>
             <hr />
             <div id="content span-24" >
-            
+

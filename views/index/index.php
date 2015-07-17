@@ -4,7 +4,7 @@
 		
 
 		<div class="quiet" style="font-size:1.25em;">
-                    <a href="mailto:admin@webjobnow.com" alt="Mail to: admin@webjobnow.com"><img src="<?php echo URL; ?>public/images/ad_banner.jpg" alt="Place your Ad here, just $299 per month"></a>
+                    <a href="mailto:admin@webjobnow.com" alt="Mail to: admin@webjobnow.com"><img src="<?php echo URL; ?>public/images/ad_banner.jpg" alt="Place your Ad here, just $299 per month" /></a>
 		</div>
 	</div>
 	<div id="needadev" class="span-11 last">
@@ -29,9 +29,10 @@
      <?php
      foreach ($this->alllist as $key=>$value)
          {
-          echo '<li class="'.$value['type'].'"><h3 ><a href="'.URL.'jobs/view/'.$value['postid'].'">'.htmlspecialchars($value['title']).'</a><span> at '.htmlspecialchars($value['company']).'</span> <span class=date>'. date("Y-m-d", strtotime($value['date_create'])).'</span></h3>'.$value['country'].', '.htmlspecialchars($value['city']).'</li>';
+          echo '<li class="'.$value['type'].'"><h3><a href="'.URL.'jobs/view/'.$value['postid'].'">'.htmlspecialchars($value['title']).'</a><span> at '.htmlspecialchars($value['company']).'</span> <span class="date">'. date("Y-m-d", strtotime($value['date_create'])).'</span></h3>'.$value['country'].', '.htmlspecialchars($value['city']).'</li>';
          }
      ?>
       </ul>
       </div>
+   </div>
    </div>
