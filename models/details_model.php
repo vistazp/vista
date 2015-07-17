@@ -21,6 +21,7 @@ class details_model extends model {
             'url' => $data['url'],
             'company' => $data['company'],
             'jobdescription' => $data['jobdescription'],
+            'apply' => $data['apply'],
             'type_of_position' => $data['type_of_position'],
             'work_hour' => $data['work_hour']
         );

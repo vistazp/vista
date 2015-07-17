@@ -21,13 +21,20 @@ Job = {
                   
             },
             "url": {
-                  
+            
+                   //required: "#step-1:hidden",
+                   url:{
+//		  	depends: function () {
+//				return $("#step-2").css('display') == 'block';
+//			}
+                   }
+                
             },
             "description":{ 
                   
             },
-            "instructions": {
-                  
+            "apply": {
+                  url:{}
             }
           },
           messages: {
@@ -35,10 +42,11 @@ Job = {
                required: "Please enter a Company"
              },
              "url": {
-                      required: "Please enter a url"
+                      required: "Please enter a Url"
                       
                     },
-            "description": {required: "Please enter a Description"}
+            "description": {required: "Please enter a Description"},
+            "apply": {required: "Please enter a Apply link"}
             
           }
         }        

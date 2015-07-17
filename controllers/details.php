@@ -46,6 +46,7 @@ class details extends controller {
             $data['url'] = $_POST['url'];
             $data['company'] = $_POST['company_name'];
             $data['jobdescription'] = $_POST['description'];
+            $data['apply'] = $_POST['apply'];
             $data['type_of_position'] = $_POST['length_of_employment'];
             $data['work_hour'] = $_POST['hours'];
             

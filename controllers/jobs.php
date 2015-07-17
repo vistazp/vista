@@ -31,5 +31,20 @@ class jobs extends controller {
         
        
      }
+        
+        public function goApply($postid){
+            $applyUrl = $this->model->getUrl($postid);
+            $link = $applyUrl[0]['apply'];
+            
+            
+            if ((filter_var($link, FILTER_VALIDATE_EMAIL)) == FALSE) {
+            header('location:' . $link);
+        } else {
+            header('location:mailto:' . $link);
+            };
+
+            
+            
+        }
 
 }

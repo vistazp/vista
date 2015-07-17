@@ -39,6 +39,11 @@
         <textarea class="required markdown" cols="40" id="job_description" name="description" rows="20"><?= (isset($this->post[0]['jobdescription'])) ? htmlspecialchars($this->post[0]['jobdescription']) : ''; ?></textarea>
         
         <hr class="space"/>
+        <div class="span-17">
+        <strong>Apply link: *</strong><span class="hint">Provide the URL to apply actions:  (start with http://)</span><br />
+        <input class="required" id="apply" name="apply" size="112" type="text" value="<?= (isset($this->post[0]['apply'])) ? htmlspecialchars($this->post[0]['apply']) : ''; ?>" />
+      </div>
+        <hr class="space"/>
         <div class="span-9">
           <strong>Type of Position:</strong><br />
           <input <?php if($this->post[0]['type_of_position']=='contractor') echo 'checked="checked"'; ?> id="job_length_of_employment_contractor" name="length_of_employment" type="radio" value="contractor" />
