@@ -14,12 +14,12 @@ class feed extends controller{
     
             $Rss = new CRss;
 
-        $Rss->Title = "Заголовок канала";
+        $Rss->Title = "Web Job Board";
         $Rss->Link = "http://www.webjobnow.com";
-        $Rss->Copyright = "© Копирайт.";
-        $Rss->Description = "Описание";
-        $Rss->Category = "Разработка программного обеспечения";
-        $Rss->Language = "ru";
+        $Rss->Copyright = "© Pozitive Group LLC";
+        $Rss->Description = "Best Vacancy on Web Jobs Board";
+        $Rss->Category = "Jobs";
+        $Rss->Language = "en";
 
         $Rss->ManagingEditor = "admin@webjobnow.com";
         $Rss->WebMaster = "admin@webjobnow.com";
