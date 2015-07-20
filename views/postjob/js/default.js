@@ -41,7 +41,7 @@ Job = {
 
 		}
          });
-
+        $("#job_featured_status_2").attr('checked',true);
 
         $("#step-1 label[for='job_featured_status_2']").click(function (event) {
             event.preventDefault();
