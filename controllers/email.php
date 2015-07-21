@@ -6,6 +6,7 @@ class email extends controller {
         parent::__construct();
 
         $this->view->titl = 'Update email preference';
+        $this->view->canon = 'email';
     }
 
     function index() {

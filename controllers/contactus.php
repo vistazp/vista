@@ -6,6 +6,7 @@ class contactus extends controller {
         parent::__construct();
 
         $this->view->titl = 'Contact us';
+        $this->view->canon = 'contactus';
     }
 
     function index() {

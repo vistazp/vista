@@ -2,8 +2,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta name="author" content="webjobnow.com" />
-        <link rel="canonical" href="http://webjobnow.com/" />
-        <title><?= (isset($this->titl)) ? $this->titl : 'Test'; ?></title>
+        <link rel="canonical" href="<?php echo URL; ?><?= (isset($this->canon)) ? $this->canon : ''; ?>" />
+        <title><?= (isset($this->titl)) ? $this->titl : 'Webjobnow: best jobs board on WEB'; ?></title>
         <meta name="description" content="<?= (isset($this->description)) ? $this->description : 'Page description'; ?>"/>
         <link rel="shortcut icon" type="image/x-icon" href="<?php echo URL; ?>public/images/favicon.ico" />
 
@@ -17,6 +17,9 @@
         <link rel="stylesheet" href="<?php echo URL; ?>public/css/error.css" media="screen" type="text/css"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+         <!--twitter js-->
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
         <link rel="alternate" title="Web jobs board: webjobsnow.com" href="http://feeds.feedburner.com/WebJobBoard" type="application/rss+xml" />
 
         <?php

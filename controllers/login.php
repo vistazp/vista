@@ -8,6 +8,7 @@ class login extends controller{
     function index(){
         
         $this->view->render('login/index', TRUE);        
+        $this->view->canon = 'login';
     }
     
     function run(){

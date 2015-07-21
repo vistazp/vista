@@ -23,7 +23,8 @@ class jobs extends controller {
     
         
         public function view($id) {
-        
+        $this->view->canon = 'jobs/view/'.$id;
+                
         $this->view->job = $this->model->singleJob($id);
         if (count($this->view->job)> 0) $this->view->titl = $this->view->job[0]['title'];
         (count($this->view->job)== 0) ? header('location:' . URL . 'error') : $this->view->render('jobs/index');

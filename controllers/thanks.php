@@ -5,7 +5,8 @@ class thanks extends controller {
     function __construct() {
         parent::__construct();
 
-        $this->view->titl = 'Дякуэмо';
+        $this->view->titl = 'Thank You dude!';
+        $this->view->canon = 'thanks';
     }
 
     function index() {

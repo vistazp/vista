@@ -6,6 +6,7 @@ class signup extends controller {
         parent::__construct();
 
         $this->view->titl = 'Registration';
+        $this->view->canon = 'signup';
     }
 
     function index() {

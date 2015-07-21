@@ -19,12 +19,16 @@ class details extends controller {
             function index() {
 //        echo 'inside index index';
         $this->view->titl = 'Job details page';
+        $this->view->canon = 'details';
         $this->view->render('error/index');
     }
     
       public function edit($id) {
         
         session::set('postId', $id);
+        
+        $this->view->titl = 'Post a new job on webjobnow.com';
+        $this->view->canon = 'details/edit'.$id;
         
         $this->view->post = $this->model->postSingleList($id);
         (count($this->view->post)== 0) ? $this->view->render('error/index') : $this->view->render('details/edit');

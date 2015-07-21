@@ -12,7 +12,7 @@ class dashboard extends controller {
         $this->view->js = array('dashboard/js/default.js');
         
         $this->view->titl='Тайтл для страницы с Дашбордом';
-        
+        $this->view->canon = 'dashboard';
     }
 
     function index() {

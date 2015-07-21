@@ -7,7 +7,8 @@ class feedback extends controller {
         auth::HandleLogin();
 
 
-        $this->view->titl = 'Feedback page';
+        $this->view->titl = 'Admin area';
+        $this->view->canon = 'feedback';
     }
 
     function index() {

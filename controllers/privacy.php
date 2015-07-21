@@ -6,6 +6,7 @@ class privacy extends controller {
         parent::__construct();
 
         $this->view->titl = 'Privacy of information';
+        $this->view->canon = 'privacy';
     }
 
     function index() {

@@ -8,12 +8,13 @@ class payment extends controller {
     }
 
     function index() {
-
+         
         $this->view->titl = 'Select payment method';
         $this->view->render('error/index');
     }
 
     function view($postId) {
+        $this->view->canon = 'payment';
         $this->view->titl = 'Select payment method';
         $this->view->post = $this->model->singlePost($postId);
 

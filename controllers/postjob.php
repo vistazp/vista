@@ -12,6 +12,8 @@ class postjob extends controller {
 //        echo 'inside index index';
         $this->view->titl = 'Post a new job on WebJobNow.com';
         $this->view->description = 'home page meta description';
+        $this->view->canon = 'posjob';
+        
         $this->view->render('postjob/index');
     }
 
