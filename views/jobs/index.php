@@ -1,5 +1,5 @@
 
-<div id="content span-24">
+<div id="content" class="span-24">
     <div id="job" class="span-24 last">
 
         <div class="span-24 last">
@@ -56,14 +56,14 @@
 
                 <hr class="space"/>
                 <hr/>
-                <a href="mailto:admin@webjobnow@com" alt="Mail to: admin@webjobnow@com"><img src="<?php echo URL; ?>public/images/ad_banner_right.jpg" alt="Ultra posting package"></a>
+                <a href="mailto:admin@webjobnow@com"><img src="<?php echo URL; ?>public/images/ad_banner_right.jpg" alt="Ultra posting package"></a>
                 <hr class="space"/>
                 <hr/>
-                <a href="mailto:admin@webjobnow@com" alt="Mail to: admin@webjobnow@com"><img src="<?php echo URL; ?>public/images/ad_banner_right.jpg" alt="Ultra posting package"></a>    
+                <a href="mailto:admin@webjobnow@com" ><img src="<?php echo URL; ?>public/images/ad_banner_right.jpg" alt="Ultra posting package"></a>    
                 <br/>
                 <hr class="space"/>
                 <hr/>
-                <a href="mailto:admin@webjobnow@com" alt="Mail to: admin@webjobnow@com"><img src="<?php echo URL; ?>public/images/ad_banner_right.jpg" alt="Ultra posting package"></a>    
+                <a href="mailto:admin@webjobnow@com" ><img src="<?php echo URL; ?>public/images/ad_banner_right.jpg" alt="Ultra posting package"></a>    
                 <br/>
 
             </div>

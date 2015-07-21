@@ -6,6 +6,9 @@
         <title><?= (isset($this->titl)) ? $this->titl : 'Webjobnow: best jobs board on WEB'; ?></title>
         <meta name="description" content="<?= (isset($this->description)) ? $this->description : 'Page description'; ?>"/>
         <link rel="shortcut icon" type="image/x-icon" href="<?php echo URL; ?>public/images/favicon.ico" />
+        <meta name="rating" content="general" />
+        <meta name="language" content="en-us" />
+
 
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css"/>
@@ -15,12 +18,12 @@
         <link rel="stylesheet" href="<?php echo URL; ?>public/css/formtastic.css" media="screen" type="text/css"/>
         <link rel="stylesheet" href="<?php echo URL; ?>public/css/jquery.fancybox-1.3.4.css" media="screen" type="text/css"/>
         <link rel="stylesheet" href="<?php echo URL; ?>public/css/error.css" media="screen" type="text/css"/>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" type="text/javascript"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" type="text/javascript"></script>
          <!--twitter js-->
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
-        <link rel="alternate" title="Web jobs board: webjobsnow.com" href="http://feeds.feedburner.com/WebJobBoard" type="application/rss+xml" />
+        
 
         <?php
         if (isset($this->js)) {
@@ -41,7 +44,8 @@
 
         <?php if (isset($this->js_code)) echo $this->js_code; ?>
 
-
+    <link rel="alternate" href="http://feeds.feedburner.com/webjobboard" title="Web Job Board: webjobnow.com" type="application/rss+xml"/>    
+    
     </head>
 
     <?php session::init(); ?>
@@ -59,7 +63,7 @@
                     <div id="top-nav" class="span-17 last">
                         <a href="<?php echo URL; ?>">Home</a> |
                         <a href="<?php echo URL; ?>postjob">Post a job</a> |
-                        <a href="http://feeds.feedburner.com/WebJobBoard" class="rss">RSS</a> |
+                        <a href="http://feeds.feedburner.com/webjobboard" class="rss">RSS</a> |
                         <?php if (session::get('loggedIn') == FALSE): ?>
                             <a href="<?php echo URL; ?>signup">Sign Up</a> |
                         <?php endif; ?>                               
@@ -111,5 +115,5 @@
 
             </div>
             <hr />
-            <div id="content span-24" >
+            
 

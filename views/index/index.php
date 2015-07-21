@@ -1,10 +1,10 @@
-      <div id="content span-24">
+      <div id="content" class="span-24">
         <div id="intro-box" class="span-24">
             <div id="intro" class="span-11 colborder">
 		
 
 		<div class="quiet" style="font-size:1.25em;">
-                    <a href="mailto:admin@webjobnow.com" alt="Mail to: admin@webjobnow.com"><img src="<?php echo URL; ?>public/images/ad_banner.jpg" alt="Place your Ad here, just $299 per month" /></a>
+                    <a href="mailto:admin@webjobnow.com" ><img src="<?php echo URL; ?>public/images/ad_banner.jpg" alt="Place your Ad here, just $299 per month" /></a>
 		</div>
 	</div>
 	<div id="needadev" class="span-11 last">

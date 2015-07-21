@@ -3,3 +3,5 @@ Host: webjobnow.com
 Sitemap: http://webjobnow.com/sitemap.xml
 Disallow: /dashboard
 Disallow: /feedback
+Disallow: /login
+Disallow: /signup

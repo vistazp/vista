@@ -1,5 +1,3 @@
-
-    </div>
     <div id="footer" class="span-24 last">
         <a href="<?php echo URL; ?>privacy">Privacy Policy</a> |
         <a href="<?php echo URL; ?>terms">Terms of use</a> |
