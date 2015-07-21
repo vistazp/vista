@@ -24,12 +24,11 @@ class feed extends controller{
         $Rss->ManagingEditor = "admin@webjobnow.com";
         $Rss->WebMaster = "admin@webjobnow.com";
         $Rss->Query = "SELECT
+               post.postid,
                 post.title,
                 post.jobdescription,
-                post.apply,
-                post.date_pablish,
-                post.type
-                FROM post
+                post.date_pablish
+               FROM post
      ORDER by date_pablish desc Limit 0,20";
 
         $Rss->Open($Server, $DataBase, $Login, $Password);
@@ -55,11 +54,11 @@ class feed extends controller{
         $Rss->Query();
 
         while ($line = mysql_fetch_array($Rss->Result)) {   // для каждой записи выведем
-            $Title = $line[0];
-            $Description = $line[1];
-            $Link = $line[2];
+            $Title = $line[1];
+            $Description = $line[2];
+            $Link = "http://www.webjobnow.com/jobs/view/".$line[0];
             $PubDate = date("r", strtotime($line[3]));
-            $Category = $line[4];
+            $Category = "Job";
             $Rss->PrintBody($Title, $Link, $Description, $Category, $PubDate);
         }
         $Rss->PrintFooter();
