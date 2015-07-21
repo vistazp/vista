@@ -19,7 +19,7 @@ class feed extends controller{
         $Rss->Copyright = "© Pozitive Group LLC";
         $Rss->Description = "Best Vacancy on Web Jobs Board";
         $Rss->Category = "Jobs";
-        $Rss->Language = "en";
+        $Rss->Language = "en-us";
 
         $Rss->ManagingEditor = "admin@webjobnow.com";
         $Rss->WebMaster = "admin@webjobnow.com";
@@ -55,7 +55,7 @@ class feed extends controller{
 
         while ($line = mysql_fetch_array($Rss->Result)) {   // для каждой записи выведем
             $Title = $line[1];
-            $Description = $line[2];
+            $Description = substr($line[2],0,200).' ...';
             $Link = "http://www.webjobnow.com/jobs/view/".$line[0];
             $PubDate = date("r", strtotime($line[3]));
             $Category = "Job";
