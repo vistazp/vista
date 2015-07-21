@@ -43,7 +43,7 @@
                     <div id="top-nav" class="span-17 last">
                         <a href="<?php echo URL; ?>">Home</a> |
                         <a href="<?php echo URL; ?>postjob">Post a job</a> |
-                        <a href="http://feeds.feedburner.com/webjobnow" class="rss">RSS</a> |
+                        <a href="http://feeds.feedburner.com/WebJobBoard" class="rss">RSS</a> |
                         <?php if (session::get('loggedIn') == FALSE): ?>
                         <a href="<?php echo URL; ?>signup">Sign Up</a> |
                         <?php endif; ?>                               

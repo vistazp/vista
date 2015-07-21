@@ -25,7 +25,7 @@ class feed extends controller{
         $Rss->WebMaster = "admin@webjobnow.com";
         $Rss->Query = "SELECT
                 post.title,
-                post.company,
+                post.jobdescription,
                 post.apply,
                 post.date_pablish,
                 post.type
