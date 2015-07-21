@@ -5,8 +5,10 @@ class signup extends controller {
     function __construct() {
         parent::__construct();
 
-        $this->view->titl = 'Registration';
+        $this->view->titl = 'WebJobNow WEB Jobs Board User Signup';
         $this->view->canon = 'signup';
+        $this->view->description = 'Signup for a WebJobNow account to be able to edit and track your ruby jobs post';
+        
     }
 
     function index() {

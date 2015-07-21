@@ -19,6 +19,7 @@ class details extends controller {
             function index() {
 //        echo 'inside index index';
         $this->view->titl = 'Job details page';
+        
         $this->view->canon = 'details';
         $this->view->render('error/index');
     }

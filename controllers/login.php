@@ -9,6 +9,8 @@ class login extends controller{
         
         $this->view->render('login/index', TRUE);        
         $this->view->canon = 'login';
+        $this->view->description='WebJobNow WEB jobs Board User Login';
+        $this->view->titl='WebJobNow WEB jobs Board User Login';
     }
     
     function run(){

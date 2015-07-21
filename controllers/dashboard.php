@@ -11,8 +11,9 @@ class dashboard extends controller {
         
         $this->view->js = array('dashboard/js/default.js');
         
-        $this->view->titl='Тайтл для страницы с Дашбордом';
+        $this->view->titl='Web Jobs | Web Jobs Board | Webjobnow jobs index';
         $this->view->canon = 'dashboard';
+        $this->view->description = 'Find Web developers. Post Web jobs into the inboxes of active Web developers today. WebJobNow: the trusted Web Jobs board since 2010.';
     }
 
     function index() {

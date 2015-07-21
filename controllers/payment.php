@@ -9,7 +9,8 @@ class payment extends controller {
 
     function index() {
          
-        $this->view->titl = 'Select payment method';
+        $this->view->titl = 'Select payment method on WebJobNow';
+        $this->view->description = 'Select payment method on WebJobNow';
         $this->view->render('error/index');
     }
 

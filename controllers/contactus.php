@@ -7,6 +7,7 @@ class contactus extends controller {
 
         $this->view->titl = 'Contact us';
         $this->view->canon = 'contactus';
+        $this->view->description = 'Reach out to the WebJobNow team. We are here to help you find your ideal WEB job or ideal WEB developer';
     }
 
     function index() {

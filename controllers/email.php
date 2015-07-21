@@ -7,6 +7,7 @@ class email extends controller {
 
         $this->view->titl = 'Update email preference';
         $this->view->canon = 'email';
+        $this->view->description = 'Update email preference';
     }
 
     function index() {

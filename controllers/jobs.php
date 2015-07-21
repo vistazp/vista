@@ -26,7 +26,17 @@ class jobs extends controller {
         $this->view->canon = 'jobs/view/'.$id;
                 
         $this->view->job = $this->model->singleJob($id);
-        if (count($this->view->job)> 0) $this->view->titl = $this->view->job[0]['title'];
+        
+        
+        //job[0]['title']
+        $sendTitle=substr($this->view->job[0]['title'],0,70);
+        $sendDescription=substr($this->view->job[0]['jobdescription'],0,170);
+        
+        
+        if (count($this->view->job)> 0) $this->view->titl = $sendTitle;
+        
+        if (count($this->view->job)> 0) $this->view->description = $sendDescription;
+        
         (count($this->view->job)== 0) ? header('location:' . URL . 'error') : $this->view->render('jobs/index');
         
         

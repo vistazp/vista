@@ -5,7 +5,8 @@ class terms extends controller {
     function __construct() {
         parent::__construct();
 
-        $this->view->titl = 'Terms of use on webjobnow.com';
+        $this->view->titl = 'WebJobNow usage terms page';
+        $this->view->description = 'WebJobNow usage terms page lists the terms of usage of the site';
         $this->view->canon = 'terms';
     }
 

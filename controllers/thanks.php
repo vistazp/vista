@@ -7,6 +7,7 @@ class thanks extends controller {
 
         $this->view->titl = 'Thank You dude!';
         $this->view->canon = 'thanks';
+        $this->view->description = 'WebJobNow thanks page';
     }
 
     function index() {
