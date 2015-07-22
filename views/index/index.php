@@ -30,6 +30,7 @@
      foreach ($this->alllist as $key=>$value)
          {
           echo '<li class="'.$value['type'].'"><h3><a href="'.URL.'jobs/view/'.$value['postid'].'">'.htmlspecialchars($value['title']).'</a><span> at '.htmlspecialchars($value['company']).'</span> <span class="date">'. date("Y-m-d", strtotime($value['date_create'])).'</span></h3>'.$value['country'].', '.htmlspecialchars($value['city']).'</li>';
+          echo "\r\n";
          }
      ?>
       </ul>
