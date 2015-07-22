@@ -1,5 +1,5 @@
 
-<div id="content span-24">
+<div id="content" class="span-24">
     <h1>Signup</h1>        
 After the account creation, you will be able to post jobs.<br/>
 If you already have an account and have lost your password, go to the <a href="<?php echo URL; ?>signup/reset">reset account</a> page.<br/><br/>

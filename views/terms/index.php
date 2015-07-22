@@ -1,4 +1,4 @@
-<div id="content span-24">
+<div id="content" class="span-24">
         <h1>Webjobnow Online Terms of Use</h1>
 
 <p>The terms and conditions set forth below (the "Terms") govern your use of the Webjobnow.com site on world wide web (the "Site"), including the employment searching and hiring services available on this Site (the "Services").   If you do not agree with any of these terms, do not access or otherwise use this Site and/or the services or any information contained on the Site. Your use of this Site and/or the services on this Site shall be deemed to be your agreement to abide by each of the terms set forth below.  </p>

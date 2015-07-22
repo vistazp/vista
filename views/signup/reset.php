@@ -1,4 +1,4 @@
-      <div id="content span-24">
+      <div id="content" class="span-24">
         If you don't have an account, then go to the <a href="<?php echo URL; ?>signup">create account</a> page.<br/>
 If you have lost your password, just fill out your email address in the form below and a new password will be sent to you.<br/>
 <form accept-charset="UTF-8" action="<?php echo URL; ?>signup/password_reset" method="post"><div style="margin:0;padding:0;display:inline"></div>	

@@ -1,4 +1,4 @@
-  <div id="content span-24">
+  <div id="content" class="span-24">
          <form accept-charset="UTF-8" action=" " autocomplete="off" class="cmxform" id="payment_confirmation_form" method="post" novalidate="novalidate">
 <div class="span-24 last">
 <fieldset><legend>Job Information</legend>	

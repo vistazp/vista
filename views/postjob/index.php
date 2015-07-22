@@ -1,5 +1,5 @@
 
-<div id="content span-24">
+<div id="content" class="span-24">
 
     <div id="steps" class="span-24 last">
         <form accept-charset="UTF-8" action="<?php echo URL; ?>postjob/nextstep" class="new_job" id="new_job" method="post"><div style="margin:0;padding:0;display:inline">

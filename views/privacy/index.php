@@ -1,4 +1,4 @@
-<div id="content span-24">
+<div id="content" class="span-24">
         <h1>WebJobNow Privacy Policy</h1>
 
 <p>Webjobnow.com (“Webjobnow”) takes the privacy of its users very seriously.  This Privacy Policy details certain policies implemented throughout Webjobnow governing its use of personally identifiable information provided to Webjobnow.</p>

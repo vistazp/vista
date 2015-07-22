@@ -1,4 +1,4 @@
-<div id="content span-24">
+<div id="content" class="span-24">
         <h1>Get in Touch</h1>
 <div class="span-24">
   <div class="span-16 colborder">

@@ -1,6 +1,6 @@
 <h1>Login page</h1>
 
-  <div id="content span-24">
+  <div id="content" class="span-24">
         If you don't have an account, then go to the <a href="<?php echo URL; ?>signup">create account</a> page.<br/>
 If you already have an account and have lost your password, go to the <a href="<?php echo URL; ?>signup/reset">reset account</a> page.<br/><br/>
 

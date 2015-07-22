@@ -8,8 +8,6 @@
         <link rel="shortcut icon" type="image/x-icon" href="<?php echo URL; ?>public/images/favicon.ico" />
         <meta name="rating" content="general" />
         <meta name="language" content="en-us" />
-
-
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css"/>
 
@@ -22,9 +20,6 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" type="text/javascript"></script>
          <!--twitter js-->
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-        
-
         <?php
         if (isset($this->js)) {
             foreach ($this->js as $js) {
@@ -39,26 +34,16 @@
             }
         }
         ?>
-
-
-
         <?php if (isset($this->js_code)) echo $this->js_code; ?>
-
     <link rel="alternate" href="http://feeds.feedburner.com/webjobboard" title="Web Job Board: webjobnow.com" type="application/rss+xml"/>    
-    
     </head>
-
     <?php session::init(); ?>
-
     <body>        
-
         <div class="container">
             <div id="header" class="span-24">
                 <div id="logo" class="span-7">
-                    <a href="http://webjobnow.com/"><h1>WebJobNow: WEB Jobs | Web Jobs Developer Board</h1></a>
+                    <a href="http://webjobnow.com/"></a>
                 </div>
-
-
                 <div id="navigation" class="span-17 last">
                     <div id="top-nav" class="span-17 last">
                         <a href="<?php echo URL; ?>">Home</a> |
@@ -67,13 +52,9 @@
                         <?php if (session::get('loggedIn') == FALSE): ?>
                             <a href="<?php echo URL; ?>signup">Sign Up</a> |
                         <?php endif; ?>                               
-
-
                         <?php if (session::get('loggedIn') == TRUE): ?>
                             <a href="<?php echo URL; ?>dashboard">Account</a> |
-
                         <?php endif; ?>                               
-
                         <?php if (session::get('loggedIn') == FALSE): ?>
                             <a href="<?php echo URL; ?>login">Login</a>
                         <?php else: ?>   
@@ -82,14 +63,9 @@
                                 <a href="<?php echo URL; ?>feedback">Feedback</a> |
                                 <a href="<?php echo URL; ?>subscription">Subscription</a> |
                             <?php endif; ?>   
-
                             <a href="<?php echo URL; ?>dashboard/logout">Logout</a>
-
-
                         <?php endif; ?>                               
-
                     </div>
-
                     <div id="subscribe" class="span-17 prepend-0 last">
                         <div class="span-11 prepend-4 last">
                             <div class="span-11">
@@ -111,8 +87,6 @@
                         </div>
                     </div>
                 </div>
-
-
             </div>
             <hr />
             

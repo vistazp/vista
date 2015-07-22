@@ -1,4 +1,4 @@
-<div id="content span-24">
+<div id="content" class="span-24">
         
 <h2>Update account information | (<?php echo $_SESSION['userEmail'] ?>)</h2>
 

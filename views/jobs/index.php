@@ -7,12 +7,12 @@
             <h2 id="location"><?php echo htmlspecialchars($this->job[0]['city']); ?>, <?php echo $this->job[0]['country']; ?></h2>
         </div>
         <div id="info" class="span-18 colborder">
-            <p id="description">
+            <div id="description">
                 <?php $html = \michelf\markdown::defaultTransform(htmlspecialchars($this->job[0]['jobdescription']));
-                echo $html; ?>
+                echo $html;
+                ?>
 
-
-            </p>
+            </div>
 
             <br/><br/>
 
@@ -56,14 +56,14 @@
 
                 <hr class="space"/>
                 <hr/>
-                <a href="mailto:admin@webjobnow@com"><img src="<?php echo URL; ?>public/images/ad_banner_right.jpg" alt="Ultra posting package"></a>
+                <a href="mailto:admin@webjobnow@com"><img src="<?php echo URL; ?>public/images/ad_banner_right.jpg" alt="Ultra posting package" /></a>
                 <hr class="space"/>
                 <hr/>
-                <a href="mailto:admin@webjobnow@com" ><img src="<?php echo URL; ?>public/images/ad_banner_right.jpg" alt="Ultra posting package"></a>    
+                <a href="mailto:admin@webjobnow@com" ><img src="<?php echo URL; ?>public/images/ad_banner_right.jpg" alt="Ultra posting package" /></a>    
                 <br/>
                 <hr class="space"/>
                 <hr/>
-                <a href="mailto:admin@webjobnow@com" ><img src="<?php echo URL; ?>public/images/ad_banner_right.jpg" alt="Ultra posting package"></a>    
+                <a href="mailto:admin@webjobnow@com" ><img src="<?php echo URL; ?>public/images/ad_banner_right.jpg" alt="Ultra posting package" /></a>    
                 <br/>
 
             </div>
@@ -71,3 +71,4 @@
         <hr class="space"/>
 
     </div>
+</div>

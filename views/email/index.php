@@ -1,4 +1,4 @@
-<div id="content span-24">
+<div id="content" class="span-24">
         <h2>Notifications Settings for New Jobs</h2>
 <p>Use the form to set when you wish to receive email notifications for new jobs have been posted to the board.</p>
 

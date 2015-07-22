@@ -1,4 +1,4 @@
-<div id="content span-24">
+<div id="content" class="span-24">
     <div id='info'>
         <p>
         <h2>Job Post Dashboard</h2> 
