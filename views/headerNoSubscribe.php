@@ -1,12 +1,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
+        <link rel="alternate" href="http://feeds.feedburner.com/webjobnow" title="Web Job Board: webjobnow.com" type="application/rss+xml" /> 
         <meta name="author" content="webjobnow.com" />
         <link rel="canonical" href="<?php echo URL; ?><?= (isset($this->canon)) ? $this->canon : ''; ?>" />
         <title><?= (isset($this->titl)) ? $this->titl : 'Test'; ?></title>
         <meta name="description" content="<?= (isset($this->description)) ? $this->description : 'Page description'; ?>"/>
         <link rel="shortcut icon" type="image/x-icon" href="<?php echo URL; ?>public/images/favicon.ico" />
-        <link rel="alternate" href="http://feeds.feedburner.com/webjobboard" title="Web Job Board: webjobnow.com" type="application/rss+xml"/>
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css" />
         <link rel="stylesheet" href="<?php echo URL; ?>public/css/application.css"/>
@@ -45,7 +45,7 @@
                     <div id="top-nav" class="span-17 last">
                         <a href="<?php echo URL; ?>">Home</a> |
                         <a href="<?php echo URL; ?>postjob">Post a job</a> |
-                        <a href="http://feeds.feedburner.com/webjobboard" class="rss">RSS</a> |
+                        <a href="http://feeds.feedburner.com/webjobnow" class="rss">RSS</a> |
                         <?php if (session::get('loggedIn') == FALSE): ?>
                             <a href="<?php echo URL; ?>signup">Sign Up</a> |
                         <?php endif; ?>                               
