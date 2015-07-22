@@ -14,7 +14,7 @@ class postjob extends controller {
         $this->view->description = 'Post your WEB jobs on the job board that companies trust, and directly email active Web developers today!';
         $this->view->canon = 'posjob';
         
-        $this->view->render('postjob/index');
+        $this->view->render('postjob/index', TRUE);
     }
 
     public function nextStep() {

@@ -13,7 +13,7 @@ class contactus extends controller {
     function index() {
 //        echo 'inside index index';
 
-        $this->view->render('contactus/index', 'false');
+        $this->view->render('contactus/index', TRUE);
     }
 
     public function create() {

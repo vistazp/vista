@@ -1,7 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <link rel="alternate" href="http://feeds.feedburner.com/webjobnow" title="Web Job Board: webjobnow.com" type="application/rss+xml" /> 
         <meta name="author" content="webjobnow.com" />
         <link rel="canonical" href="<?php echo URL; ?><?= (isset($this->canon)) ? $this->canon : ''; ?>" />
         <title><?= (isset($this->titl)) ? $this->titl : 'Webjobnow: best jobs board on WEB'; ?></title>
@@ -36,7 +35,7 @@
         }
         ?>
         <?php if (isset($this->js_code)) echo $this->js_code; ?>
-   
+        <link rel="alternate" href="http://feeds.feedburner.com/webjobnow" title="Web Job Board: webjobnow.com" type="application/rss+xml" /> 
     </head>
     <?php session::init(); ?>
     <body>        

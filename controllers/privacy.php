@@ -13,7 +13,7 @@ class privacy extends controller {
     function index() {
 //        echo 'inside index index';
 
-        $this->view->render('privacy/index');
+        $this->view->render('privacy/index', TRUE);
     }
 
     

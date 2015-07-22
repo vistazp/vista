@@ -37,7 +37,7 @@ class jobs extends controller {
         
         if (count($this->view->job)> 0) $this->view->description = $sendDescription;
         
-        (count($this->view->job)== 0) ? header('location:' . URL . 'error') : $this->view->render('jobs/index');
+        (count($this->view->job)== 0) ? header('location:' . URL . 'error') : $this->view->render('jobs/index', TRUE);
         
         
        

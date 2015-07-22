@@ -43,7 +43,7 @@ class payment extends controller {
         ));
 
         $this->view->htm = $html;
-        $this->view->render('payment/index');
+        $this->view->render('payment/index', TRUE);
     }
 
 }

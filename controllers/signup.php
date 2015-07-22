@@ -13,7 +13,7 @@ class signup extends controller {
 
     function index() {
         //echo Hash::create('md5', 'prof', HASH_KEY);
-        $this->view->render('signup/index');
+        $this->view->render('signup/index', TRUE);
     }
 
     public function addSubscribe($data) {

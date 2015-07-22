@@ -13,7 +13,7 @@ class terms extends controller {
     function index() {
 //        echo 'inside index index';
 
-        $this->view->render('terms/index');
+        $this->view->render('terms/index', TRUE);
     }
 
     

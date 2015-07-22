@@ -32,7 +32,7 @@ class details extends controller {
         $this->view->canon = 'details/edit'.$id;
         
         $this->view->post = $this->model->postSingleList($id);
-        (count($this->view->post)== 0) ? $this->view->render('error/index') : $this->view->render('details/edit');
+        (count($this->view->post)== 0) ? $this->view->render('error/index') : $this->view->render('details/edit', TRUE);
         
         
        
@@ -62,7 +62,7 @@ class details extends controller {
         
         $this->view->postPreview = $this->model->postSingleList($id);
         if (count($this->view->postPreview)> 0) $this->view->titl = $this->view->postPreview[0]['title'];
-        (count($this->view->postPreview)== 0) ? header('location:' . URL . 'error') : $this->view->render('details/view');
+        (count($this->view->postPreview)== 0) ? header('location:' . URL . 'error') : $this->view->render('details/view', TRUE);
         
         
        
