@@ -1,18 +1,17 @@
 <?php
 
-class feed extends controller{
+class feed extends controller {
 
     function __construct() {
         parent::__construct();
-        
     }
 
-    function index(){
-    require "libs/rss.php";           // это собственно класс
-    //require "libs/feed.php";           // это собственно класс
-    require "config/conn.inc";          // переменные для открытия базы
-    
-            $Rss = new CRss;
+    function index() {
+        require "libs/rss.php";           // это собственно класс
+        //require "libs/feed.php";           // это собственно класс
+        require "config/conn.inc";          // переменные для открытия базы
+
+        $Rss = new CRss;
 
         $Rss->Title = "Web Job Board";
         $Rss->Link = "http://www.webjobnow.com";
@@ -21,8 +20,8 @@ class feed extends controller{
         $Rss->Category = "Jobs";
         $Rss->Language = "en-us";
 
-        $Rss->ManagingEditor = "admin@webjobnow.com";
-        $Rss->WebMaster = "admin@webjobnow.com";
+        $Rss->ManagingEditor = "admin@webjobnow.com (Jassy Fishman)";
+        $Rss->WebMaster = "admin@webjobnow.com (Jassy Fishman)";
         $Rss->Query = "SELECT
                post.postid,
                 post.title,
@@ -53,26 +52,28 @@ class feed extends controller{
         $Rss->PrintHeader();
         $Rss->Query();
 
+
+
+
+
+
         while ($line = mysql_fetch_array($Rss->Result)) {   // для каждой записи выведем
+           
+            $trimmed = trim(substr($line[2], 0, 200), " \t.");
+            $strOutput = preg_replace("/\s+\r\n/", "", $trimmed);
+            $name = str_replace(array("'", "\""), "", $strOutput);
+            $remove = array("#", "*");
+            $sendDescription = str_replace($remove, "", $name);
+
             $Title = $line[1];
-            $Description = substr($line[2],0,200).' ...';
-            $Link = "http://www.webjobnow.com/jobs/view/".$line[0];
+            $Description = $sendDescription.'...';
+            $Link = "http://www.webjobnow.com/jobs/view/" . $line[0];
             $PubDate = date("r", strtotime($line[3]));
             $Category = "Job";
             $Rss->PrintBody($Title, $Link, $Description, $Category, $PubDate);
         }
         $Rss->PrintFooter();
         $Rss->Close();
-
-        
     }
 
-
-
 }
-
-
-
-
-
-

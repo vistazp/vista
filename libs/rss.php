@@ -58,7 +58,7 @@ class CRss
       $Date=date("r");   // дата в формате Mon, 25 Dec 2006 10:23:37 +0400
       print "<$End";
       print "xml version=\"1.0\" encoding=\"UTF-8\" $End> $RN";
-      print "<rss version=\"2.0\">$RN";
+      print "<rss xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:feedburner=\"http://rssnamespace.org/feedburner/ext/1.0\" version=\"2.0\">$RN";
       print "   <channel>$RN";
       print "       <title>$this->Title</title>$RN";
       print "       <category>$this->Category</category>$RN";
