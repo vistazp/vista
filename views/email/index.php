@@ -16,3 +16,4 @@
 
 <input class="button inline" name="email_preference" type="submit" value="Change Email Frequency" />
 </form>
+</div>

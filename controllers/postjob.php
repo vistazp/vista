@@ -5,7 +5,9 @@ class postjob extends controller {
     function __construct() {
         parent::__construct();
         @session_start();
-        $this->view->js = array('postjob/js/default.js', 'postjob/js/jquery.fancybox-1.3.4.pack.js', 'postjob/js/jquery.validate.min.js');
+        
+        //$this->view->js_code = '<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" type="text/javascript"></script>';
+        $this->view->js = array('postjob/js/jquery.min.js','postjob/js/default.js', 'postjob/js/jquery.fancybox-1.3.4.pack.js', 'postjob/js/jquery.validate.min.js');
       }
 
     function index() {

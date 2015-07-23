@@ -3,7 +3,7 @@ class index extends controller{
 
     function __construct() {
         parent::__construct();
-        $this->view->js = array('index/js/default.js');
+        
         
         
     }

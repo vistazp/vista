@@ -31,3 +31,4 @@ If you already have an account and have lost your password, go to the <a href="<
     </div>
 
 </form>
+</div>

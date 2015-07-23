@@ -29,8 +29,17 @@ class jobs extends controller {
         
         
         //job[0]['title']
-        $sendTitle=substr($this->view->job[0]['title'],0,70);
-        $sendDescription=substr($this->view->job[0]['jobdescription'],0,170);
+        
+        $sendTitle=str_replace(array("'","\""), "", substr($this->view->job[0]['title'],0,70));
+        
+        
+        
+        $trimmed = trim(substr($this->view->job[0]['jobdescription'],0,180), " \t.");
+        $strOutput = preg_replace("/\s+\r\n/","", $trimmed);
+        $name = str_replace(array("'","\""), "", $strOutput);
+        $remove = array("#", "*");
+        $sendDescription = str_replace($remove, "", $name);
+        
         
         
         if (count($this->view->job)> 0) $this->view->titl = $sendTitle;

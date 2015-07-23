@@ -47,3 +47,4 @@
 
     <input id="job_step" name="job[step]" type="hidden" value="2" />
 </form></div>
+</div>

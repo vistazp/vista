@@ -88,7 +88,7 @@ Jessy Fishman
 jessy@webjobnow.com
 
 webjobnow.com
-Follow us on Twitter! @FindWebJob (http://twitter.com/FindWebJob)';
+Follow us on Twitter! @FindWebJob (http://twitter.com/webjobnow)';
 
         $headers = "Content-type: text/plain; charset=UTF-8 \r\n";
         $headers .= "From: Jessy Fishman <jessy@webjobnow.com>\r\n";

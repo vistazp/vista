@@ -57,3 +57,4 @@ If you have any questions regarding this Privacy Policy please email:
 <p>
   This Privacy Policy is effective as of: June 10th, 2011
 </p>
+</div>

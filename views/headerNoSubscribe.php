@@ -7,22 +7,36 @@
         <link rel="shortcut icon" type="image/x-icon" href="<?php echo URL; ?>public/images/favicon.ico" />
         <meta name="rating" content="general" />
         <meta name="language" content="en-us" />
+        
+        <meta name="og:title" content="<?= (isset($this->titl)) ? $this->titl : 'Webjobnow: best jobs board on WEB'; ?>" />
+        <meta name="og:type" content="website" />
+        <meta name="og:description" content="<?= (isset($this->description)) ? $this->description : 'Page description'; ?>" />
+        
+        <meta name="og:url" content="<?php echo URL; ?><?= (isset($this->canon)) ? $this->canon : ''; ?>" />
+        <meta name="og:image" content="<?php echo URL; ?>public/images/logowebjobkv.png" />
+        <meta name="og:site_name" content="Webjobnow.com: WEB jobs board" />
+
+        
+        
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css"/>
+        
 
         <link rel="stylesheet" href="<?php echo URL; ?>public/css/application.css" media="screen" type="text/css"/>
         <link rel="stylesheet" href="<?php echo URL; ?>public/css/screen.css" media="screen" type="text/css"/>
         <link rel="stylesheet" href="<?php echo URL; ?>public/css/formtastic.css" media="screen" type="text/css"/>
         <link rel="stylesheet" href="<?php echo URL; ?>public/css/jquery.fancybox-1.3.4.css" media="screen" type="text/css"/>
         <link rel="stylesheet" href="<?php echo URL; ?>public/css/error.css" media="screen" type="text/css"/>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" type="text/javascript"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" type="text/javascript"></script>
+        
+        
          <!--twitter js-->
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        
+
         <?php
         if (isset($this->js)) {
             foreach ($this->js as $js) {
                 echo '<script type="text/javascript" src="' . URL . 'views/' . $js . '"></script>';
+                echo "\r\n";
             }
         }
         ?>
@@ -30,11 +44,24 @@
         if (isset($this->css_custom)) {
             foreach ($this->css_custom as $css) {
                 echo '<link rel="stylesheet" href="' . URL . 'views/' . $css . ' "media="screen" type="text/css"/>';
+                echo "\r\n";
             }
         }
         ?>
         <?php if (isset($this->js_code)) echo $this->js_code; ?>
+        
         <link rel="alternate" href="http://feeds.feedburner.com/webjobnow" title="Web Job Board: webjobnow.com" type="application/rss+xml" /> 
+        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-65525272-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+        
     </head>
     <?php session::init(); ?>
     <body>       

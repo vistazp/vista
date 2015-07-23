@@ -9,7 +9,7 @@ class dashboard extends controller {
         
         //print_r($_SESSION);
         
-        $this->view->js = array('dashboard/js/default.js');
+        //$this->view->js = array('dashboard/js/default.js');
         
         $this->view->titl='Web Jobs | Web Jobs Board | Webjobnow jobs index';
         $this->view->canon = 'dashboard';

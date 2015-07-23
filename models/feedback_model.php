@@ -140,7 +140,7 @@ $message = '
                 <tr>
                     <td colspan="3">
                         <hr/>
-                        Follow us on Twitter for more jobs: <a href="https://twitter.com/FindWebJob">@FindTechJob</a>
+                        Follow us on Twitter for more jobs: <a href="https://twitter.com/webjobnow">@webjobnow</a>
                         <br/>
                         <hr/>
                         <p>Click for delivery options: <a href="http://webjobnow.com/email?email='.$value['email'].'">update email settings</a></p>
