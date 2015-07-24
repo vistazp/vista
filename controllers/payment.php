@@ -38,8 +38,8 @@ class payment extends controller {
             'order_id' => $order_id,
             'language' => 'en',
             'server_url' => 'http://webjobnow.com/thanks/callback',
-            'result_url' => 'http://webjobnow.com/thanks/success',
-            'sandbox' => '1'
+            'result_url' => 'http://webjobnow.com/thanks/success'
+//            'sandbox' => '1'
         ));
 
         $this->view->htm = $html;

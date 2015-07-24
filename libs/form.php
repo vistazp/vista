@@ -80,7 +80,8 @@ class form {
             foreach ($this->_error as $key => $value)
             {
                 
-                $str .= $key.' => '.$value."\n".'</br>';
+                //$str .= $key.' => '.$value."\n".'</br>';
+                $str .= $value."\n".'</br>';
                 
                 
             }
@@ -93,7 +94,8 @@ class form {
             foreach ($this->_error as $key => $value)
             {
                 
-                $str .='<li>'. $key.' => '.$value."\n".'</li>';
+                //$str .='<li>'. $key.' => '.$value."\n".'</li>';
+                $str .='<li>'.$value."\n".'</li>';
                            
             }
             return $str;

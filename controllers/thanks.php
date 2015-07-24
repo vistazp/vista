@@ -45,8 +45,8 @@ class thanks extends controller {
 
         if ($sign == $_POST['signature']) {
 
-            //if ($data['status'] == 'success') {
-            if ($data['status']== 'sandbox'){
+            if ($data['status'] == 'success') {
+            //if ($data['status']== 'sandbox'){
 
                 $this->model->postPaid($postid);
 

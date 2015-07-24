@@ -83,7 +83,7 @@ public function sendMailEachPost($postid){
 
     $postData = $this->db->select('SELECT * FROM post WHERE postid= :postid', array(':postid' => $postid));
     
-    $mailList = $this->db->select('SELECT email FROM subscriber WHERE notify= :notify', array(':notify' => '1'));
+    $mailList = $this->db->select('SELECT email FROM subscriber WHERE notify= :notify', array(':notify' => '2'));
     
 //    print_r($postData);
 //    die;
@@ -92,11 +92,18 @@ public function sendMailEachPost($postid){
 $to  = 'aidan@example.com' . ', '; // обратите внимание на запятую
 $to .= 'wez@example.com';
 
-// тема письма
-$subject = 'Webjobnow Jobs: WEB Developer';
 
 foreach ($mailList as $key=>$value)    {   
+
+
 // текст письма
+//$sendDescription = str_replace(array("'", "\"", "#", "*"), "", htmlspecialchars($postData[0]['jobdescription']));
+$sendDescription = \michelf\markdown::defaultTransform(htmlspecialchars($postData[0]['jobdescription']));
+$sendTitle= str_replace(array("'", "\"", "#", "*"), "", htmlspecialchars($postData[0]['title']));
+
+// тема письма
+$subject = 'Webjobnow Jobs: WEB Developer - ['.$sendTitle.']';
+            
 $message = '
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -130,7 +137,7 @@ $message = '
                             <span style="color:gray;font-size:14px">'.$postData[0]['company'].' ('.$postData[0]['city'].', '.$postData[0]['country'].')</span>
                             <p style="margin-top:4px;">
                             
-                            '.nl2br(strip_tags($postData[0]['jobdescription'], '<b> <a>')).'
+                            '.$sendDescription.'
                             </p>
 
                             (<a href="http://webjobnow.com/jobs/view/'.$postData[0]['postid'].'">Click for full details ...</a>)

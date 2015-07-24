@@ -74,7 +74,7 @@ I developed this based of my experiences working with many well known clien
 ts looking for top developer talent. Hopefully it will be of help to you.
 
 For your reference, here are links for the :
-    - Submitted job post (http://webjobnow.com/postajob) 
+    - Submitted job post (http://webjobnow.com/postjob) 
     - Posting managment dashboard (http://webjobnow.com/dashboard)
 
 If you have any questions about the site, or the submission process, please

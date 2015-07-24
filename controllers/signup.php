@@ -57,13 +57,13 @@ class signup extends controller {
             $form = new form();
 
             $form->post('name')
-                    ->val('minlength', 2)
+                    ->val('minlength', 5)
                     ->val('maxlength', 20)
                     ->post('email')
                     ->val('minlength', 5)
                     ->val('emailCorrect')
                     ->post('password')
-                    ->val('minlength', 1)
+                    ->val('minlength', 5)
                     ->val('maxlength', 20)
                     ->post2('password', 'passwordConfirm')
                     // ->post('password')
