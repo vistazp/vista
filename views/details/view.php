@@ -35,7 +35,7 @@
  -->
    <hr class="space"/>
   <div class="step-nav span-24 last">
-    <div class="prev-step column span-12" <?php echo ($this->postPreview[0]['published']=='yes') ? 'style="visibility: hidden;"' : ''?>
+    <div class="prev-step column span-12" <?php echo ($this->postPreview[0]['published']=='yes') ? 'style="visibility: hidden;"' : ''?>>
         <a href="<?php echo URL; ?>details/edit/<?php echo  $this->postPreview[0]['postid']; ?>" class="button" id="back-to-step-2">&lt;&lt; Go back and edit</a>
     </div>
     <div class="next-step column span-12 last">
