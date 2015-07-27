@@ -56,7 +56,13 @@
 
                 <hr class="space"/>
                 <hr/>
-                <a href="mailto:admin@webjobnow@com"><img src="<?php echo URL; ?>public/images/ad_banner_right.jpg" alt="Ultra posting package" /></a>
+                <a href="<?php echo URL; ?>jobs/view/278"><img src="<?php echo URL; ?>public/images/ultra/remedy.jpg" alt="Linux Systems Engineer / Administration" /></a>
+                <hr class="space"/>
+                <hr/>
+                <a href="<?php echo URL; ?>jobs/view/250"><img src="<?php echo URL; ?>public/images/ultra/jamendo.jpg" alt="SYSTEM ADMINISTRATOR / DEVOPS" /></a>
+                <hr class="space"/>
+                <hr/>
+                <a href="https://erecruit.tomtomgroup.com/psc/eRecruit/EMPLOYEE/HRMS/c/HRS_HRAM.HRS_APP_SCHJOB.GBL?FOCUS=Applicant&Page=HRS_APP_SCHJOB&Action=U&PAGE=HRS_APP_SCHJOB&"><img src="<?php echo URL; ?>public/images/ultra/tomtom.jpg" alt="Software Engineer C++ on Automotive platforms" /></a>
                 <hr class="space"/>
                 <hr/>
                 <a href="mailto:admin@webjobnow@com" ><img src="<?php echo URL; ?>public/images/ad_banner_right.jpg" alt="Ultra posting package" /></a>    

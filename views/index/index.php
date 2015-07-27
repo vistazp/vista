@@ -4,11 +4,11 @@
 		
 
 		<div class="quiet" style="font-size:1.25em;">
-                    <a href="mailto:admin@webjobnow.com" ><img src="<?php echo URL; ?>public/images/ad_banner.jpg" alt="Place your Ad here, just $299 per month" /></a>
+                    <a href="https://www.google.com/about/careers/" ><img src="<?php echo URL; ?>public/images/main/google.jpg" alt="Find your job in Google" /></a>
 		</div>
 	</div>
 	<div id="needadev" class="span-11 last">
-		<h2>Find a C#, ASP.NET Developer</h2>
+		<h2>Find a PHP, Python, ASP.NET Developer</h2>
 		<div class="quiet" style="font-size:1.25em;">  	
 		    <strong>Since 2010</strong>, WebJobNow has been the trusted WEB job board with over <strong>1,270+ job posts</strong>. Get expert recruiting advice, <strong>email your job to our 600+</strong> opt-in developer list, and broadcast it on WebJobNow, Twitter, Facebook &amp; RSS.
 		</div>
@@ -18,9 +18,9 @@
 		</div>
 
 	</div>
-
-	
 	<hr />
+        
+        
 
 
 <div id="jobs-list" class="span-24 last">

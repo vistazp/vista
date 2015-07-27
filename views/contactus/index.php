@@ -35,13 +35,15 @@
 
     <h3 class="widgettitle">WebJobNow HQ</h3>
     <div class="textwidget">
+      
       <p class="txt12">
-        Webjobnow (a subsidiary of Rosenblatt Solicitors Software LLC), <br />
-        9-13 St Andrew St<br />
-        London EC4A 3AF, UK
+        Webjobnow (a subsidiary of Pozitive Group LLC), <br />
+        5 St Minskaya St<br />
+        Zaporizhzhia 69041, UA
         
       </p>
-      <p class="txt12">Directions <a href="https://www.google.com/maps/place/Rosenblatt+Solicitors,+9-13+St+Andrew+St,+London+EC4A+3AF,+UK/@51.5168109,-0.1066499,19z/data=!3m1!4b1!4m2!3m1!1s0x48761b4d6e2b74a7:0x71585254fdcb198c?hl=en" target="_blank">Google Maps</a>
+      
+      <p class="txt12">Directions <a href="https://www.google.com/maps/place/5%2F4,+Mins'ka+St,+5%2F4,+Zaporizhzhia,+Zaporiz'ka+oblast,+Ukraine/@47.8673631,35.053589,17z/data=!4m2!3m1!1s0x40dc640049e89c6f:0xb6362e9837eed7bc?hl=en" target="_blank">Google Maps</a>
       </p>
       <p><img src="<?php echo URL; ?>public/images/map.png" border="0" alt="map" width="212" height="160" /></p>
     </div>

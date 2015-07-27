@@ -3,9 +3,10 @@
 class feedback extends controller {
 
     function __construct() {
+        require 'libs/mark/michelf/markdown.inc.php';
         parent::__construct();
         auth::HandleLogin();
-
+            
 
         $this->view->titl = 'Admin area';
         $this->view->canon = 'feedback';
