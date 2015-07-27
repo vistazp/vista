@@ -32,12 +32,13 @@
             {
                 echo '<tr>';
                 echo '<td>'.$value['postid'].'</td>';
-                echo '<td><a href="'.URL.'details/view/'.$value['postid'].'">'.htmlspecialchars($value['title'],ENT_QUOTES).'</a>';
+                echo '<td><a href="'.URL.'details/view/'.$value['postid'].'">'.substr(htmlspecialchars($value['title'],ENT_QUOTES),0,38).'</a>';
                 echo '<td>'.$value['type'].'</td>';
                 echo '<td>'.$value['paid'].'</td>';
                 echo '<td>'.$value['published'].'</td>';
                 echo '<td>'.$value['date_create'].'</td>';
-                echo '<td><a href="'.URL.'details/edit/'.$value['postid'].'">edit / pay</a></td>';
+                echo ($value['published']=='no') ? '<td><a href="'.URL.'details/edit/'.$value['postid'].'">edit / pay</a></td>' : '<td><a href="'.URL.'details/edit/'.$value['postid'].'">published</a></td>'; 
+               // echo '<td><a href="'.URL.'details/edit/'.$value['postid'].'">edit / pay</a></td>';
                 echo '<td><a class ="delete" href="'.URL.'dashboard/deletePost/'.$value['postid'].'" >delete</a></td>';
                 echo '</tr>';
             }
@@ -46,9 +47,7 @@
         ?>
         </table>
         
-        
-        
-        To create a new job post : <a href="<?php echo URL; ?>postjob" title="Post a new job">Post a Job</a>
+       To create a new job post : <a href="<?php echo URL; ?>postjob" title="Post a new job">Post a Job</a>
 
     </div>
 

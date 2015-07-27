@@ -23,7 +23,8 @@ class details_model extends model {
             'jobdescription' => $data['jobdescription'],
             'apply' => $data['apply'],
             'type_of_position' => $data['type_of_position'],
-            'work_hour' => $data['work_hour']
+            'work_hour' => $data['work_hour'],
+            'published'  => $data['published']
         );
 
         $this->db->update('post', $postData, "`postid` = {$data['postid']}");
