@@ -34,7 +34,7 @@
                                 <p class="footer">
                                     <label class='label-radio ' for='job_featured_status_1'>
                                         <input class="featured_status" id="job_featured_status_1" name="featured_status" type="radio" value="standart" /><strike>$99</strike>
-                                        <span>$</span><span id="job_premium_b_amount">49</span> (till 08/01)
+                                        <span>$</span><span id="job_premium_b_amount">49</span> (till 09/01)
                                     </label>
 
                                 </p>
@@ -67,7 +67,7 @@
                                 <p class="footer">
                                     <label class='label-radio label-radio-check' for='job_featured_status_2'>
                                         <input checked="checked" class="featured_status" id="job_featured_status_2" name="featured_status" type="radio" value="premium" /><strike>$149</strike> 
-                                        <span>$</span><span id="job_premium_a_amount">99</span> (till 08/01)
+                                        <span>$</span><span id="job_premium_a_amount">99</span> (till 09/01)
                                     </label>
                                 </p>
                             </div> <!-- end - box -->
@@ -101,7 +101,7 @@
                                 <p class="footer">
                                     <label class='label-radio ' for='job_featured_status_3'>
                                         <input class="featured_status" id="job_featured_status_3" name="featured_status" type="radio" value="ultra" /><strike>$199</strike> 
-                                        <span>$</span><span id="job_premium_c_amount">149</span> (till 08/01)
+                                        <span>$</span><span id="job_premium_c_amount">149</span> (till 09/01)
                                     </label>
                                 </p>
                             </div> <!-- end - box -->

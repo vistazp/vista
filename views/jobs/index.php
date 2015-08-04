@@ -7,6 +7,7 @@
             <h2 id="location"><?php echo htmlspecialchars($this->job[0]['city']); ?>, <?php echo $this->job[0]['country']; ?></h2>
         </div>
         <div id="info" class="span-18 colborder">
+            <h4>Job description</h4>
             <div id="description">
                 <?php $html = \michelf\markdown::defaultTransform(htmlspecialchars($this->job[0]['jobdescription']));
                 echo $html;
