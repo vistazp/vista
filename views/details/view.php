@@ -16,6 +16,7 @@
     <h2 id="location"><?php echo  htmlspecialchars($this->postPreview[0]['city']); ?>, <?php echo  $this->postPreview[0]['country']; ?></h2>
   </div>
   <div id="info" class="span-18 borderwithoutcolor">
+      <h4>Job description</h4>
     <p id="description">
         <p><?php $html= \michelf\markdown::defaultTransform(htmlspecialchars($this->postPreview[0]['jobdescription'])); echo $html; ?></p>
       
