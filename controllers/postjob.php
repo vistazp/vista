@@ -28,7 +28,9 @@ class postjob extends controller {
             $pId = $this->addStepOne();
 // запускаем контролер step2
 
-            header('location: '.URL.'details/edit/'.$pId);
+            header('location: '.URL.'details/edit/'.$pId[0]['postid']);
+           // print_r($pId[0]['postid']);
+           // die;
         } 
         else 
         {
@@ -41,8 +43,9 @@ class postjob extends controller {
             // добавляем в бд данные из step1
             $pId = $this->addStepOne();
             // запускаем контролер step2
-            
-            header('location: '.URL.'details/edit/'.$pId);
+            header('location: '.URL.'details/edit/'.$pId[0]['postid']);
+            //print_r($pId[0]['postid']);
+            //die;
         }   
        }
 
@@ -57,6 +60,7 @@ class postjob extends controller {
             $data['type'] = $_POST['featured_status'];
             $data['userid'] = session::get('userId');
             return $this->model->addStepOne($data);
+           // echo $this->model->addStepOne($data);
             
     }
 }

@@ -30,8 +30,12 @@ class postjob_model extends model {
             'date_create' => date('Y-m-d H:i:s'),
             'userid' => $data['userid']
         ));
-
-        return $this->db->lastInsertId("post");
+       
+      return $this->db->select("select post.postid
+                                FROM post
+                                ORDER by post.postid desc Limit 1");
+        
+       // return $this->db->lastInsertId("post");
     }
 
     public function runReg($log, $pass) {
