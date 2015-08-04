@@ -10,16 +10,13 @@ class details extends controller {
         require "libs/mark/michelf/markdown.inc.php";
         
         $this->view->js = array('details/js/jquery.min.js','details/js/default.js', 'details/js/jquery.fancybox-1.3.4.pack.js', 'details/js/jquery.validate.min.js', 'details/js/jquery.markitup.js','details/js/sets/markdown/set.js');
-        
         $this->view->css_custom = array('details/css/skins/simple/style.css','details/js/sets/markdown/style.css');
-        
     }
 
     
             function index() {
 //        echo 'inside index index';
         $this->view->titl = 'Job details page';
-        
         $this->view->canon = 'details';
         $this->view->render('error/index');
     }
@@ -33,9 +30,7 @@ class details extends controller {
         
         $this->view->post = $this->model->postSingleList($id);
         (count($this->view->post)== 0) ? $this->view->render('error/index') : $this->view->render('details/edit', TRUE);
-        
-        
-       
+          
      }
         
         public function preview() {
@@ -59,13 +54,9 @@ class details extends controller {
             
     }
         public function view($id) {
-        
         $this->view->postPreview = $this->model->postSingleList($id);
         if (count($this->view->postPreview)> 0) $this->view->titl = $this->view->postPreview[0]['title'];
         (count($this->view->postPreview)== 0) ? header('location:' . URL . 'error') : $this->view->render('details/view', TRUE);
-        
-        
-       
-     }
+      }
 
 }

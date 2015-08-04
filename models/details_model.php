@@ -26,7 +26,6 @@ class details_model extends model {
             'work_hour' => $data['work_hour']
             //'published'  => $data['published']
         );
-
         $this->db->update('post', $postData, "`postid` = {$data['postid']}");
     }
 
