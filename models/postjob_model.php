@@ -33,7 +33,7 @@ class postjob_model extends model {
        
       return $this->db->select("select post.postid
                                 FROM post
-                                ORDER by post.postid desc Limit 1");
+                                ORDER by post.postid desc Limit 0,1");
         
        // return $this->db->lastInsertId("post");
     }
