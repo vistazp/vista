@@ -1,0 +1,130 @@
+@media screen and (max-width: 728px){
+.container{
+	width:95%;
+}
+.span-24{
+	width:100%;
+}
+
+.span-7, .span-4, .span-6, .span-9, .span-17, .span-11, .span-12, .span-18, .span-23, .span-20, .span-21{
+	width:100%;
+}
+
+.markItUp{
+	width:100%!important;
+}
+
+#step-2 textarea{
+	width:100%;
+}
+
+#top-nav{
+	text-align: center;
+}
+
+.borderwithoutcolor{
+	margin:0;
+	padding:0;
+}
+input#update_email{
+	width:80%;
+}
+.prepend-4{
+	    padding-left: 0;
+}
+#intro img{
+	width:100%;
+	height:auto;
+	max-width:495px;
+}
+#twitter-div{
+	display:none;
+}
+
+.colborder{
+	padding-right: 0;
+    margin-right: 0;
+    border-right: none;
+}
+.last{
+	
+    
+}
+.align-center{
+	text-align:center;
+}
+.prepend-0{
+	padding-left: 0px;
+}
+.tier-box{
+	margin-top:5px;
+}
+
+#get-started input[type="text"] {
+	width:100%;
+}
+#loginForm input[type="text"] {
+	width:100%;
+}
+#loginForm input[type="password"] {
+	width:100%;
+}
+
+input{
+	padding:4px;
+
+}
+#step-1 #job_headline {
+	width:100%;
+}
+
+#step-1 #job-where input[type="text"]{
+	width:100%;
+}
+
+#step-2 input[type="text"]#job_headline {
+	width:100%;
+}
+
+input[type=text]{
+	width:100%;
+}
+#step-1 #job-where select {
+	margin:0;
+	padding:4px;
+	width:100%;
+}
+.span-12, .span7, .span-24{
+	float:none;
+	margin-right:0;
+
+}
+
+.span-23{
+	margin-right:0;
+}
+.append-1{
+	padding-right: 0;
+}
+.next-step {
+	float:none!important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+

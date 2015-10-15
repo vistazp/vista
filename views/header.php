@@ -21,12 +21,14 @@
         
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
 
         <link rel="stylesheet" href="<?php echo URL; ?>public/css/application.css" media="screen" type="text/css"/>
         <link rel="stylesheet" href="<?php echo URL; ?>public/css/screen.css" media="screen" type="text/css"/>
         <link rel="stylesheet" href="<?php echo URL; ?>public/css/formtastic.css" media="screen" type="text/css"/>
         <link rel="stylesheet" href="<?php echo URL; ?>public/css/jquery.fancybox-1.3.4.css" media="screen" type="text/css"/>
         <link rel="stylesheet" href="<?php echo URL; ?>public/css/error.css" media="screen" type="text/css"/>
+		<link rel="stylesheet" href="<?php echo URL; ?>public/css/media.css" media="screen" type="text/css"/>
         
         
 

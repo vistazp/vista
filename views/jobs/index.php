@@ -26,9 +26,9 @@
             </form>          
 
         </div>
-        <div id="sidebar" class="span-4 last">
+        <div id="sidebar" class="span-4 last ">
 
-            <div class="span-4 last">
+            <div class="span-4 last align-center">
 
                 <h3>Share this job:</h3>
                 <br/>
